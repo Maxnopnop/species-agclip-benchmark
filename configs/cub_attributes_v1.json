@@ -1,0 +1,79 @@
+{
+  "version": "cub_attributes_v1",
+  "seen_classes": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18
+  ],
+  "dev_unseen_classes": [
+    3,
+    7,
+    17,
+    19
+  ],
+  "eval_unseen_classes": [
+    1,
+    5,
+    9,
+    11,
+    13,
+    15
+  ],
+  "class_selection_seed": 20260928,
+  "variants": [
+    "finetune",
+    "region_only",
+    "automatic",
+    "gold",
+    "shuffled",
+    "gold_region"
+  ],
+  "seeds": [
+    42
+  ],
+  "learning_rates": [
+    1e-05,
+    3e-06
+  ],
+  "updates": 160,
+  "validation_steps": [
+    0,
+    40,
+    80,
+    120,
+    160
+  ],
+  "micro_batch": 2,
+  "effective_batch": 16,
+  "trainable_visual_blocks": 2,
+  "fusion_lr_multiplier": 10,
+  "class_ce_weight": 0.5,
+  "contrastive_weight": 0.5,
+  "preserve_weight": 0.5,
+  "attribute_loss_weight": 1.0,
+  "regional_attribute_weight": 0.5,
+  "detector_threshold": 0.05,
+  "detector_nms_iou": 0.5,
+  "min_region_area": 0.005,
+  "max_region_area": 0.95,
+  "max_regions": 2,
+  "attribute_selection": "At most three attributes per predeclared group, training-only support >=8 positive and >=20 negative, ranked by min support. Confidence >=3 and corresponding part visible; unknown labels masked. No held-out support used to choose attributes.",
+  "selection": "Development GZSL H; tie by mean U/S then lower CE. Attribute-best checkpoint separately selected by development attribute mAP for diagnosis only. Final images evaluated only after all selections are locked.",
+  "scope": "Fresh project dataset, CUB may overlap with pretrained CLIP/ImageNet. 20 classes, 200 training photos, 180 development photos, 320 final photos. Common-name suffix grouping is a sampling heuristic, not a taxonomy claim. Single-seed mechanistic pilot, not paper reproduction.",
+  "inference": "Image-only; same five fixed anatomical detector queries for all photos. Ground-truth image attributes/parts only construct losses and evaluation targets. Predicted attributes are fused during BOTH training and inference. No ground-truth boxes/crops or class-specific attribute lookup in forward.",
+  "detector_prompts": [
+    "a bird head.",
+    "a bird wing.",
+    "a bird breast.",
+    "a bird tail.",
+    "a bird."
+  ],
+  "source_md5": "97eceeb196236b17998738112f37df78"
+}

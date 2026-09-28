@@ -1,0 +1,50 @@
+{
+  "comparisons": [
+    {
+      "comparison": "gold minus finetune",
+      "H_difference": 3.3172983823045143,
+      "H_bootstrap_95pct": [
+        0.2819005059008941,
+        6.7391036596520735
+      ],
+      "attribute_map_difference_pp": -2.0918294857398436
+    },
+    {
+      "comparison": "gold minus region_only",
+      "H_difference": 0.5260089786545024,
+      "H_bootstrap_95pct": [
+        0.0,
+        1.668968207483616
+      ],
+      "attribute_map_difference_pp": 0.0
+    },
+    {
+      "comparison": "gold minus automatic",
+      "H_difference": 0.0,
+      "H_bootstrap_95pct": [
+        0.0,
+        0.0
+      ],
+      "attribute_map_difference_pp": 0.0
+    },
+    {
+      "comparison": "gold minus shuffled",
+      "H_difference": 0.0,
+      "H_bootstrap_95pct": [
+        0.0,
+        0.0
+      ],
+      "attribute_map_difference_pp": 0.0
+    },
+    {
+      "comparison": "gold_region minus gold",
+      "H_difference": 0.0,
+      "H_bootstrap_95pct": [
+        0.0,
+        0.0
+      ],
+      "attribute_map_difference_pp": 0.0
+    }
+  ],
+  "scope": "Paired within-class image bootstrap, 2000 replicates. Conditional on one training seed and fixed classes; exploratory comparisons without multiplicity adjustment."
+}

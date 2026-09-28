@@ -1,0 +1,168 @@
+{
+  "attributes": [
+    {
+      "source_id": 21,
+      "name": "has_wing_color::black",
+      "positive": 82,
+      "negative": 83
+    },
+    {
+      "source_id": 22,
+      "name": "has_wing_color::white",
+      "positive": 62,
+      "negative": 103
+    },
+    {
+      "source_id": 15,
+      "name": "has_wing_color::grey",
+      "positive": 49,
+      "negative": 116
+    },
+    {
+      "source_id": 7,
+      "name": "has_bill_shape::all-purpose",
+      "positive": 53,
+      "negative": 131
+    },
+    {
+      "source_id": 2,
+      "name": "has_bill_shape::dagger",
+      "positive": 43,
+      "negative": 141
+    },
+    {
+      "source_id": 8,
+      "name": "has_bill_shape::cone",
+      "positive": 32,
+      "negative": 152
+    },
+    {
+      "source_id": 118,
+      "name": "has_breast_color::white",
+      "positive": 92,
+      "negative": 85
+    },
+    {
+      "source_id": 117,
+      "name": "has_breast_color::black",
+      "positive": 44,
+      "negative": 133
+    },
+    {
+      "source_id": 111,
+      "name": "has_breast_color::grey",
+      "positive": 31,
+      "negative": 146
+    },
+    {
+      "source_id": 70,
+      "name": "has_back_color::black",
+      "positive": 42,
+      "negative": 74
+    },
+    {
+      "source_id": 64,
+      "name": "has_back_color::grey",
+      "positive": 33,
+      "negative": 83
+    },
+    {
+      "source_id": 60,
+      "name": "has_back_color::brown",
+      "positive": 30,
+      "negative": 86
+    },
+    {
+      "source_id": 210,
+      "name": "has_belly_color::white",
+      "positive": 94,
+      "negative": 74
+    },
+    {
+      "source_id": 203,
+      "name": "has_belly_color::grey",
+      "positive": 34,
+      "negative": 134
+    },
+    {
+      "source_id": 212,
+      "name": "has_belly_color::buff",
+      "positive": 28,
+      "negative": 140
+    },
+    {
+      "source_id": 305,
+      "name": "has_crown_color::black",
+      "positive": 76,
+      "negative": 110
+    },
+    {
+      "source_id": 295,
+      "name": "has_crown_color::brown",
+      "positive": 31,
+      "negative": 155
+    },
+    {
+      "source_id": 299,
+      "name": "has_crown_color::grey",
+      "positive": 29,
+      "negative": 157
+    },
+    {
+      "source_id": 309,
+      "name": "has_wing_pattern::solid",
+      "positive": 65,
+      "negative": 94
+    },
+    {
+      "source_id": 312,
+      "name": "has_wing_pattern::multi-colored",
+      "positive": 48,
+      "negative": 111
+    },
+    {
+      "source_id": 311,
+      "name": "has_wing_pattern::striped",
+      "positive": 30,
+      "negative": 129
+    },
+    {
+      "source_id": 55,
+      "name": "has_breast_pattern::solid",
+      "positive": 101,
+      "negative": 73
+    },
+    {
+      "source_id": 58,
+      "name": "has_breast_pattern::multi-colored",
+      "positive": 44,
+      "negative": 130
+    },
+    {
+      "source_id": 57,
+      "name": "has_breast_pattern::striped",
+      "positive": 16,
+      "negative": 158
+    }
+  ],
+  "groups": [
+    "Kingfisher",
+    "Bunting",
+    "Hummingbird",
+    "Waterthrush",
+    "Cormorant",
+    "Tern",
+    "Jaeger",
+    "Grosbeak",
+    "Oriole",
+    "Cuckoo"
+  ],
+  "certainty_labels": "1 not visible\n2 guessing\n3 probably\n4 definitely\n",
+  "counts": {
+    "train_seen": 200,
+    "dev_seen": 100,
+    "eval_seen": 200,
+    "eval_unseen": 120,
+    "dev_unseen": 80
+  }
+}

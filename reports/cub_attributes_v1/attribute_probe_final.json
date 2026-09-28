@@ -1,0 +1,408 @@
+{
+  "selection": {
+    "lr": 0.001,
+    "step": 600,
+    "development_map": 0.5585698990793801
+  },
+  "native": {
+    "attribute_map": 0.4186436579226493,
+    "attribute_macro_f1": 0.3788495352405837,
+    "attribute_evaluable_count": 24,
+    "known_attribute_labels": 6117,
+    "per_attribute": [
+      {
+        "id": 0,
+        "positive": 116,
+        "negative": 151,
+        "ap": 0.5811347105613262,
+        "f1": 0.5446808510638298,
+        "positive_prevalence": 0.4344569288389513
+      },
+      {
+        "id": 1,
+        "positive": 97,
+        "negative": 170,
+        "ap": 0.4449531937405081,
+        "f1": 0.4978902953586498,
+        "positive_prevalence": 0.36329588014981273
+      },
+      {
+        "id": 2,
+        "positive": 99,
+        "negative": 168,
+        "ap": 0.5061652123791354,
+        "f1": 0.5543071161048689,
+        "positive_prevalence": 0.3707865168539326
+      },
+      {
+        "id": 3,
+        "positive": 81,
+        "negative": 202,
+        "ap": 0.25178461200056695,
+        "f1": 0.022222222222222223,
+        "positive_prevalence": 0.2862190812720848
+      },
+      {
+        "id": 4,
+        "positive": 64,
+        "negative": 219,
+        "ap": 0.4839500416121103,
+        "f1": 0.3644067796610169,
+        "positive_prevalence": 0.22614840989399293
+      },
+      {
+        "id": 5,
+        "positive": 43,
+        "negative": 240,
+        "ap": 0.11163589220862563,
+        "f1": 0.1375,
+        "positive_prevalence": 0.1519434628975265
+      },
+      {
+        "id": 6,
+        "positive": 122,
+        "negative": 142,
+        "ap": 0.6000807448870277,
+        "f1": 0.6363636363636364,
+        "positive_prevalence": 0.4621212121212121
+      },
+      {
+        "id": 7,
+        "positive": 73,
+        "negative": 191,
+        "ap": 0.6268390229986455,
+        "f1": 0.5935483870967742,
+        "positive_prevalence": 0.2765151515151515
+      },
+      {
+        "id": 8,
+        "positive": 48,
+        "negative": 216,
+        "ap": 0.22645321449305558,
+        "f1": 0.23622047244094488,
+        "positive_prevalence": 0.18181818181818182
+      },
+      {
+        "id": 9,
+        "positive": 52,
+        "negative": 124,
+        "ap": 0.5767095779177953,
+        "f1": 0.4678362573099415,
+        "positive_prevalence": 0.29545454545454547
+      },
+      {
+        "id": 10,
+        "positive": 61,
+        "negative": 115,
+        "ap": 0.46834889011432906,
+        "f1": 0.5093167701863354,
+        "positive_prevalence": 0.3465909090909091
+      },
+      {
+        "id": 11,
+        "positive": 33,
+        "negative": 143,
+        "ap": 0.42188899359083964,
+        "f1": 0.42276422764227645,
+        "positive_prevalence": 0.1875
+      },
+      {
+        "id": 12,
+        "positive": 130,
+        "negative": 123,
+        "ap": 0.6190571278752136,
+        "f1": 0.6460481099656358,
+        "positive_prevalence": 0.5138339920948617
+      },
+      {
+        "id": 13,
+        "positive": 43,
+        "negative": 210,
+        "ap": 0.16937937223934718,
+        "f1": 0.2,
+        "positive_prevalence": 0.16996047430830039
+      },
+      {
+        "id": 14,
+        "positive": 37,
+        "negative": 216,
+        "ap": 0.1786136005513516,
+        "f1": 0.2537313432835821,
+        "positive_prevalence": 0.14624505928853754
+      },
+      {
+        "id": 15,
+        "positive": 110,
+        "negative": 174,
+        "ap": 0.6717472816283041,
+        "f1": 0.6339869281045751,
+        "positive_prevalence": 0.3873239436619718
+      },
+      {
+        "id": 16,
+        "positive": 48,
+        "negative": 236,
+        "ap": 0.3925532838456469,
+        "f1": 0.4,
+        "positive_prevalence": 0.16901408450704225
+      },
+      {
+        "id": 17,
+        "positive": 59,
+        "negative": 225,
+        "ap": 0.3154131911605454,
+        "f1": 0.3888888888888889,
+        "positive_prevalence": 0.20774647887323944
+      },
+      {
+        "id": 18,
+        "positive": 106,
+        "negative": 144,
+        "ap": 0.44822393633817986,
+        "f1": 0.43902439024390244,
+        "positive_prevalence": 0.424
+      },
+      {
+        "id": 19,
+        "positive": 76,
+        "negative": 174,
+        "ap": 0.5050290751030422,
+        "f1": 0.15730337078651685,
+        "positive_prevalence": 0.304
+      },
+      {
+        "id": 20,
+        "positive": 46,
+        "negative": 204,
+        "ap": 0.2140386814644947,
+        "f1": 0.21875,
+        "positive_prevalence": 0.184
+      },
+      {
+        "id": 21,
+        "positive": 135,
+        "negative": 127,
+        "ap": 0.6070326171951649,
+        "f1": 0.2064516129032258,
+        "positive_prevalence": 0.5152671755725191
+      },
+      {
+        "id": 22,
+        "positive": 82,
+        "negative": 180,
+        "ap": 0.331186727128445,
+        "f1": 0.25757575757575757,
+        "positive_prevalence": 0.31297709923664124
+      },
+      {
+        "id": 23,
+        "positive": 35,
+        "negative": 227,
+        "ap": 0.2952287891098833,
+        "f1": 0.30357142857142855,
+        "positive_prevalence": 0.13358778625954199
+      }
+    ]
+  },
+  "linear_probe": {
+    "attribute_map": 0.5824738694090247,
+    "attribute_macro_f1": 0.34967001067785014,
+    "attribute_evaluable_count": 24,
+    "known_attribute_labels": 6117,
+    "per_attribute": [
+      {
+        "id": 0,
+        "positive": 116,
+        "negative": 151,
+        "ap": 0.671105520181417,
+        "f1": 0.6793893129770993,
+        "positive_prevalence": 0.4344569288389513
+      },
+      {
+        "id": 1,
+        "positive": 97,
+        "negative": 170,
+        "ap": 0.6610646273128334,
+        "f1": 0.5316455696202531,
+        "positive_prevalence": 0.36329588014981273
+      },
+      {
+        "id": 2,
+        "positive": 99,
+        "negative": 168,
+        "ap": 0.5674352825081628,
+        "f1": 0.10909090909090909,
+        "positive_prevalence": 0.3707865168539326
+      },
+      {
+        "id": 3,
+        "positive": 81,
+        "negative": 202,
+        "ap": 0.6052791227976053,
+        "f1": 0.46551724137931033,
+        "positive_prevalence": 0.2862190812720848
+      },
+      {
+        "id": 4,
+        "positive": 64,
+        "negative": 219,
+        "ap": 0.6616410049959874,
+        "f1": 0.3116883116883117,
+        "positive_prevalence": 0.22614840989399293
+      },
+      {
+        "id": 5,
+        "positive": 43,
+        "negative": 240,
+        "ap": 0.6514678953722823,
+        "f1": 0.24,
+        "positive_prevalence": 0.1519434628975265
+      },
+      {
+        "id": 6,
+        "positive": 122,
+        "negative": 142,
+        "ap": 0.7678501586009977,
+        "f1": 0.7985074626865671,
+        "positive_prevalence": 0.4621212121212121
+      },
+      {
+        "id": 7,
+        "positive": 73,
+        "negative": 191,
+        "ap": 0.7169848776372262,
+        "f1": 0.46464646464646464,
+        "positive_prevalence": 0.2765151515151515
+      },
+      {
+        "id": 8,
+        "positive": 48,
+        "negative": 216,
+        "ap": 0.4091140750922069,
+        "f1": 0.0,
+        "positive_prevalence": 0.18181818181818182
+      },
+      {
+        "id": 9,
+        "positive": 52,
+        "negative": 124,
+        "ap": 0.6606743878372228,
+        "f1": 0.5416666666666666,
+        "positive_prevalence": 0.29545454545454547
+      },
+      {
+        "id": 10,
+        "positive": 61,
+        "negative": 115,
+        "ap": 0.6413708520870625,
+        "f1": 0.17647058823529413,
+        "positive_prevalence": 0.3465909090909091
+      },
+      {
+        "id": 11,
+        "positive": 33,
+        "negative": 143,
+        "ap": 0.5683917513766542,
+        "f1": 0.43478260869565216,
+        "positive_prevalence": 0.1875
+      },
+      {
+        "id": 12,
+        "positive": 130,
+        "negative": 123,
+        "ap": 0.8361173658683833,
+        "f1": 0.8222996515679443,
+        "positive_prevalence": 0.5138339920948617
+      },
+      {
+        "id": 13,
+        "positive": 43,
+        "negative": 210,
+        "ap": 0.40344918499674143,
+        "f1": 0.125,
+        "positive_prevalence": 0.16996047430830039
+      },
+      {
+        "id": 14,
+        "positive": 37,
+        "negative": 216,
+        "ap": 0.34806150406833886,
+        "f1": 0.0,
+        "positive_prevalence": 0.14624505928853754
+      },
+      {
+        "id": 15,
+        "positive": 110,
+        "negative": 174,
+        "ap": 0.7386887770745802,
+        "f1": 0.7088607594936709,
+        "positive_prevalence": 0.3873239436619718
+      },
+      {
+        "id": 16,
+        "positive": 48,
+        "negative": 236,
+        "ap": 0.43264403793716033,
+        "f1": 0.0,
+        "positive_prevalence": 0.16901408450704225
+      },
+      {
+        "id": 17,
+        "positive": 59,
+        "negative": 225,
+        "ap": 0.3350181789404983,
+        "f1": 0.0,
+        "positive_prevalence": 0.20774647887323944
+      },
+      {
+        "id": 18,
+        "positive": 106,
+        "negative": 144,
+        "ap": 0.8173077505300617,
+        "f1": 0.7475728155339806,
+        "positive_prevalence": 0.424
+      },
+      {
+        "id": 19,
+        "positive": 76,
+        "negative": 174,
+        "ap": 0.5205832154453883,
+        "f1": 0.45528455284552843,
+        "positive_prevalence": 0.304
+      },
+      {
+        "id": 20,
+        "positive": 46,
+        "negative": 204,
+        "ap": 0.28832571010446273,
+        "f1": 0.0,
+        "positive_prevalence": 0.184
+      },
+      {
+        "id": 21,
+        "positive": 135,
+        "negative": 127,
+        "ap": 0.72095917516331,
+        "f1": 0.710691823899371,
+        "positive_prevalence": 0.5152671755725191
+      },
+      {
+        "id": 22,
+        "positive": 82,
+        "negative": 180,
+        "ap": 0.4809778566500438,
+        "f1": 0.06896551724137931,
+        "positive_prevalence": 0.31297709923664124
+      },
+      {
+        "id": 23,
+        "positive": 35,
+        "negative": 227,
+        "ap": 0.47486055323796633,
+        "f1": 0.0,
+        "positive_prevalence": 0.13358778625954199
+      }
+    ]
+  },
+  "scope": "Frozen original CLIP features; image-level attribute labels only from 200 seen-class training photos. Evaluated after locked selections. Not an AG species classification result."
+}

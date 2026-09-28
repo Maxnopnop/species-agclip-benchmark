@@ -1,0 +1,83 @@
+{
+  "comparisons": [
+    {
+      "comparison": "gold minus native",
+      "ZSL_difference_pp": 4.999999999999993,
+      "unseen_photos": 120,
+      "A_correct_B_wrong": 6,
+      "A_wrong_B_correct": 0,
+      "exact_mcnemar_p": 0.03125,
+      "attribute_mAP_difference_pp": 8.389619003211168,
+      "attribute_mAP_bootstrap_95pct": [
+        6.684064125723311,
+        10.071821442341628
+      ]
+    },
+    {
+      "comparison": "gold minus finetune",
+      "ZSL_difference_pp": 1.6666666666666607,
+      "unseen_photos": 120,
+      "A_correct_B_wrong": 2,
+      "A_wrong_B_correct": 0,
+      "exact_mcnemar_p": 0.5,
+      "attribute_mAP_difference_pp": 6.112081819111209,
+      "attribute_mAP_bootstrap_95pct": [
+        4.445376284967924,
+        7.704711887727451
+      ]
+    },
+    {
+      "comparison": "gold minus region_only",
+      "ZSL_difference_pp": 0.8333333333333304,
+      "unseen_photos": 120,
+      "A_correct_B_wrong": 1,
+      "A_wrong_B_correct": 0,
+      "exact_mcnemar_p": 1.0,
+      "attribute_mAP_difference_pp": 6.233502744902325,
+      "attribute_mAP_bootstrap_95pct": [
+        4.5022866450252215,
+        7.772004426336311
+      ]
+    },
+    {
+      "comparison": "gold minus automatic",
+      "ZSL_difference_pp": 1.6666666666666607,
+      "unseen_photos": 120,
+      "A_correct_B_wrong": 2,
+      "A_wrong_B_correct": 0,
+      "exact_mcnemar_p": 0.5,
+      "attribute_mAP_difference_pp": 6.465838596571983,
+      "attribute_mAP_bootstrap_95pct": [
+        4.730167343353398,
+        8.122456298581323
+      ]
+    },
+    {
+      "comparison": "gold minus shuffled",
+      "ZSL_difference_pp": 0.8333333333333304,
+      "unseen_photos": 120,
+      "A_correct_B_wrong": 1,
+      "A_wrong_B_correct": 0,
+      "exact_mcnemar_p": 1.0,
+      "attribute_mAP_difference_pp": 6.554596619541448,
+      "attribute_mAP_bootstrap_95pct": [
+        5.339304130907657,
+        7.844734925483242
+      ]
+    },
+    {
+      "comparison": "gold_region minus gold",
+      "ZSL_difference_pp": 0.0,
+      "unseen_photos": 120,
+      "A_correct_B_wrong": 0,
+      "A_wrong_B_correct": 0,
+      "exact_mcnemar_p": 1.0,
+      "attribute_mAP_difference_pp": 0.12456584433376827,
+      "attribute_mAP_bootstrap_95pct": [
+        0.024218811959276228,
+        0.24725942837008819
+      ]
+    }
+  ],
+  "scope": "Attribute-selected checkpoints, exploratory post-hoc contrasts. No multiplicity adjustment; one seed. Attribute bootstrap uses 500 paired within-class image resamples; ZSL McNemar uses the fixed 120 unseen photos. No retuning."
+}

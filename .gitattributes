@@ -5,3 +5,7 @@
 /multimodal/grounded_experiment.py text eol=lf
 # The Windows JSON writer produced this pinned protocol with CRLF.
 /configs/grounded_v1.json text eol=crlf
+/multimodal/cub_*.py text eol=lf
+/multimodal/visible_train.py text eol=lf
+/probe_cub.py text eol=lf
+/configs/cub_attributes_v1.json text eol=crlf

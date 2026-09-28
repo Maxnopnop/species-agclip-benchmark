@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "provenance": {
+    "multimodal/cub_data.py": "e80e01a341173ed2b3837e50c92564b88ae18387e6219e04ea8c0bdbb8e6d3be",
+    "multimodal/cub_model.py": "7d9961d83269d7f179753750efc0c67f05f9144354a8e24dae7cd2d0184f9c73",
+    "multimodal/cub_experiment.py": "290e9a0b83306aba971ff5575a11b0aa685cd9b453649be86e47fe38ee08e2a5",
+    "multimodal/models.py": "192ffa1e9dfc84d47d0d67b11e61c2613b6734041f22dec65cc13a5afbe54fea",
+    "multimodal/grounded_model.py": "83055c722600b074cfb60a0707b692ba9905b95864f8686ac8fe80c3e03d69d7",
+    "multimodal/grounded_experiment.py": "23f240bf04083f8eb5c167343c755fdeb5a6304f4673bf92c0794b9fed8711b4",
+    "multimodal/visible_train.py": "ddfb2634a5b578b4beb0d132c8168d3e3e3cc69581932978326298e2439f1dca",
+    "configs/cub_attributes_v1.json": "82b254867db30ba5aab77a664dbdfbcfbf33d0f6fd416f389bd877eea476dddc"
+  },
+  "gradient_cache_max_error": 0.0,
+  "gradient_norms": {
+    "global_visual": 14.91843305370217,
+    "attribute_visual": 0.5250630049665506,
+    "attr_head": 0.19377257288677732,
+    "caf": 0.20145294731273253
+  },
+  "parameter_changes": {
+    "global_visual.proj": 1.0013580322265625e-05,
+    "attr_head.weight": 0.00010067224502563477,
+    "attribute_visual.proj": 1.0006129741668701e-05,
+    "caf.linear1.weight": 0.00010002776980400085
+  },
+  "unknown_targets_zero_gradient": true,
+  "unseen_training_rejected": true,
+  "shuffled_mask_and_marginals_preserved": true,
+  "no_region_exact_fallback": true,
+  "class_and_image_isolation": true,
+  "peak_allocated_mib": 1748.01708984375,
+  "seconds": 1.1501502990722656,
+  "counts": {
+    "train_seen": 200,
+    "dev_seen": 100,
+    "dev_unseen": 80,
+    "eval_seen": 200,
+    "eval_unseen": 120
+  },
+  "attributes": 24
+}

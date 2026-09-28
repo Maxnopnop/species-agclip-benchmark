@@ -1,0 +1,66 @@
+{
+  "provenance": {
+    "multimodal/cub_data.py": "e80e01a341173ed2b3837e50c92564b88ae18387e6219e04ea8c0bdbb8e6d3be",
+    "multimodal/cub_model.py": "7d9961d83269d7f179753750efc0c67f05f9144354a8e24dae7cd2d0184f9c73",
+    "multimodal/cub_experiment.py": "290e9a0b83306aba971ff5575a11b0aa685cd9b453649be86e47fe38ee08e2a5",
+    "multimodal/models.py": "192ffa1e9dfc84d47d0d67b11e61c2613b6734041f22dec65cc13a5afbe54fea",
+    "multimodal/grounded_model.py": "83055c722600b074cfb60a0707b692ba9905b95864f8686ac8fe80c3e03d69d7",
+    "multimodal/grounded_experiment.py": "23f240bf04083f8eb5c167343c755fdeb5a6304f4673bf92c0794b9fed8711b4",
+    "multimodal/visible_train.py": "ddfb2634a5b578b4beb0d132c8168d3e3e3cc69581932978326298e2439f1dca",
+    "configs/cub_attributes_v1.json": "82b254867db30ba5aab77a664dbdfbcfbf33d0f6fd416f389bd877eea476dddc"
+  },
+  "diagnostic_source_sha256": "4c96d62403bc797fb03db08e19660acb07b8e6f2e0264e5a85abf19c0083558b",
+  "records": [
+    {
+      "variant": "gold",
+      "selected_step": 160,
+      "checkpoint": "runs\\cub_attributes_v1\\gold_seed42_lr1e-05\\attribute_best.pt",
+      "H": 45.77075112551789,
+      "attribute_map": 0.5023738267978418,
+      "fusion_gate": 0.029676025733351707,
+      "valid_regions": 630,
+      "mean_pairwise_attribute_text_cosine": 0.9999485611915588,
+      "mean_attribute_probability_std": 0.0387832336127758,
+      "interventions": {
+        "zero_text": {
+          "H": 44.79442976476831,
+          "ZSL": 97.49999940395355,
+          "changed_gzsl_predictions": 2,
+          "max_logit_difference": 0.04627370834350586
+        },
+        "permuted": {
+          "H": 45.77075112551789,
+          "ZSL": 97.49999940395355,
+          "changed_gzsl_predictions": 0,
+          "max_logit_difference": 0.0011744499206542969
+        }
+      }
+    },
+    {
+      "variant": "gold_region",
+      "selected_step": 160,
+      "checkpoint": "runs\\cub_attributes_v1\\gold_region_seed42_lr1e-05\\attribute_best.pt",
+      "H": 44.901315873415264,
+      "attribute_map": 0.5036194852411795,
+      "fusion_gate": 0.029706770554184914,
+      "valid_regions": 630,
+      "mean_pairwise_attribute_text_cosine": 0.9995707869529724,
+      "mean_attribute_probability_std": 0.07243049889802933,
+      "interventions": {
+        "zero_text": {
+          "H": 44.84808461460294,
+          "ZSL": 97.49999940395355,
+          "changed_gzsl_predictions": 2,
+          "max_logit_difference": 0.05460977554321289
+        },
+        "permuted": {
+          "H": 44.901315873415264,
+          "ZSL": 97.49999940395355,
+          "changed_gzsl_predictions": 0,
+          "max_logit_difference": 0.0017838478088378906
+        }
+      }
+    }
+  ],
+  "scope": "Attribute-selected trained checkpoints; evaluation-only, no tuning. Text interventions do not erase learned visual features. High text-mixture similarity is a candidate bottleneck, not a causal proof."
+}

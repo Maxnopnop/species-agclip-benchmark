@@ -1,0 +1,180 @@
+{
+  "attributes": [
+    {
+      "name": "has_wing_color::black",
+      "positive": 81,
+      "negative": 83,
+      "unknown": 36,
+      "region_known": 238
+    },
+    {
+      "name": "has_wing_color::white",
+      "positive": 62,
+      "negative": 102,
+      "unknown": 36,
+      "region_known": 238
+    },
+    {
+      "name": "has_wing_color::grey",
+      "positive": 49,
+      "negative": 115,
+      "unknown": 36,
+      "region_known": 238
+    },
+    {
+      "name": "has_bill_shape::all-purpose",
+      "positive": 52,
+      "negative": 127,
+      "unknown": 21,
+      "region_known": 92
+    },
+    {
+      "name": "has_bill_shape::dagger",
+      "positive": 42,
+      "negative": 137,
+      "unknown": 21,
+      "region_known": 92
+    },
+    {
+      "name": "has_bill_shape::cone",
+      "positive": 32,
+      "negative": 147,
+      "unknown": 21,
+      "region_known": 92
+    },
+    {
+      "name": "has_breast_color::white",
+      "positive": 92,
+      "negative": 85,
+      "unknown": 23,
+      "region_known": 160
+    },
+    {
+      "name": "has_breast_color::black",
+      "positive": 44,
+      "negative": 133,
+      "unknown": 23,
+      "region_known": 160
+    },
+    {
+      "name": "has_breast_color::grey",
+      "positive": 31,
+      "negative": 146,
+      "unknown": 23,
+      "region_known": 160
+    },
+    {
+      "name": "has_back_color::black",
+      "positive": 42,
+      "negative": 74,
+      "unknown": 84,
+      "region_known": 136
+    },
+    {
+      "name": "has_back_color::grey",
+      "positive": 33,
+      "negative": 83,
+      "unknown": 84,
+      "region_known": 136
+    },
+    {
+      "name": "has_back_color::brown",
+      "positive": 30,
+      "negative": 86,
+      "unknown": 84,
+      "region_known": 136
+    },
+    {
+      "name": "has_belly_color::white",
+      "positive": 94,
+      "negative": 73,
+      "unknown": 33,
+      "region_known": 174
+    },
+    {
+      "name": "has_belly_color::grey",
+      "positive": 34,
+      "negative": 133,
+      "unknown": 33,
+      "region_known": 174
+    },
+    {
+      "name": "has_belly_color::buff",
+      "positive": 28,
+      "negative": 139,
+      "unknown": 33,
+      "region_known": 174
+    },
+    {
+      "name": "has_crown_color::black",
+      "positive": 74,
+      "negative": 109,
+      "unknown": 17,
+      "region_known": 130
+    },
+    {
+      "name": "has_crown_color::brown",
+      "positive": 31,
+      "negative": 152,
+      "unknown": 17,
+      "region_known": 130
+    },
+    {
+      "name": "has_crown_color::grey",
+      "positive": 28,
+      "negative": 155,
+      "unknown": 17,
+      "region_known": 130
+    },
+    {
+      "name": "has_wing_pattern::solid",
+      "positive": 64,
+      "negative": 94,
+      "unknown": 42,
+      "region_known": 228
+    },
+    {
+      "name": "has_wing_pattern::multi-colored",
+      "positive": 48,
+      "negative": 110,
+      "unknown": 42,
+      "region_known": 228
+    },
+    {
+      "name": "has_wing_pattern::striped",
+      "positive": 30,
+      "negative": 128,
+      "unknown": 42,
+      "region_known": 228
+    },
+    {
+      "name": "has_breast_pattern::solid",
+      "positive": 101,
+      "negative": 73,
+      "unknown": 26,
+      "region_known": 158
+    },
+    {
+      "name": "has_breast_pattern::multi-colored",
+      "positive": 44,
+      "negative": 130,
+      "unknown": 26,
+      "region_known": 158
+    },
+    {
+      "name": "has_breast_pattern::striped",
+      "positive": 16,
+      "negative": 158,
+      "unknown": 26,
+      "region_known": 158
+    }
+  ],
+  "train_photos": 200,
+  "development_photos": 180,
+  "train_known_global": 3954,
+  "train_possible_global": 4800,
+  "train_known_regional": 3948,
+  "images_with_regions": 380,
+  "development_total": 380,
+  "scope": "CUB crowd annotations with confidence>=3 and visible part in CLIP center crop; part points are not full part segmentations. Not expert re-annotation."
+}
