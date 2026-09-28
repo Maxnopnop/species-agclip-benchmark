@@ -1,0 +1,13 @@
+{
+  "completed": [
+    "cub_tokens_v1",
+    "cub_bottleneck_v1",
+    "cub_rich_v1",
+    "cub_sparse_v1",
+    "cub_b16_v1"
+  ],
+  "pending": [
+    "cub_regional_tokens_v1"
+  ],
+  "training_cells": 162
+}

@@ -1,0 +1,50 @@
+{
+  "version": "cub_sparse_v1",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "variants": [
+    "tokens",
+    "dense_contrast",
+    "sparse_ce",
+    "dense_ce",
+    "region_only",
+    "pooled",
+    "permuted",
+    "constant"
+  ],
+  "learning_rates": [
+    0.001,
+    0.0003
+  ],
+  "updates": 160,
+  "validation_steps": [
+    0,
+    40,
+    80,
+    120,
+    160
+  ],
+  "batch_size": 32,
+  "hidden_dim": 128,
+  "max_residual": 0.2,
+  "preserve_weight": 5.0,
+  "probe_learning_rates": [
+    0.01,
+    0.001
+  ],
+  "probe_steps": [
+    0,
+    100,
+    300,
+    600
+  ],
+  "probe_regional_weight": 0.5,
+  "selection": "Development GZSL H, then mean S/U, then lower candidate CE. Step zero is eligible. All 30 cells are completed and selections locked before evaluation.",
+  "scope": "Exploratory follow-up on reused CUB split. 2x2 diagnostic: dense/sparse tokens crossed with seen CE / half CE plus half symmetric multi-positive contrastive loss. tokens denotes sparse+contrastive. Four extra matched sparse+contrastive controls. Same 158-attribute frozen probe and 160-update budgets as cub_rich_v1. Three fusion seeds; no visual fine-tuning.",
+  "tokens": "Top eight predicted attributes per valid view remain separate; no threshold or true-label selection. Pooled control averages only selected tokens and repeats them; region-only has zero semantic/confidence inputs. Every valid view retains eight tokens in sparse variants; all 158 in dense variants.",
+  "inference": "Image only plus fixed detector, class/attribute text assets and trained weights. No image labels, true attributes, or true part locations are inference inputs. Unknown attributes are masked only during probe training and evaluation. Global attribute tokens remain available when detector regions are missing.",
+  "attributes_per_view": 8
+}

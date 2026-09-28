@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "trainable_parameters": 214785,
+  "no_attribute_variation_exact_native": true,
+  "frozen_probe": true,
+  "nonzero_attribute_gradients": true,
+  "matched_capacity": true
+}

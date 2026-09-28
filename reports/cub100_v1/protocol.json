@@ -1,0 +1,916 @@
+{
+  "status": "locked_before_new_performance_evaluation",
+  "roles": {
+    "train_seen": 500,
+    "dev_seen": 250,
+    "eval_seen": 500,
+    "dev_unseen": 250,
+    "eval_unseen": 250
+  },
+  "classes": [
+    {
+      "label": 0,
+      "source_id": 196,
+      "name": "House Wren"
+    },
+    {
+      "label": 1,
+      "source_id": 159,
+      "name": "Black and white Warbler"
+    },
+    {
+      "label": 2,
+      "source_id": 86,
+      "name": "Pacific Loon"
+    },
+    {
+      "label": 3,
+      "source_id": 197,
+      "name": "Marsh Wren"
+    },
+    {
+      "label": 4,
+      "source_id": 9,
+      "name": "Brewer Blackbird"
+    },
+    {
+      "label": 5,
+      "source_id": 63,
+      "name": "Ivory Gull"
+    },
+    {
+      "label": 6,
+      "source_id": 29,
+      "name": "American Crow"
+    },
+    {
+      "label": 7,
+      "source_id": 130,
+      "name": "Tree Sparrow"
+    },
+    {
+      "label": 8,
+      "source_id": 107,
+      "name": "Common Raven"
+    },
+    {
+      "label": 9,
+      "source_id": 178,
+      "name": "Swainson Warbler"
+    },
+    {
+      "label": 10,
+      "source_id": 59,
+      "name": "California Gull"
+    },
+    {
+      "label": 11,
+      "source_id": 102,
+      "name": "Western Wood Pewee"
+    },
+    {
+      "label": 12,
+      "source_id": 149,
+      "name": "Brown Thrasher"
+    },
+    {
+      "label": 13,
+      "source_id": 200,
+      "name": "Common Yellowthroat"
+    },
+    {
+      "label": 14,
+      "source_id": 135,
+      "name": "Bank Swallow"
+    },
+    {
+      "label": 15,
+      "source_id": 8,
+      "name": "Rhinoceros Auklet"
+    },
+    {
+      "label": 16,
+      "source_id": 80,
+      "name": "Green Kingfisher"
+    },
+    {
+      "label": 17,
+      "source_id": 119,
+      "name": "Field Sparrow"
+    },
+    {
+      "label": 18,
+      "source_id": 166,
+      "name": "Golden winged Warbler"
+    },
+    {
+      "label": 19,
+      "source_id": 154,
+      "name": "Red eyed Vireo"
+    },
+    {
+      "label": 20,
+      "source_id": 30,
+      "name": "Fish Crow"
+    },
+    {
+      "label": 21,
+      "source_id": 17,
+      "name": "Cardinal"
+    },
+    {
+      "label": 22,
+      "source_id": 57,
+      "name": "Rose breasted Grosbeak"
+    },
+    {
+      "label": 23,
+      "source_id": 84,
+      "name": "Red legged Kittiwake"
+    },
+    {
+      "label": 24,
+      "source_id": 160,
+      "name": "Black throated Blue Warbler"
+    },
+    {
+      "label": 25,
+      "source_id": 7,
+      "name": "Parakeet Auklet"
+    },
+    {
+      "label": 26,
+      "source_id": 73,
+      "name": "Blue Jay"
+    },
+    {
+      "label": 27,
+      "source_id": 140,
+      "name": "Summer Tanager"
+    },
+    {
+      "label": 28,
+      "source_id": 169,
+      "name": "Magnolia Warbler"
+    },
+    {
+      "label": 29,
+      "source_id": 88,
+      "name": "Western Meadowlark"
+    },
+    {
+      "label": 30,
+      "source_id": 189,
+      "name": "Red bellied Woodpecker"
+    },
+    {
+      "label": 31,
+      "source_id": 51,
+      "name": "Horned Grebe"
+    },
+    {
+      "label": 32,
+      "source_id": 62,
+      "name": "Herring Gull"
+    },
+    {
+      "label": 33,
+      "source_id": 52,
+      "name": "Pied billed Grebe"
+    },
+    {
+      "label": 34,
+      "source_id": 65,
+      "name": "Slaty backed Gull"
+    },
+    {
+      "label": 35,
+      "source_id": 191,
+      "name": "Red headed Woodpecker"
+    },
+    {
+      "label": 36,
+      "source_id": 74,
+      "name": "Florida Jay"
+    },
+    {
+      "label": 37,
+      "source_id": 49,
+      "name": "Boat tailed Grackle"
+    },
+    {
+      "label": 38,
+      "source_id": 108,
+      "name": "White necked Raven"
+    },
+    {
+      "label": 39,
+      "source_id": 77,
+      "name": "Tropical Kingbird"
+    },
+    {
+      "label": 40,
+      "source_id": 125,
+      "name": "Lincoln Sparrow"
+    },
+    {
+      "label": 41,
+      "source_id": 1,
+      "name": "Black footed Albatross"
+    },
+    {
+      "label": 42,
+      "source_id": 3,
+      "name": "Sooty Albatross"
+    },
+    {
+      "label": 43,
+      "source_id": 106,
+      "name": "Horned Puffin"
+    },
+    {
+      "label": 44,
+      "source_id": 148,
+      "name": "Green tailed Towhee"
+    },
+    {
+      "label": 45,
+      "source_id": 13,
+      "name": "Bobolink"
+    },
+    {
+      "label": 46,
+      "source_id": 70,
+      "name": "Green Violetear"
+    },
+    {
+      "label": 47,
+      "source_id": 75,
+      "name": "Green Jay"
+    },
+    {
+      "label": 48,
+      "source_id": 157,
+      "name": "Yellow throated Vireo"
+    },
+    {
+      "label": 49,
+      "source_id": 139,
+      "name": "Scarlet Tanager"
+    },
+    {
+      "label": 50,
+      "source_id": 158,
+      "name": "Bay breasted Warbler"
+    },
+    {
+      "label": 51,
+      "source_id": 126,
+      "name": "Nelson Sharp tailed Sparrow"
+    },
+    {
+      "label": 52,
+      "source_id": 5,
+      "name": "Crested Auklet"
+    },
+    {
+      "label": 53,
+      "source_id": 123,
+      "name": "Henslow Sparrow"
+    },
+    {
+      "label": 54,
+      "source_id": 109,
+      "name": "American Redstart"
+    },
+    {
+      "label": 55,
+      "source_id": 98,
+      "name": "Scott Oriole"
+    },
+    {
+      "label": 56,
+      "source_id": 12,
+      "name": "Yellow headed Blackbird"
+    },
+    {
+      "label": 57,
+      "source_id": 53,
+      "name": "Western Grebe"
+    },
+    {
+      "label": 58,
+      "source_id": 48,
+      "name": "European Goldfinch"
+    },
+    {
+      "label": 59,
+      "source_id": 26,
+      "name": "Bronzed Cowbird"
+    },
+    {
+      "label": 60,
+      "source_id": 94,
+      "name": "White breasted Nuthatch"
+    },
+    {
+      "label": 61,
+      "source_id": 19,
+      "name": "Gray Catbird"
+    },
+    {
+      "label": 62,
+      "source_id": 171,
+      "name": "Myrtle Warbler"
+    },
+    {
+      "label": 63,
+      "source_id": 121,
+      "name": "Grasshopper Sparrow"
+    },
+    {
+      "label": 64,
+      "source_id": 127,
+      "name": "Savannah Sparrow"
+    },
+    {
+      "label": 65,
+      "source_id": 187,
+      "name": "American Three toed Woodpecker"
+    },
+    {
+      "label": 66,
+      "source_id": 100,
+      "name": "Brown Pelican"
+    },
+    {
+      "label": 67,
+      "source_id": 78,
+      "name": "Gray Kingbird"
+    },
+    {
+      "label": 68,
+      "source_id": 122,
+      "name": "Harris Sparrow"
+    },
+    {
+      "label": 69,
+      "source_id": 198,
+      "name": "Rock Wren"
+    },
+    {
+      "label": 70,
+      "source_id": 165,
+      "name": "Chestnut sided Warbler"
+    },
+    {
+      "label": 71,
+      "source_id": 54,
+      "name": "Blue Grosbeak"
+    },
+    {
+      "label": 72,
+      "source_id": 103,
+      "name": "Sayornis"
+    },
+    {
+      "label": 73,
+      "source_id": 168,
+      "name": "Kentucky Warbler"
+    },
+    {
+      "label": 74,
+      "source_id": 16,
+      "name": "Painted Bunting"
+    },
+    {
+      "label": 75,
+      "source_id": 134,
+      "name": "Cape Glossy Starling"
+    },
+    {
+      "label": 76,
+      "source_id": 199,
+      "name": "Winter Wren"
+    },
+    {
+      "label": 77,
+      "source_id": 83,
+      "name": "White breasted Kingfisher"
+    },
+    {
+      "label": 78,
+      "source_id": 32,
+      "name": "Mangrove Cuckoo"
+    },
+    {
+      "label": 79,
+      "source_id": 116,
+      "name": "Chipping Sparrow"
+    },
+    {
+      "label": 80,
+      "source_id": 113,
+      "name": "Baird Sparrow"
+    },
+    {
+      "label": 81,
+      "source_id": 181,
+      "name": "Worm eating Warbler"
+    },
+    {
+      "label": 82,
+      "source_id": 156,
+      "name": "White eyed Vireo"
+    },
+    {
+      "label": 83,
+      "source_id": 42,
+      "name": "Vermilion Flycatcher"
+    },
+    {
+      "label": 84,
+      "source_id": 20,
+      "name": "Yellow breasted Chat"
+    },
+    {
+      "label": 85,
+      "source_id": 193,
+      "name": "Bewick Wren"
+    },
+    {
+      "label": 86,
+      "source_id": 153,
+      "name": "Philadelphia Vireo"
+    },
+    {
+      "label": 87,
+      "source_id": 89,
+      "name": "Hooded Merganser"
+    },
+    {
+      "label": 88,
+      "source_id": 115,
+      "name": "Brewer Sparrow"
+    },
+    {
+      "label": 89,
+      "source_id": 67,
+      "name": "Anna Hummingbird"
+    },
+    {
+      "label": 90,
+      "source_id": 6,
+      "name": "Least Auklet"
+    },
+    {
+      "label": 91,
+      "source_id": 132,
+      "name": "White crowned Sparrow"
+    },
+    {
+      "label": 92,
+      "source_id": 25,
+      "name": "Pelagic Cormorant"
+    },
+    {
+      "label": 93,
+      "source_id": 50,
+      "name": "Eared Grebe"
+    },
+    {
+      "label": 94,
+      "source_id": 90,
+      "name": "Red breasted Merganser"
+    },
+    {
+      "label": 95,
+      "source_id": 110,
+      "name": "Geococcyx"
+    },
+    {
+      "label": 96,
+      "source_id": 104,
+      "name": "American Pipit"
+    },
+    {
+      "label": 97,
+      "source_id": 85,
+      "name": "Horned Lark"
+    },
+    {
+      "label": 98,
+      "source_id": 87,
+      "name": "Mallard"
+    },
+    {
+      "label": 99,
+      "source_id": 101,
+      "name": "White Pelican"
+    }
+  ],
+  "attribute_source_ids": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    45,
+    46,
+    47,
+    48,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    64,
+    65,
+    66,
+    67,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    85,
+    86,
+    87,
+    91,
+    92,
+    93,
+    94,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    111,
+    112,
+    113,
+    114,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    126,
+    127,
+    129,
+    132,
+    133,
+    134,
+    135,
+    137,
+    140,
+    141,
+    145,
+    146,
+    147,
+    148,
+    150,
+    151,
+    152,
+    153,
+    154,
+    157,
+    158,
+    159,
+    160,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    173,
+    174,
+    175,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    188,
+    189,
+    190,
+    191,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    203,
+    204,
+    205,
+    206,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    223,
+    224,
+    226,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    254,
+    255,
+    256,
+    257,
+    259,
+    260,
+    261,
+    262,
+    263,
+    265,
+    269,
+    270,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    284,
+    285,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    298,
+    299,
+    300,
+    301,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312
+  ],
+  "prior_species_excluded": true,
+  "prior_project_images_excluded": true,
+  "source": {
+    "code_sha256": "dafea0387b24e258111e9161ec67afb1dabc1c8d3016e20d22692dd69e8effc9",
+    "config_sha256": "aeea2f0f787a3b6ce7d5f90eb2f53855d1b2f693fe41772be148bda3768761c3"
+  },
+  "manifest_sha256": "cf25f035b5fa011e2a60e24d1f3ea4d7cfaa40aae3adf03032a715a6a36c47fe",
+  "config": {
+    "version": "cub100_v1",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "variants": [
+      "region_only",
+      "pooled",
+      "tokens",
+      "permuted",
+      "constant"
+    ],
+    "learning_rates": [
+      0.001,
+      0.0003
+    ],
+    "updates": 400,
+    "validation_steps": [
+      0,
+      100,
+      200,
+      300,
+      400
+    ],
+    "batch_size": 32,
+    "hidden_dim": 128,
+    "max_residual": 0.2,
+    "preserve_weight": 5.0,
+    "probe_learning_rates": [
+      0.01,
+      0.001
+    ],
+    "probe_steps": [
+      0,
+      100,
+      300,
+      600
+    ],
+    "probe_regional_weight": 0.5,
+    "selection": "Development GZSL H, then mean S/U, then lower candidate CE. Step zero is eligible. All 30 cells are completed and selections locked before evaluation.",
+    "scope": "Predeclared class-diversity follow-up, excluding all 20 prior CUB species. 100 source classes sampled before new performance inspection: 50 seen, 25 development-unseen, 25 final-unseen; 500 training, 500 development, 750 final photos, respecting official source train/test boundaries. Frozen CLIP B/16 visuals; train-supported attribute selection; 400 updates matches prior per-photo exposure approximately. Three fusion seeds, two learning rates, all selections locked before any final feature extraction. No claim of no overlap with foundation-model pretraining.",
+    "tokens": "Three views, one separate token per training-supported attribute. All variants share parameters/budgets and fixed detector; pooled repeats its mean to match sequence length; region_only removes text/confidence; permuted and constant are negative controls.",
+    "inference": "Image only plus fixed detector, class/attribute text assets and trained weights. No image labels, true attributes, or true part locations are inference inputs. Unknown attributes are masked only during probe training and evaluation. Global attribute tokens remain available when detector regions are missing.",
+    "seen_classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "dev_unseen_classes": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "eval_unseen_classes": [
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "class_selection_seed": 20260928,
+    "detector_prompts": [
+      "a bird head.",
+      "a bird wing.",
+      "a bird breast.",
+      "a bird tail.",
+      "a bird."
+    ],
+    "detector_threshold": 0.05,
+    "detector_nms_iou": 0.5,
+    "min_region_area": 0.005,
+    "max_region_area": 0.95,
+    "max_regions": 2
+  }
+}

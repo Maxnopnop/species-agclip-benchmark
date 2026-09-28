@@ -1,0 +1,19 @@
+{
+  "version": "cub_bottleneck_v1",
+  "seeds": [42, 43, 44],
+  "variants": ["tokens", "permuted", "identity", "constant"],
+  "learning_rates": [0.001, 0.0003],
+  "updates": 640,
+  "validation_steps": [0, 40, 160, 320, 640],
+  "batch_size": 32,
+  "hidden_dim": 128,
+  "max_residual": 0.5,
+  "preserve_weight": 5.0,
+  "probe_learning_rates": [0.01, 0.001],
+  "probe_steps": [0, 100, 300, 600],
+  "probe_regional_weight": 0.5,
+  "selection": "Development H then mean S/U then lower CE; all cells locked before evaluation. Reuses the exact frozen attribute probe selected for cub_tokens_v1.",
+  "scope": "Exploratory follow-up after inspecting cub_tokens_v1 on reused CUB data. Three fusion seeds, fixed split and fixed probe. Attribute-only residual: no image features or global visual query enter the learned branch; subtract its output for training-mean attribute probabilities. The global visual classifier remains frozen.",
+  "tokens": "Separate attribute tokens containing signed confidence times a centered semantic vector, plus confidence. Three views with invalid regions masked. A learned constant query pools the tokens; prediction can change only through image-dependent predicted attributes. Controls: permuted semantic pairing, orthogonal nonsemantic attribute identities, and constant probabilities. Identity controls preserve attribute identity, not semantic text meaning.",
+  "inference": "Images only. No true image attribute or class annotation in forward. Fixed class text, detector and frozen attribute probe. Global tokens valid when region detections are missing."
+}

@@ -1,5 +1,7 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
+**冻结全图分支与独立属性 token 连续诊断：** [汇总报告](reports/cub_followup_v1/summary_zh.md)、[运行说明](docs/cub_token_diagnostics.md)。包括三种子、匹配容量对照、属性瓶颈、24／158 属性、稀疏 token／对比损失、B/16 复核及区域分支微调；报告自动区分已完成与待完成版本，并保留负结果和第 0 步选择。不能把属性识别、主干更换或校准的收益直接归因于 AG。
+
 **CUB 人工属性诊断：** [中文报告](reports/cub_attributes_v1/summary_zh.md)、[运行与协议说明](docs/cub_attributes_v1.md)。采用官方 CUB 逐图属性／可见部位标注，固定 20 个物种和 24 条属性，对比自动属性、人工标注、打乱监督及额外区域监督，并用冻结特征线性探针单独检验属性可学习性。分类最优与属性最优检查点分别锁定；真实测试属性和部位不作为输入。入口 `cub_models.cmd`，单图入口 `predict_cub.py`。完整状态、成绩及第 0 步选择说明见该版本报告。
 
 **本机新起步配置（grounded_v1）：** [部署与运行说明](docs/grounded_starter.md)、[中文实测报告](reports/grounded_v1/summary_zh.md)、[对比表](reports/grounded_v1/comparison.csv)。CLIP ViT-B/32＋OWL-ViT 实际区域＋独立属性视觉分支＋CAF，两个视觉分支都训练末端两层。训练图片由 200 增至 300；保留原始 CLIP、普通微调、区域无文字和打乱属性对照。`grounded_models.cmd` 运行完整流程，`predict_grounded.cmd` 可接受拖入的图片。用户只输入图片，内部仍使用固定文字库和检测器；它不是 CoCa 论文的严格复现。训练与最终评估状态、局限及准确率以该版本报告为准。

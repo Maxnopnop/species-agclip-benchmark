@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "trainable_parameters": 345857,
+  "checks": [
+    {
+      "variant": "region_only",
+      "passed": true
+    },
+    {
+      "variant": "pooled",
+      "passed": true
+    },
+    {
+      "variant": "tokens",
+      "passed": true
+    },
+    {
+      "variant": "permuted",
+      "passed": true
+    },
+    {
+      "variant": "constant",
+      "passed": true
+    }
+  ],
+  "native_logits_unchanged": true,
+  "frozen_probe_unchanged": true,
+  "masked_regions_ignored": true,
+  "separate_attribute_tokens": true
+}

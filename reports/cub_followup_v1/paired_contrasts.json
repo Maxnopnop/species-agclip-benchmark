@@ -1,0 +1,282 @@
+[
+  {
+    "version": "cub_tokens_v1",
+    "control": "region_only",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.0,
+    "conditional_95_interval": [
+      0.0,
+      0.0
+    ],
+    "changed_predictions_per_seed": [
+      1,
+      1,
+      1
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_tokens_v1",
+    "control": "pooled",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.0,
+    "conditional_95_interval": [
+      0.0,
+      0.0
+    ],
+    "changed_predictions_per_seed": [
+      0,
+      0,
+      1
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_tokens_v1",
+    "control": "constant",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.0,
+    "conditional_95_interval": [
+      0.0,
+      0.0
+    ],
+    "changed_predictions_per_seed": [
+      0,
+      0,
+      1
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_bottleneck_v1",
+    "control": "constant",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": -2.9765309654164676,
+    "conditional_95_interval": [
+      -4.783549586003077,
+      -1.1750841858731083
+    ],
+    "changed_predictions_per_seed": [
+      0,
+      43,
+      0
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_bottleneck_v1",
+    "control": "identity",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 4.698924127704269,
+    "conditional_95_interval": [
+      1.8133715821705074,
+      7.647265595006545
+    ],
+    "changed_predictions_per_seed": [
+      35,
+      9,
+      42
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_rich_v1",
+    "control": "region_only",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.0,
+    "conditional_95_interval": [
+      0.0,
+      0.0
+    ],
+    "changed_predictions_per_seed": [
+      0,
+      1,
+      1
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_rich_v1",
+    "control": "pooled",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.19189499948844002,
+    "conditional_95_interval": [
+      0.0,
+      0.6007137280774909
+    ],
+    "changed_predictions_per_seed": [
+      0,
+      2,
+      2
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_rich_v1",
+    "control": "constant",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.19189499948844002,
+    "conditional_95_interval": [
+      0.0,
+      0.6007137280774909
+    ],
+    "changed_predictions_per_seed": [
+      0,
+      0,
+      2
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_sparse_v1",
+    "control": "region_only",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.0,
+    "conditional_95_interval": [
+      0.0,
+      0.0
+    ],
+    "changed_predictions_per_seed": [
+      1,
+      0,
+      0
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_sparse_v1",
+    "control": "pooled",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.0,
+    "conditional_95_interval": [
+      0.0,
+      0.0
+    ],
+    "changed_predictions_per_seed": [
+      0,
+      0,
+      0
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_sparse_v1",
+    "control": "constant",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": -0.18978846497084115,
+    "conditional_95_interval": [
+      -0.5994462796050399,
+      0.0
+    ],
+    "changed_predictions_per_seed": [
+      0,
+      1,
+      1
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_b16_v1",
+    "control": "region_only",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.18921635951144822,
+    "conditional_95_interval": [
+      -0.17479715364912352,
+      0.620236024214384
+    ],
+    "changed_predictions_per_seed": [
+      1,
+      0,
+      2
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_b16_v1",
+    "control": "pooled",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.32602543644542453,
+    "conditional_95_interval": [
+      -0.17437924800023835,
+      0.990368408267576
+    ],
+    "changed_predictions_per_seed": [
+      1,
+      0,
+      3
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  },
+  {
+    "version": "cub_b16_v1",
+    "control": "constant",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_H_delta": 0.0,
+    "conditional_95_interval": [
+      0.0,
+      0.0
+    ],
+    "changed_predictions_per_seed": [
+      0,
+      0,
+      0
+    ],
+    "scope": "Paired within-class image bootstrap, shared resamples across three fixed trained seeds. Conditional on this split/probe/checkpoint search; not a population-of-training-runs interval or multiplicity-adjusted confirmation."
+  }
+]

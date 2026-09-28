@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "exact_cached_gradient_max_error": 0.0,
+  "global_logits_bitwise_unchanged": true,
+  "frozen_probe": true,
+  "heldout_labels_rejected": true,
+  "gradient_norms": {
+    "attribute_visual": 1.0493490439560258,
+    "fusion": 0.11919778549379982
+  }
+}

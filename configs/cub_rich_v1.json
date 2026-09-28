@@ -1,0 +1,46 @@
+{
+  "version": "cub_rich_v1",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "variants": [
+    "region_only",
+    "pooled",
+    "tokens",
+    "permuted",
+    "constant"
+  ],
+  "learning_rates": [
+    0.001,
+    0.0003
+  ],
+  "updates": 160,
+  "validation_steps": [
+    0,
+    40,
+    80,
+    120,
+    160
+  ],
+  "batch_size": 32,
+  "hidden_dim": 128,
+  "max_residual": 0.2,
+  "preserve_weight": 5.0,
+  "probe_learning_rates": [
+    0.01,
+    0.001
+  ],
+  "probe_steps": [
+    0,
+    100,
+    300,
+    600
+  ],
+  "probe_regional_weight": 0.5,
+  "selection": "Development GZSL H, then mean S/U, then lower candidate CE. Step zero is eligible. All 30 cells are completed and selections locked before evaluation.",
+  "scope": "Exploratory follow-up on reused CUB split, after 24-attribute experiments. Same frozen visuals, fusion architecture, seeds and budgets as cub_tokens_v1; 158 training-supported attributes replace 24. Additional attribute dimensions and annotation supervision are a joint intervention. Probe selected anew on development mean global/regional mAP. No final-image tuning.",
+  "tokens": "Three views (whole image plus two detector regions), 158 separate attribute tokens per view. Shared token MLP and single-query cross attention. Pooled control repeats the mean attribute representation 158 times per view, matching length and parameters. Region-only has zero text and confidence; constant uses training-mean per-view predicted probabilities; permuted uses a fixed incorrect text association, which could be relearned.",
+  "inference": "Image only plus fixed detector, class/attribute text assets and trained weights. No image labels, true attributes, or true part locations are inference inputs. Unknown attributes are masked only during probe training and evaluation. Global attribute tokens remain available when detector regions are missing."
+}
