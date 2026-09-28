@@ -1,5 +1,7 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
+**最新图片级属性实验：** [中文结果](reports/visible_v1/Summary_CN.md)、[完整指标](reports/visible_v1/README.md)、[复现说明](docs/visible_v1.md)。CLIP ViT-B/16 与 SigLIP 2 使用可见属性监督和区域对齐，另用 FG-CLIP 做小规模复核。分别评价属性识别、定位和物种分类；不把属性指标的改善等同于分类提升。该轮属于验证集探索，保留全图基线、匹配容量对照和错误监督对照。
+
 课程实验项目，主体位于 `E:\ELEC4240\SpeciesRecognition`。以少量有标签图片将四种 ImageNet 视觉模型对齐到 CLIP 文字空间，再比较五个模型的属性融合效果。
 
 **已完成 20 物种、1,000 张真实图片的扩展实验，共 225 组比较。** [完整结果](reports/expanded20/README.md)、[对比图](reports/expanded20/comparison.png)、[实验定义和运行方法](docs/expanded20.md)。5-shot 基线准确率约 60%–75%；AG 改编带来小幅且不一致的变化，15 个“模型 × 样本数”设置中，没有正向提升通过多重比较校正。不能据此声称 AG 显著有效。正式 100 类实验仍待完整数据和来源核查属性库准备完毕。

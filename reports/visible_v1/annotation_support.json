@@ -1,0 +1,98 @@
+[
+  {
+    "id": 0,
+    "name": "pale white or pale gray wing surfaces",
+    "train_positive": 6,
+    "train_negative": 12
+  },
+  {
+    "id": 1,
+    "name": "predominantly brown or black wings",
+    "train_positive": 9,
+    "train_negative": 8
+  },
+  {
+    "id": 2,
+    "name": "blue colored areas on wings",
+    "train_positive": 3,
+    "train_negative": 15
+  },
+  {
+    "id": 3,
+    "name": "orange or red colored areas on wings",
+    "train_positive": 8,
+    "train_negative": 11
+  },
+  {
+    "id": 4,
+    "name": "distinct dark spots on wings",
+    "train_positive": 8,
+    "train_negative": 3
+  },
+  {
+    "id": 5,
+    "name": "distinct pale spots or patches on dark wings",
+    "train_positive": 6,
+    "train_negative": 6
+  },
+  {
+    "id": 6,
+    "name": "a pale longitudinal stripe along the leading edge of a brown forewing",
+    "train_positive": 2,
+    "train_negative": 8
+  },
+  {
+    "id": 7,
+    "name": "green leaves on the target plant",
+    "train_positive": 12,
+    "train_negative": 4
+  },
+  {
+    "id": 8,
+    "name": "yellow flowers or yellow floral bracts",
+    "train_positive": 7,
+    "train_negative": 10
+  },
+  {
+    "id": 9,
+    "name": "white or cream colored petaled flowers",
+    "train_positive": 3,
+    "train_negative": 16
+  },
+  {
+    "id": 10,
+    "name": "visible spines on a cactus",
+    "train_positive": 4,
+    "train_negative": 16
+  },
+  {
+    "id": 11,
+    "name": "grass seed heads on slender stems",
+    "train_positive": 4,
+    "train_negative": 16
+  },
+  {
+    "id": 12,
+    "name": "red oval fruits",
+    "train_positive": 1,
+    "train_negative": 18
+  },
+  {
+    "id": 13,
+    "name": "a compact upright barrel shaped cactus",
+    "train_positive": 2,
+    "train_negative": 18
+  },
+  {
+    "id": 14,
+    "name": "branching cylindrical cactus segments",
+    "train_positive": 2,
+    "train_negative": 18
+  },
+  {
+    "id": 15,
+    "name": "rounded leaves with lobed or scalloped edges",
+    "train_positive": 3,
+    "train_negative": 12
+  }
+]

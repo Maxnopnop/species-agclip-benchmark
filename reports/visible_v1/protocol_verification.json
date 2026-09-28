@@ -1,0 +1,12 @@
+{
+  "completed_cells": 70,
+  "test_images_used": 0,
+  "fixed_training_images": 200,
+  "validation_images": 200,
+  "training_implementation_sha256": "ddfb2634a5b578b4beb0d132c8168d3e3e3cc69581932978326298e2439f1dca",
+  "manifest_sha256": "1b75b02405874db64407b2561479a4ac3f5e7bdff25a7b90eac242e82664f8ef",
+  "fgclip_weight_sha256": "e42fdf108f56292277be193a5531a63d7b817541dbd6c250f8294b3fc76d8ab1",
+  "unit_tests": "5 passed: masked labels, region loss, geometry, image-only forward, split/shuffle",
+  "dense_feature_parity": "Official FG-CLIP global and dense APIs agree with extraction path on first batch; assertions passed",
+  "inference_parity": "9 image/model cases passed; details in inference_verification.json"
+}

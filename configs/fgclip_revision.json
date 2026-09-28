@@ -1,0 +1,9 @@
+{
+  "repo": "qihoo360/fg-clip-base",
+  "revision": "454d76372c2cf5eb48fa0d871fd0534481484d97",
+  "weights": "model.safetensors",
+  "code_sha256": {
+    "modeling_fgclip.py": "513e070876a425cc20d671ded192e9430b948300e917cacbfc83768ba2fcf303",
+    "modeling_clip.py": "9be3580b200858591c61f660674aebc54df77a784cd9bcb00854b87f487c00ac"
+  }
+}

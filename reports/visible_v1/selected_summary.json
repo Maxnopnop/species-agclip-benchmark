@@ -1,0 +1,574 @@
+[
+  {
+    "backbone": "clip_b16",
+    "variant": "baseline",
+    "lr": 0.001,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n": 3,
+    "top1_accuracy": 0.8183333333333334,
+    "top1_accuracy_sd": 0.01258305739211787,
+    "macro_f1": 0.8150265697415943,
+    "macro_f1_sd": 0.012298987330421805,
+    "loss": 0.595418299039205,
+    "loss_sd": 0.016481093394531493,
+    "attribute_map": 0.6657259778911564,
+    "attribute_map_sd": 0.0,
+    "attribute_macro_f1": 0.3148809523809524,
+    "attribute_macro_f1_sd": 0.0,
+    "grounding_peak_in_box": 0.3611111044883728,
+    "grounding_peak_in_box_sd": 0.0,
+    "grounding_attention_mass": 0.3758343458175659,
+    "grounding_attention_mass_sd": 0.0,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": 0.0,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {}
+  },
+  {
+    "backbone": "clip_b16",
+    "variant": "capacity_control",
+    "lr": 0.0003,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n": 3,
+    "top1_accuracy": 0.7383333333333333,
+    "top1_accuracy_sd": 0.010408329997330672,
+    "macro_f1": 0.7346096847690962,
+    "macro_f1_sd": 0.009017014725944869,
+    "loss": 0.7663449422518412,
+    "loss_sd": 0.0038398615685630473,
+    "attribute_map": 0.4870358560090703,
+    "attribute_map_sd": 0.02144722432828496,
+    "attribute_macro_f1": 0.3576655982905983,
+    "attribute_macro_f1_sd": 0.04159273949007237,
+    "grounding_peak_in_box": 0.43518519401550293,
+    "grounding_peak_in_box_sd": 0.16037508242217555,
+    "grounding_attention_mass": 0.42983954151471454,
+    "grounding_attention_mass_sd": 0.07359285314308871,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": 0.0,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.7316666666666667,
+        "flipped_predictions": 29.666666666666668,
+        "mean_probability_l1": 0.20414671301841736
+      },
+      "permuted": {
+        "top1_accuracy": 0.7366666666666667,
+        "flipped_predictions": 2,
+        "mean_probability_l1": 0.008235067129135132
+      }
+    }
+  },
+  {
+    "backbone": "clip_b16",
+    "variant": "attribute_supervision",
+    "lr": 0.001,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n": 3,
+    "top1_accuracy": 0.8233333333333334,
+    "top1_accuracy_sd": 0.020816659994661285,
+    "macro_f1": 0.8210705273398772,
+    "macro_f1_sd": 0.02122795316216004,
+    "loss": 0.5999789651234945,
+    "loss_sd": 0.02552917703538895,
+    "attribute_map": 0.7114311696900982,
+    "attribute_map_sd": 0.01418939826996286,
+    "attribute_macro_f1": 0.50246743996744,
+    "attribute_macro_f1_sd": 0.046638710767100446,
+    "grounding_peak_in_box": 0.25925926367441815,
+    "grounding_peak_in_box_sd": 0.016037515124769093,
+    "grounding_attention_mass": 0.28684814771016437,
+    "grounding_attention_mass_sd": 0.007998186452652838,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": 0.0,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.8116666666666666,
+        "flipped_predictions": 7.666666666666667,
+        "mean_probability_l1": 0.08563993871212006
+      },
+      "permuted": {
+        "top1_accuracy": 0.8216666666666667,
+        "flipped_predictions": 1,
+        "mean_probability_l1": 0.039221870402495064
+      }
+    }
+  },
+  {
+    "backbone": "clip_b16",
+    "variant": "attribute_region",
+    "lr": 0.001,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n": 3,
+    "top1_accuracy": 0.815,
+    "top1_accuracy_sd": 0.004999999999999949,
+    "macro_f1": 0.8134724652637562,
+    "macro_f1_sd": 0.005344128944738987,
+    "loss": 0.5839663592974345,
+    "loss_sd": 0.018171189703347797,
+    "attribute_map": 0.7713683390022675,
+    "attribute_map_sd": 0.008187379251771959,
+    "attribute_macro_f1": 0.6467261904761905,
+    "attribute_macro_f1_sd": 0.019534899035541457,
+    "grounding_peak_in_box": 0.8333333333333334,
+    "grounding_peak_in_box_sd": 0.027777761220937336,
+    "grounding_attention_mass": 0.745037575562795,
+    "grounding_attention_mass_sd": 0.012634186329745485,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": 0.0,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.825,
+        "flipped_predictions": 8.333333333333334,
+        "mean_probability_l1": 0.0784659634033839
+      },
+      "permuted": {
+        "top1_accuracy": 0.82,
+        "flipped_predictions": 4.333333333333333,
+        "mean_probability_l1": 0.0386323519051075
+      }
+    }
+  },
+  {
+    "backbone": "clip_b16",
+    "variant": "shuffled_supervision",
+    "lr": 0.001,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n": 3,
+    "top1_accuracy": 0.82,
+    "top1_accuracy_sd": 0.0050000000000000044,
+    "macro_f1": 0.8179875978082333,
+    "macro_f1_sd": 0.005768807999442919,
+    "loss": 0.5994096318880717,
+    "loss_sd": 0.021664418237692506,
+    "attribute_map": 0.4328313964474678,
+    "attribute_map_sd": 0.031366930439983585,
+    "attribute_macro_f1": 0.28474476911976915,
+    "attribute_macro_f1_sd": 0.03920833757943676,
+    "grounding_peak_in_box": 0.8240740895271301,
+    "grounding_peak_in_box_sd": 0.137024520820567,
+    "grounding_attention_mass": 0.6045971512794495,
+    "grounding_attention_mass_sd": 0.043334882451407694,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": 0.0,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.81,
+        "flipped_predictions": 6,
+        "mean_probability_l1": 0.0662013553082943
+      },
+      "permuted": {
+        "top1_accuracy": 0.815,
+        "flipped_predictions": 3,
+        "mean_probability_l1": 0.029666491473714512
+      }
+    }
+  },
+  {
+    "backbone": "siglip2_b16",
+    "variant": "baseline",
+    "lr": 0.001,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n": 3,
+    "top1_accuracy": 0.8033333333333333,
+    "top1_accuracy_sd": 0.011547005383792526,
+    "macro_f1": 0.7999819822470248,
+    "macro_f1_sd": 0.010683937027793277,
+    "loss": 0.6182650272051493,
+    "loss_sd": 0.02786954122754095,
+    "attribute_map": 0.4472611961451247,
+    "attribute_map_sd": 0.0,
+    "attribute_macro_f1": 0.0,
+    "attribute_macro_f1_sd": 0.0,
+    "grounding_peak_in_box": 0.3611111044883728,
+    "grounding_peak_in_box_sd": 0.0,
+    "grounding_attention_mass": 0.38468465209007263,
+    "grounding_attention_mass_sd": 0.0,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": 0.0,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {}
+  },
+  {
+    "backbone": "siglip2_b16",
+    "variant": "capacity_control",
+    "lr": 0.001,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n": 3,
+    "top1_accuracy": 0.8016666666666667,
+    "top1_accuracy_sd": 0.00763762615825974,
+    "macro_f1": 0.7983924635474307,
+    "macro_f1_sd": 0.0074255651249998415,
+    "loss": 0.6286673466364543,
+    "loss_sd": 0.0592454509661358,
+    "attribute_map": 0.4737794075963719,
+    "attribute_map_sd": 0.024112469977885763,
+    "attribute_macro_f1": 0.3541456228956229,
+    "attribute_macro_f1_sd": 0.02918718881300911,
+    "grounding_peak_in_box": 0.45370370149612427,
+    "grounding_peak_in_box_sd": 0.04243126040907662,
+    "grounding_attention_mass": 0.4372429351011912,
+    "grounding_attention_mass_sd": 0.0383473326635693,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": 0.0,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.7933333333333333,
+        "flipped_predictions": 21.333333333333332,
+        "mean_probability_l1": 0.22611005107561746
+      },
+      "permuted": {
+        "top1_accuracy": 0.795,
+        "flipped_predictions": 4.333333333333333,
+        "mean_probability_l1": 0.023157657589763403
+      }
+    }
+  },
+  {
+    "backbone": "siglip2_b16",
+    "variant": "attribute_supervision",
+    "lr": 0.001,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n": 3,
+    "top1_accuracy": 0.8166666666666667,
+    "top1_accuracy_sd": 0.010408329997330611,
+    "macro_f1": 0.8131106747258315,
+    "macro_f1_sd": 0.009918711608240842,
+    "loss": 0.6322887015342713,
+    "loss_sd": 0.022836887971802156,
+    "attribute_map": 0.6795192035147392,
+    "attribute_map_sd": 0.01058921740734552,
+    "attribute_macro_f1": 0.44655009342509344,
+    "attribute_macro_f1_sd": 0.05465605084873208,
+    "grounding_peak_in_box": 0.3611111044883728,
+    "grounding_peak_in_box_sd": 0.0,
+    "grounding_attention_mass": 0.42168713609377545,
+    "grounding_attention_mass_sd": 0.018738254819430412,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": 0.0,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.7916666666666667,
+        "flipped_predictions": 9,
+        "mean_probability_l1": 0.07789666950702667
+      },
+      "permuted": {
+        "top1_accuracy": 0.8083333333333333,
+        "flipped_predictions": 3,
+        "mean_probability_l1": 0.02951748048265775
+      }
+    }
+  },
+  {
+    "backbone": "siglip2_b16",
+    "variant": "attribute_region",
+    "lr": 0.001,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n": 3,
+    "top1_accuracy": 0.8066666666666668,
+    "top1_accuracy_sd": 0.005773502691896263,
+    "macro_f1": 0.8033626536438491,
+    "macro_f1_sd": 0.004832719018856664,
+    "loss": 0.5979228631655376,
+    "loss_sd": 0.02611382340400822,
+    "attribute_map": 0.8879794973544973,
+    "attribute_map_sd": 0.024198973464494244,
+    "attribute_macro_f1": 0.7630799755799755,
+    "attribute_macro_f1_sd": 0.02704939312635901,
+    "grounding_peak_in_box": 0.9722222089767456,
+    "grounding_peak_in_box_sd": 0.0,
+    "grounding_attention_mass": 0.7766956289609274,
+    "grounding_attention_mass_sd": 0.014098204184210008,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": 0.0,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.805,
+        "flipped_predictions": 3.6666666666666665,
+        "mean_probability_l1": 0.0682752716044585
+      },
+      "permuted": {
+        "top1_accuracy": 0.8016666666666667,
+        "flipped_predictions": 2.3333333333333335,
+        "mean_probability_l1": 0.034371996919314064
+      }
+    }
+  },
+  {
+    "backbone": "siglip2_b16",
+    "variant": "shuffled_supervision",
+    "lr": 0.001,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n": 3,
+    "top1_accuracy": 0.805,
+    "top1_accuracy_sd": 0.0050000000000000044,
+    "macro_f1": 0.801783541949244,
+    "macro_f1_sd": 0.004200441170706005,
+    "loss": 0.6146500571568807,
+    "loss_sd": 0.03221922246275411,
+    "attribute_map": 0.4096708475056689,
+    "attribute_map_sd": 0.04336221831827902,
+    "attribute_macro_f1": 0.25495205026455026,
+    "attribute_macro_f1_sd": 0.04753013315924379,
+    "grounding_peak_in_box": 0.75,
+    "grounding_peak_in_box_sd": 0.05555558204650879,
+    "grounding_attention_mass": 0.5761359135309855,
+    "grounding_attention_mass_sd": 0.04274162985708475,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": 0.0,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.8,
+        "flipped_predictions": 3.6666666666666665,
+        "mean_probability_l1": 0.06032683576146761
+      },
+      "permuted": {
+        "top1_accuracy": 0.8016666666666667,
+        "flipped_predictions": 1.3333333333333333,
+        "mean_probability_l1": 0.0216893603404363
+      }
+    }
+  },
+  {
+    "backbone": "fgclip_b16",
+    "variant": "baseline",
+    "lr": 0.0003,
+    "seeds": [
+      42
+    ],
+    "n": 1,
+    "top1_accuracy": 0.76,
+    "top1_accuracy_sd": null,
+    "macro_f1": 0.7570115406609215,
+    "macro_f1_sd": null,
+    "loss": 0.7498389339447021,
+    "loss_sd": null,
+    "attribute_map": 0.7262914540816325,
+    "attribute_map_sd": null,
+    "attribute_macro_f1": 0.25902777777777775,
+    "attribute_macro_f1_sd": null,
+    "grounding_peak_in_box": 0.9166666865348816,
+    "grounding_peak_in_box_sd": null,
+    "grounding_attention_mass": 0.5245276093482971,
+    "grounding_attention_mass_sd": null,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": null,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {}
+  },
+  {
+    "backbone": "fgclip_b16",
+    "variant": "capacity_control",
+    "lr": 0.001,
+    "seeds": [
+      42
+    ],
+    "n": 1,
+    "top1_accuracy": 0.76,
+    "top1_accuracy_sd": null,
+    "macro_f1": 0.7574095445970113,
+    "macro_f1_sd": null,
+    "loss": 0.6578989505767823,
+    "loss_sd": null,
+    "attribute_map": 0.4874131944444445,
+    "attribute_map_sd": null,
+    "attribute_macro_f1": 0.31236263736263736,
+    "attribute_macro_f1_sd": null,
+    "grounding_peak_in_box": 0.75,
+    "grounding_peak_in_box_sd": null,
+    "grounding_attention_mass": 0.600885272026062,
+    "grounding_attention_mass_sd": null,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": null,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.76,
+        "flipped_predictions": 26,
+        "mean_probability_l1": 0.2196531742811203
+      },
+      "permuted": {
+        "top1_accuracy": 0.76,
+        "flipped_predictions": 0,
+        "mean_probability_l1": 0.006560175213962793
+      }
+    }
+  },
+  {
+    "backbone": "fgclip_b16",
+    "variant": "attribute_supervision",
+    "lr": 0.0003,
+    "seeds": [
+      42
+    ],
+    "n": 1,
+    "top1_accuracy": 0.76,
+    "top1_accuracy_sd": null,
+    "macro_f1": 0.7563784129020956,
+    "macro_f1_sd": null,
+    "loss": 0.7559763503074646,
+    "loss_sd": null,
+    "attribute_map": 0.7401041666666666,
+    "attribute_map_sd": null,
+    "attribute_macro_f1": 0.6796626984126984,
+    "attribute_macro_f1_sd": null,
+    "grounding_peak_in_box": 0.9166666865348816,
+    "grounding_peak_in_box_sd": null,
+    "grounding_attention_mass": 0.7521939277648926,
+    "grounding_attention_mass_sd": null,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": null,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.75,
+        "flipped_predictions": 4,
+        "mean_probability_l1": 0.04209517315030098
+      },
+      "permuted": {
+        "top1_accuracy": 0.74,
+        "flipped_predictions": 6,
+        "mean_probability_l1": 0.02304787188768387
+      }
+    }
+  },
+  {
+    "backbone": "fgclip_b16",
+    "variant": "attribute_region",
+    "lr": 0.001,
+    "seeds": [
+      42
+    ],
+    "n": 1,
+    "top1_accuracy": 0.76,
+    "top1_accuracy_sd": null,
+    "macro_f1": 0.7569309432970422,
+    "macro_f1_sd": null,
+    "loss": 0.6094965934753418,
+    "loss_sd": null,
+    "attribute_map": 0.8637276785714285,
+    "attribute_map_sd": null,
+    "attribute_macro_f1": 0.7206597222222222,
+    "attribute_macro_f1_sd": null,
+    "grounding_peak_in_box": 0.7777777910232544,
+    "grounding_peak_in_box_sd": null,
+    "grounding_attention_mass": 0.7839638590812683,
+    "grounding_attention_mass_sd": null,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": null,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.755,
+        "flipped_predictions": 6,
+        "mean_probability_l1": 0.043760959059000015
+      },
+      "permuted": {
+        "top1_accuracy": 0.75,
+        "flipped_predictions": 3,
+        "mean_probability_l1": 0.026080023497343063
+      }
+    }
+  },
+  {
+    "backbone": "fgclip_b16",
+    "variant": "shuffled_supervision",
+    "lr": 0.001,
+    "seeds": [
+      42
+    ],
+    "n": 1,
+    "top1_accuracy": 0.755,
+    "top1_accuracy_sd": null,
+    "macro_f1": 0.752618528272553,
+    "macro_f1_sd": null,
+    "loss": 0.6113166856765747,
+    "loss_sd": null,
+    "attribute_map": 0.5306831065759637,
+    "attribute_map_sd": null,
+    "attribute_macro_f1": 0.2985863095238095,
+    "attribute_macro_f1_sd": null,
+    "grounding_peak_in_box": 0.6944444179534912,
+    "grounding_peak_in_box_sd": null,
+    "grounding_attention_mass": 0.5771213173866272,
+    "grounding_attention_mass_sd": null,
+    "grounding_uniform_area_reference": 0.4003070592880249,
+    "grounding_uniform_area_reference_sd": null,
+    "attribute_evaluable_count": 16,
+    "positive_grounding_pairs": 36,
+    "interventions": {
+      "zero": {
+        "top1_accuracy": 0.755,
+        "flipped_predictions": 10,
+        "mean_probability_l1": 0.05858456715941429
+      },
+      "permuted": {
+        "top1_accuracy": 0.755,
+        "flipped_predictions": 4,
+        "mean_probability_l1": 0.027174808084964752
+      }
+    }
+  }
+]

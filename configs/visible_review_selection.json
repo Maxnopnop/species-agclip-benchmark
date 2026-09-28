@@ -1,0 +1,422 @@
+[
+  {
+    "id": 0,
+    "split": "train",
+    "path": "train_mini/01158_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Cabera_pusaria/d47902af-d861-4461-be02-f3428e11e262.jpg",
+    "label": 0,
+    "sha256": "92f973e439e4b7e3d8da7a0673c1d40445484f79ba3004a51640eaec54baeac1"
+  },
+  {
+    "id": 1,
+    "split": "train",
+    "path": "train_mini/01158_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Cabera_pusaria/8a7c2fd5-5bf0-4f6e-b662-3c13cd2bc05e.jpg",
+    "label": 0,
+    "sha256": "28cb7b8b53008f6161fb7a324bacd0327219f4d5747cec3fdf6eb166a39e6e08"
+  },
+  {
+    "id": 2,
+    "split": "train",
+    "path": "train_mini/01227_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Heterophleps_triguttaria/3084e229-8e19-4988-9c40-f84088f08147.jpg",
+    "label": 1,
+    "sha256": "86341b13247abc7dd746630b98ecae043879f22cda30a0f763295b342d00c316"
+  },
+  {
+    "id": 3,
+    "split": "train",
+    "path": "train_mini/01227_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Heterophleps_triguttaria/340e171f-adc2-44b9-83cf-762dd3ea2cc8.jpg",
+    "label": 1,
+    "sha256": "6ab4b72904cfcec6c7522f2540fd6167308e42b80397887395074efdf7f5c3cb"
+  },
+  {
+    "id": 4,
+    "split": "train",
+    "path": "train_mini/01367_Animalia_Arthropoda_Insecta_Lepidoptera_Hesperiidae_Euphyes_vestris/8a97a18e-75f6-438f-9ef2-a93ff2cf7a83.jpg",
+    "label": 2,
+    "sha256": "653d29512b21be8f4d958f0d510d171ece9a4289b1f2a82cac646edc2ebdbba2"
+  },
+  {
+    "id": 5,
+    "split": "train",
+    "path": "train_mini/01367_Animalia_Arthropoda_Insecta_Lepidoptera_Hesperiidae_Euphyes_vestris/76fa7b2b-b57a-401d-9d27-92c8af5ffae0.jpg",
+    "label": 2,
+    "sha256": "bb5f8a5297c1c391156bf77ee22cc7a63142b7414bc6d55ac043f847d41c8a14"
+  },
+  {
+    "id": 6,
+    "split": "train",
+    "path": "train_mini/01388_Animalia_Arthropoda_Insecta_Lepidoptera_Hesperiidae_Panoquina_ocola/bc81dca9-f7bb-42f1-9fae-fe5fa7b0ff92.jpg",
+    "label": 3,
+    "sha256": "04a96e2f6c2999d773ea2404b09d550cba330836871a5a9c76c9f96396092db7"
+  },
+  {
+    "id": 7,
+    "split": "train",
+    "path": "train_mini/01388_Animalia_Arthropoda_Insecta_Lepidoptera_Hesperiidae_Panoquina_ocola/4cf62714-a8c4-4c9d-b802-be3376f525f0.jpg",
+    "label": 3,
+    "sha256": "30c506a2e06ccddbe437ed989bd5261c0f80972d5cea627725ca2ea3631774e0"
+  },
+  {
+    "id": 8,
+    "split": "train",
+    "path": "train_mini/01484_Animalia_Arthropoda_Insecta_Lepidoptera_Lycaenidae_Icaricia_acmon/fa4b9c33-b9e0-41cf-aa4c-456df470c321.jpg",
+    "label": 4,
+    "sha256": "8737003c0f8473a2305f8278d0d459f5787d1e5849ee05fcb4b628c6e339eabd"
+  },
+  {
+    "id": 9,
+    "split": "train",
+    "path": "train_mini/01484_Animalia_Arthropoda_Insecta_Lepidoptera_Lycaenidae_Icaricia_acmon/0c492920-2eec-48a1-bf22-09523a730121.jpg",
+    "label": 4,
+    "sha256": "18bcce34b0998946aaa97502ee4805213202587c6db3b6e498f8a518a049b279"
+  },
+  {
+    "id": 10,
+    "split": "train",
+    "path": "train_mini/01486_Animalia_Arthropoda_Insecta_Lepidoptera_Lycaenidae_Icaricia_lupini/5bfa03c0-4332-4c56-a4c3-ab9bb6cae573.jpg",
+    "label": 5,
+    "sha256": "8b8e5242be8432a15f45d2882aa487d9ecaa68b8902c13e3120fd6fa49ec6894"
+  },
+  {
+    "id": 11,
+    "split": "train",
+    "path": "train_mini/01486_Animalia_Arthropoda_Insecta_Lepidoptera_Lycaenidae_Icaricia_lupini/be3c4d89-4911-4323-95be-62ee157bbfbf.jpg",
+    "label": 5,
+    "sha256": "7a8f6fbf10bd2a451601a17eed95698dccc31c2a1e1d406288d6ccdb5910c858"
+  },
+  {
+    "id": 12,
+    "split": "train",
+    "path": "train_mini/01569_Animalia_Arthropoda_Insecta_Lepidoptera_Noctuidae_Agrotis_segetum/f7c079a9-d4c1-43eb-b49e-b84e90879768.jpg",
+    "label": 6,
+    "sha256": "45ceb7f33322f0ef240383b90127df179d3b62e0c02183e53563be83e9e40365"
+  },
+  {
+    "id": 13,
+    "split": "train",
+    "path": "train_mini/01569_Animalia_Arthropoda_Insecta_Lepidoptera_Noctuidae_Agrotis_segetum/1455a6c7-3824-41a3-85f4-1a2fcc8c6407.jpg",
+    "label": 6,
+    "sha256": "2c7b6baa5716dea2c6d02644134ca30f5400b475c4b1723d01a6dd61462d8926"
+  },
+  {
+    "id": 14,
+    "split": "train",
+    "path": "train_mini/01670_Animalia_Arthropoda_Insecta_Lepidoptera_Noctuidae_Ochropleura_plecta/51fc8176-daf2-42dc-815c-11b795c27453.jpg",
+    "label": 7,
+    "sha256": "4f833a87c36f2a61e40a534bdeab6ef43d88ba1d7621058100dc5734738ceefc"
+  },
+  {
+    "id": 15,
+    "split": "train",
+    "path": "train_mini/01670_Animalia_Arthropoda_Insecta_Lepidoptera_Noctuidae_Ochropleura_plecta/bb07a8bc-3522-43e5-a6a2-844c8dc9dab4.jpg",
+    "label": 7,
+    "sha256": "9f460aa9f2f98d1270521d5bcf5e8a37e35bae17d3a9a9c281406a439e951a87"
+  },
+  {
+    "id": 16,
+    "split": "train",
+    "path": "train_mini/01771_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Aglais_urticae/efd79777-879e-4822-8018-00288e82127a.jpg",
+    "label": 8,
+    "sha256": "66d98d150900174321a0b4968fe09dfc1f17d86e9e75e92b66e7cc87d3e4a98f"
+  },
+  {
+    "id": 17,
+    "split": "train",
+    "path": "train_mini/01771_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Aglais_urticae/c5591014-aa44-473e-99da-d9725957d471.jpg",
+    "label": 8,
+    "sha256": "d88283f286e9bc7432756820ac192aaf9dc1a81fbdb66b4b3be70be5dc9d5f9e"
+  },
+  {
+    "id": 18,
+    "split": "train",
+    "path": "train_mini/01775_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Anartia_amathea/b1ad46d8-31da-4a38-9659-d4a3c78f08d2.jpg",
+    "label": 9,
+    "sha256": "842b0d61c3018ef305fb102ee6e579837f0f71d08dd01bfcf890259d93f96c48"
+  },
+  {
+    "id": 19,
+    "split": "train",
+    "path": "train_mini/01775_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Anartia_amathea/aca3ec4e-629c-4ade-a4cb-18037109039f.jpg",
+    "label": 9,
+    "sha256": "39b657800c14cfaa0ae3832de4f2c077da68e556f959712d9e1fde1e9c5eea64"
+  },
+  {
+    "id": 20,
+    "split": "train",
+    "path": "train_mini/06343_Plantae_Tracheophyta_Liliopsida_Poales_Poaceae_Briza_minor/137db52c-3b1a-4bed-9f02-feeda906f88c.jpg",
+    "label": 10,
+    "sha256": "d087f41527732ffe02b07302dd16ec6f489f2860e37e8e349f8533121af5f1b9"
+  },
+  {
+    "id": 21,
+    "split": "train",
+    "path": "train_mini/06343_Plantae_Tracheophyta_Liliopsida_Poales_Poaceae_Briza_minor/607865a1-78c2-4d6e-a8e0-f87f5e993b01.jpg",
+    "label": 10,
+    "sha256": "e5b4b8f03b585e1fd0a4eb5e3fba564c186b091d6cdfc593dd9723e9114a307d"
+  },
+  {
+    "id": 22,
+    "split": "train",
+    "path": "train_mini/06385_Plantae_Tracheophyta_Liliopsida_Poales_Poaceae_Koeleria_macrantha/b829147b-99e1-4a73-8f6b-5731a4e5a89b.jpg",
+    "label": 11,
+    "sha256": "29833367041b3a427b9c51548c9f2e027ddaf6fed77d45ff887134acb8f7ecbb"
+  },
+  {
+    "id": 23,
+    "split": "train",
+    "path": "train_mini/06385_Plantae_Tracheophyta_Liliopsida_Poales_Poaceae_Koeleria_macrantha/d860e73e-d544-4e75-9277-a4442850ed57.jpg",
+    "label": 11,
+    "sha256": "1fc8f7697fb50e5f1cb63dc1a2dcc63326f1deeb013376f94ff3a7763b814800"
+  },
+  {
+    "id": 24,
+    "split": "train",
+    "path": "train_mini/06814_Plantae_Tracheophyta_Magnoliopsida_Asterales_Asteraceae_Grindelia_stricta/e05ef248-02ad-4f7e-8c4d-b900583a2e4c.jpg",
+    "label": 12,
+    "sha256": "65a8f6805b7d2a3a3b4ca1c73e418652e282a29f6cb8bbd5a5b9effbc8de276f"
+  },
+  {
+    "id": 25,
+    "split": "train",
+    "path": "train_mini/06814_Plantae_Tracheophyta_Magnoliopsida_Asterales_Asteraceae_Grindelia_stricta/5458be94-448a-4993-bff6-597572e8846a.jpg",
+    "label": 12,
+    "sha256": "d1117acca42e03fa708e0815427e463e81613db776c43f9f1893a2dd06ada95e"
+  },
+  {
+    "id": 26,
+    "split": "train",
+    "path": "train_mini/07006_Plantae_Tracheophyta_Magnoliopsida_Asterales_Asteraceae_Solidago_sempervirens/23a6cc69-42c6-47b5-bd7d-3bebaa74aa7c.jpg",
+    "label": 13,
+    "sha256": "2fe06a9864999160b7c7d346797696b47021adf70a75a1bbbdb115b10c0b01f5"
+  },
+  {
+    "id": 27,
+    "split": "train",
+    "path": "train_mini/07006_Plantae_Tracheophyta_Magnoliopsida_Asterales_Asteraceae_Solidago_sempervirens/cc1a157c-f8cb-4936-86f0-b84b48bb3903.jpg",
+    "label": 13,
+    "sha256": "8cfe96823078b0115bbef4717c5273f229ef4b04a05658303d85445201aa6f18"
+  },
+  {
+    "id": 28,
+    "split": "train",
+    "path": "train_mini/07356_Plantae_Tracheophyta_Magnoliopsida_Caryophyllales_Cactaceae_Cylindropuntia_whipplei/24deee5c-eed1-42dc-a744-e61d75b074cd.jpg",
+    "label": 14,
+    "sha256": "81ec262474c1cb422a3187deb47f5c9f27d354cc0f9fd8f0c0f7d0aaa70dabe0"
+  },
+  {
+    "id": 29,
+    "split": "train",
+    "path": "train_mini/07356_Plantae_Tracheophyta_Magnoliopsida_Caryophyllales_Cactaceae_Cylindropuntia_whipplei/77dcbf31-f95e-48b6-b1fb-5c0ac619948c.jpg",
+    "label": 14,
+    "sha256": "83ad67bc37b0ee238505ffd0b314f637ba27af428d4ed9a160638730c1c695d7"
+  },
+  {
+    "id": 30,
+    "split": "train",
+    "path": "train_mini/07376_Plantae_Tracheophyta_Magnoliopsida_Caryophyllales_Cactaceae_Ferocactus_cylindraceus/ea853e34-fd04-467e-830b-09e7f110e42f.jpg",
+    "label": 15,
+    "sha256": "8d59049e2dddd69bb01a4e37b2132176cd37ce1aede33cf250381ad17c874331"
+  },
+  {
+    "id": 31,
+    "split": "train",
+    "path": "train_mini/07376_Plantae_Tracheophyta_Magnoliopsida_Caryophyllales_Cactaceae_Ferocactus_cylindraceus/10c6ab60-c361-48ab-a8e5-b16c5ae72338.jpg",
+    "label": 15,
+    "sha256": "31bda28dfc3764a21b898b9dd408e529501aa815cda1536590bd410fe4acd0fa"
+  },
+  {
+    "id": 32,
+    "split": "train",
+    "path": "train_mini/08264_Plantae_Tracheophyta_Magnoliopsida_Gentianales_Apocynaceae_Carissa_bispinosa/8015c97b-3c48-464f-b819-fc8c88a5c2a9.jpg",
+    "label": 16,
+    "sha256": "6ff994123efb3081f640e101a7780c1154075cbe3cdc1f7823842d9cddafc7f8"
+  },
+  {
+    "id": 33,
+    "split": "train",
+    "path": "train_mini/08264_Plantae_Tracheophyta_Magnoliopsida_Gentianales_Apocynaceae_Carissa_bispinosa/bcddd181-299b-4565-ac27-6f799173c962.jpg",
+    "label": 16,
+    "sha256": "054aecf90f9365f3f71549fd21710c35a4b091a369c49b91033220af2d00aaef"
+  },
+  {
+    "id": 34,
+    "split": "train",
+    "path": "train_mini/08272_Plantae_Tracheophyta_Magnoliopsida_Gentianales_Apocynaceae_Gomphocarpus_cancellatus/b09f92e8-1656-4805-8662-6d2bc7c291c4.jpg",
+    "label": 17,
+    "sha256": "1449b4a9a8b602e1b694936ce9ab92e047a2ab863f0dd261208e11a855b945b1"
+  },
+  {
+    "id": 35,
+    "split": "train",
+    "path": "train_mini/08272_Plantae_Tracheophyta_Magnoliopsida_Gentianales_Apocynaceae_Gomphocarpus_cancellatus/bdf9f383-0ea5-4529-b4ff-f542f6285bd7.jpg",
+    "label": 17,
+    "sha256": "71f6d694211b5709cfa410347d8fbc7da6dfdf66de8c5f36848cd6cacd13d41c"
+  },
+  {
+    "id": 36,
+    "split": "train",
+    "path": "train_mini/09649_Plantae_Tracheophyta_Magnoliopsida_Saxifragales_Saxifragaceae_Chrysosplenium_alternifolium/23302b7d-2725-4b56-8e94-6b9ffcc57c13.jpg",
+    "label": 18,
+    "sha256": "f58135e576198db050766a0a5e0810804afe51b82e5f04313a9ce89aa9b99c13"
+  },
+  {
+    "id": 37,
+    "split": "train",
+    "path": "train_mini/09649_Plantae_Tracheophyta_Magnoliopsida_Saxifragales_Saxifragaceae_Chrysosplenium_alternifolium/18bdaa03-5ffc-43ea-837a-2a4c9c65e3a0.jpg",
+    "label": 18,
+    "sha256": "1f3434f21c98228c31c3f7fa2d18eacaa3d994e9242300e005281cadfd6bbdac"
+  },
+  {
+    "id": 38,
+    "split": "train",
+    "path": "train_mini/09652_Plantae_Tracheophyta_Magnoliopsida_Saxifragales_Saxifragaceae_Heuchera_cylindrica/40fa4f70-6e0f-4a67-a0b7-6bb83c2eb2cb.jpg",
+    "label": 19,
+    "sha256": "d6e0cb92c42caa8e61574a77e7258ebdb7d7d4b7dcdc922500f6d27445a810a9"
+  },
+  {
+    "id": 39,
+    "split": "train",
+    "path": "train_mini/09652_Plantae_Tracheophyta_Magnoliopsida_Saxifragales_Saxifragaceae_Heuchera_cylindrica/d30a6ac6-04f9-433e-aa2e-80f33ff8d3dd.jpg",
+    "label": 19,
+    "sha256": "415c58743ff862406a0751c4f42cfeea7438f7f3336ab0cf4fb3460174b3f705"
+  },
+  {
+    "id": 40,
+    "split": "val",
+    "path": "train_mini/01158_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Cabera_pusaria/344b603f-6213-49a1-bb59-b98204f00afc.jpg",
+    "label": 0,
+    "sha256": "466b44bf87f0b2a36fbac19402872fdd8cbb48a194fc14989d59e90597ffdd2d"
+  },
+  {
+    "id": 41,
+    "split": "val",
+    "path": "train_mini/01227_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Heterophleps_triguttaria/6a1e3d7d-9c71-4ed3-8053-2ba1a0f04c26.jpg",
+    "label": 1,
+    "sha256": "831e01e0504464bcf89d7e5003a741959033b6a1b4392f5dc6cdacb5c0fa044b"
+  },
+  {
+    "id": 42,
+    "split": "val",
+    "path": "train_mini/01367_Animalia_Arthropoda_Insecta_Lepidoptera_Hesperiidae_Euphyes_vestris/7bb1a1ac-a11f-425a-8a2d-9dfca9a6da0a.jpg",
+    "label": 2,
+    "sha256": "887e6419d6919075bd7e9555a02a16c7941c13ca5322409ee42e613a1944eb44"
+  },
+  {
+    "id": 43,
+    "split": "val",
+    "path": "train_mini/01388_Animalia_Arthropoda_Insecta_Lepidoptera_Hesperiidae_Panoquina_ocola/feba3835-6d86-44ad-938d-d176188f0e18.jpg",
+    "label": 3,
+    "sha256": "aad9df7448b56aa9e2a363e17019b3e8091694a6f087f1eaa491e667817195b7"
+  },
+  {
+    "id": 44,
+    "split": "val",
+    "path": "train_mini/01484_Animalia_Arthropoda_Insecta_Lepidoptera_Lycaenidae_Icaricia_acmon/3008245a-e0cf-4a28-9bff-d54a27f025f5.jpg",
+    "label": 4,
+    "sha256": "9add7d41b3d390f8f446de74db701b4d8dedc2153ee3218c7534df07645b2267"
+  },
+  {
+    "id": 45,
+    "split": "val",
+    "path": "train_mini/01486_Animalia_Arthropoda_Insecta_Lepidoptera_Lycaenidae_Icaricia_lupini/64d2acb9-1940-4e85-875c-cdfbef91d001.jpg",
+    "label": 5,
+    "sha256": "faed7660b524bbd5313a7669d0e46371361c1d0c22dc30e7a420adf1bf4b2457"
+  },
+  {
+    "id": 46,
+    "split": "val",
+    "path": "train_mini/01569_Animalia_Arthropoda_Insecta_Lepidoptera_Noctuidae_Agrotis_segetum/2a7d2708-ce1a-41f9-89b6-907134ea603b.jpg",
+    "label": 6,
+    "sha256": "ac4608b04366efecd264bc7b09454838cabe55955289fa38788cb422078e3b98"
+  },
+  {
+    "id": 47,
+    "split": "val",
+    "path": "train_mini/01670_Animalia_Arthropoda_Insecta_Lepidoptera_Noctuidae_Ochropleura_plecta/7071ff3c-75ac-4392-888e-48bf1fe3718f.jpg",
+    "label": 7,
+    "sha256": "0dd792e0d408a1ee846bee9b6d3b90a0c6e43745d9a38c26b37c9d3f6732a8d9"
+  },
+  {
+    "id": 48,
+    "split": "val",
+    "path": "train_mini/01771_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Aglais_urticae/15abfa4e-8171-40b7-a4d6-3c760f7c7dbe.jpg",
+    "label": 8,
+    "sha256": "2be8f8463d85b1253eb2e93bdafe7e00af05aae7257656cf52861f3d4bb62457"
+  },
+  {
+    "id": 49,
+    "split": "val",
+    "path": "train_mini/01775_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Anartia_amathea/a6fa0a36-3492-414e-aff6-683bb247b785.jpg",
+    "label": 9,
+    "sha256": "5eefd18ff46076c6b858cc56bb8e9034f68850236e6a2b73d422a0204a102918"
+  },
+  {
+    "id": 50,
+    "split": "val",
+    "path": "train_mini/06343_Plantae_Tracheophyta_Liliopsida_Poales_Poaceae_Briza_minor/6ce6dbd0-3892-41ee-990a-a40dafa10a72.jpg",
+    "label": 10,
+    "sha256": "757faea385146d3198a25fbf51e5ad8463f15d92045f501a4012163d6e828ef0"
+  },
+  {
+    "id": 51,
+    "split": "val",
+    "path": "train_mini/06385_Plantae_Tracheophyta_Liliopsida_Poales_Poaceae_Koeleria_macrantha/fad9cb0a-e592-41f1-a6bf-81a9258ff772.jpg",
+    "label": 11,
+    "sha256": "12c3031d9d2ebac7a3c99b14dc2df9d1520212f157ed1eaea5c90c92275d8e36"
+  },
+  {
+    "id": 52,
+    "split": "val",
+    "path": "train_mini/06814_Plantae_Tracheophyta_Magnoliopsida_Asterales_Asteraceae_Grindelia_stricta/af38efda-d817-4305-bdce-3fa9be642df3.jpg",
+    "label": 12,
+    "sha256": "3a3dc68c8eee3774286d7d1ae32f40526b02ed852b1752941724b6236b27e136"
+  },
+  {
+    "id": 53,
+    "split": "val",
+    "path": "train_mini/07006_Plantae_Tracheophyta_Magnoliopsida_Asterales_Asteraceae_Solidago_sempervirens/3a13a65a-de10-4b0e-8732-11faa8bbb30f.jpg",
+    "label": 13,
+    "sha256": "d573aea274d538ca6ad10bc07f31cee06d3f2bda71495769ecdb1ec7d11b4b00"
+  },
+  {
+    "id": 54,
+    "split": "val",
+    "path": "train_mini/07356_Plantae_Tracheophyta_Magnoliopsida_Caryophyllales_Cactaceae_Cylindropuntia_whipplei/d1534ebd-b9c2-4a56-84e2-0ba1a59b7eb4.jpg",
+    "label": 14,
+    "sha256": "a0cfa1b78eef293f480d05d8e9e392790817d917c4a9de423617403d57a895f0"
+  },
+  {
+    "id": 55,
+    "split": "val",
+    "path": "train_mini/07376_Plantae_Tracheophyta_Magnoliopsida_Caryophyllales_Cactaceae_Ferocactus_cylindraceus/dc04134f-9430-4405-986b-de5ea40040b7.jpg",
+    "label": 15,
+    "sha256": "123cdb70f1f0c12bf18e4763631c8d965040ece6bbcf767608626a3775aa7632"
+  },
+  {
+    "id": 56,
+    "split": "val",
+    "path": "train_mini/08264_Plantae_Tracheophyta_Magnoliopsida_Gentianales_Apocynaceae_Carissa_bispinosa/7f8a9172-7c37-403f-816b-d99338f17c93.jpg",
+    "label": 16,
+    "sha256": "b504c619c1cced6af10ed7125bd56715de98bd419c6d4deebee525b3c56d14b8"
+  },
+  {
+    "id": 57,
+    "split": "val",
+    "path": "train_mini/08272_Plantae_Tracheophyta_Magnoliopsida_Gentianales_Apocynaceae_Gomphocarpus_cancellatus/f16afe36-f547-480e-b9ef-abacc33ca28d.jpg",
+    "label": 17,
+    "sha256": "287f775b4869fd5b89579725f4d807ddebc3b1fa92bfc839277a75e3ff137a5b"
+  },
+  {
+    "id": 58,
+    "split": "val",
+    "path": "train_mini/09649_Plantae_Tracheophyta_Magnoliopsida_Saxifragales_Saxifragaceae_Chrysosplenium_alternifolium/f320cdd2-56c4-4314-99c8-38303cf5ac47.jpg",
+    "label": 18,
+    "sha256": "5e9b8defb34ce67f7e3a2ce3de36dd521df6ff14982a3e06a992bddde48271e4"
+  },
+  {
+    "id": 59,
+    "split": "val",
+    "path": "train_mini/09652_Plantae_Tracheophyta_Magnoliopsida_Saxifragales_Saxifragaceae_Heuchera_cylindrica/87d207b0-86d2-4861-8473-bec2e98ec9d0.jpg",
+    "label": 19,
+    "sha256": "736c7a1581e1bdf5bb5dc5a06d01b9a68fb0f5eee87c99b87d276025547e87ac"
+  }
+]

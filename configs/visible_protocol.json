@@ -1,0 +1,20 @@
+{
+  "version":1,
+  "backbones":["clip_b16","siglip2_b16"],
+  "shots":10,
+  "sample_seed":20260929,
+  "optimization_seeds":[42,43,44],
+  "head_learning_rates":[0.001,0.0003],
+  "variants":["baseline","capacity_control","attribute_supervision","attribute_region","shuffled_supervision"],
+  "updates":400,
+  "validation_steps":[100,200,300,400],
+  "class_batch_size":16,
+  "annotated_extra_batch_size":8,
+  "attribute_loss_weight":1.0,
+  "region_loss_weight":0.1,
+  "selection":"Checkpoint and learning-rate choice by validation species macro-F1, then classification cross-entropy. Same two-rate budget in every condition.",
+  "design":"400 fixed train/val images: 200 class-labelled training and 200 validation; 40 training and 20 validation images receive assistant-reviewed visible-attribute labels. Same training sample set across optimization seeds. No test images are encoded or evaluated.",
+  "supervision":"Sixteen image-visible traits, unknown and non-applicable entries masked. Approximate evidence boxes guide attribute-specific patch attention during training only. Shuffled control permutes training annotations and boxes across species within insect/plant groups.",
+  "model":"Frozen official image/text encoders. Train separate low-rank global/patch residual adapters, attribute calibration and an additive attribute-to-class linear branch. All region variants share the same architecture. Baseline omits the attribute branch. No auxiliary labels or boxes are inputs at prediction time.",
+  "limitations":"Exploratory validation reused for development; assistant labels are provisional, not expert ground truth. Sparse annotation and some whole-organism evidence boxes limit attribute and localization conclusions. No gain is assumed."
+}

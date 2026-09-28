@@ -1,0 +1,12 @@
+{
+  "clip_b16": {
+    "repo": "openai/clip-vit-base-patch16",
+    "revision": "57c216476eefef5ab752ec549e440a49ae4ae5f3",
+    "weights": "pytorch_model.bin"
+  },
+  "siglip2_b16": {
+    "repo": "google/siglip2-base-patch16-224",
+    "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+    "weights": "model.safetensors"
+  }
+}
