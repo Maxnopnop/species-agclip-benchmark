@@ -1,0 +1,14 @@
+{
+  "ag_minus_native_H": 8.957992055105315,
+  "ag_minus_finetune_H": 0.08225273210906892,
+  "paired_bootstrap_95pct_H_difference_vs_native": [
+    3.446818158471908,
+    14.943532481750479
+  ],
+  "paired_bootstrap_95pct_H_difference_vs_finetune": [
+    -1.182444091834725,
+    1.4253139778256618
+  ],
+  "replicates": 2000,
+  "scope": "Within-class paired image bootstrap, conditional on selected 16 classes and seed 42; not seed variability or independent held-out-dataset evidence."
+}

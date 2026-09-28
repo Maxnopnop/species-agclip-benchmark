@@ -1,0 +1,130 @@
+{
+  "scope": "Development-only descriptive audit; not used for tuning. Proposals are not verified attribute labels.",
+  "vocabulary_size": 58,
+  "used_attributes": 38,
+  "total_regions": 607,
+  "top_attributes": [
+    {
+      "attribute_id": 4,
+      "prompt": "a photo showing very dark brown butterfly wings.",
+      "count": 116
+    },
+    {
+      "attribute_id": 56,
+      "prompt": "a photo showing dense upright cluster of cream colored flowers.",
+      "count": 77
+    },
+    {
+      "attribute_id": 54,
+      "prompt": "a photo showing low growing herbaceous plant.",
+      "count": 69
+    },
+    {
+      "attribute_id": 33,
+      "prompt": "a photo showing yellow daisy like flower heads.",
+      "count": 66
+    },
+    {
+      "attribute_id": 26,
+      "prompt": "a photo showing band of white spots across butterfly wings.",
+      "count": 62
+    },
+    {
+      "attribute_id": 47,
+      "prompt": "a photo showing small white tubular flowers.",
+      "count": 53
+    },
+    {
+      "attribute_id": 27,
+      "prompt": "a photo showing slender butterfly antennae.",
+      "count": 31
+    },
+    {
+      "attribute_id": 3,
+      "prompt": "a photo showing two or three visible spots on moth wings.",
+      "count": 19
+    },
+    {
+      "attribute_id": 21,
+      "prompt": "a photo showing contrasting pale stripe along the forewing leading edge.",
+      "count": 11
+    },
+    {
+      "attribute_id": 45,
+      "prompt": "a photo showing forked thorns on woody branches.",
+      "count": 11
+    }
+  ],
+  "per_class": [
+    {
+      "name": "Heterophleps triguttaria",
+      "images": 40,
+      "with_regions": 38
+    },
+    {
+      "name": "Panoquina ocola",
+      "images": 40,
+      "with_regions": 40
+    },
+    {
+      "name": "Icaricia acmon",
+      "images": 40,
+      "with_regions": 32
+    },
+    {
+      "name": "Icaricia lupini",
+      "images": 20,
+      "with_regions": 20
+    },
+    {
+      "name": "Agrotis segetum",
+      "images": 20,
+      "with_regions": 19
+    },
+    {
+      "name": "Ochropleura plecta",
+      "images": 40,
+      "with_regions": 34
+    },
+    {
+      "name": "Anartia amathea",
+      "images": 40,
+      "with_regions": 40
+    },
+    {
+      "name": "Briza minor",
+      "images": 40,
+      "with_regions": 11
+    },
+    {
+      "name": "Grindelia stricta",
+      "images": 40,
+      "with_regions": 37
+    },
+    {
+      "name": "Ferocactus cylindraceus",
+      "images": 40,
+      "with_regions": 35
+    },
+    {
+      "name": "Carissa bispinosa",
+      "images": 20,
+      "with_regions": 16
+    },
+    {
+      "name": "Gomphocarpus cancellatus",
+      "images": 40,
+      "with_regions": 19
+    },
+    {
+      "name": "Chrysosplenium alternifolium",
+      "images": 20,
+      "with_regions": 13
+    },
+    {
+      "name": "Heuchera cylindrica",
+      "images": 40,
+      "with_regions": 21
+    }
+  ]
+}

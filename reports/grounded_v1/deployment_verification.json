@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "provenance": {
+    "configs/grounded_v1.json": "f6ccdfe48991360bb928cb01dcfe3adda8ddecb18e7bc884577bf02fdb022165",
+    "multimodal/grounded_data.py": "9f56ef680dcf30e9943f048a0520964b3d1c08aff73c6bd40184ee83ba44ce96",
+    "multimodal/grounded_model.py": "83055c722600b074cfb60a0707b692ba9905b95864f8686ac8fe80c3e03d69d7",
+    "multimodal/grounded_experiment.py": "23f240bf04083f8eb5c167343c755fdeb5a6304f4673bf92c0794b9fed8711b4",
+    "multimodal/models.py": "192ffa1e9dfc84d47d0d67b11e61c2613b6734041f22dec65cc13a5afbe54fea"
+  },
+  "checks": [
+    {
+      "variant": "finetune",
+      "max_logit_error": 2.86102294921875e-06,
+      "prediction_matches": true
+    },
+    {
+      "variant": "region_only",
+      "max_logit_error": 1.9073486328125e-06,
+      "prediction_matches": true
+    },
+    {
+      "variant": "ag",
+      "max_logit_error": 1.9073486328125e-06,
+      "prediction_matches": true
+    },
+    {
+      "variant": "shuffled",
+      "max_logit_error": 1.9073486328125e-06,
+      "prediction_matches": true
+    }
+  ]
+}

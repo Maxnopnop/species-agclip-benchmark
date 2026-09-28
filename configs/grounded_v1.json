@@ -1,0 +1,73 @@
+{
+  "version": "grounded_v1",
+  "seen_classes": [
+    1,
+    3,
+    4,
+    7,
+    9,
+    10,
+    12,
+    15,
+    17,
+    19
+  ],
+  "dev_unseen_classes": [
+    5,
+    6,
+    16,
+    18
+  ],
+  "eval_unseen_classes": [
+    0,
+    2,
+    8,
+    11,
+    13,
+    14
+  ],
+  "backbone": "OpenAI CLIP ViT-B/32",
+  "resolution": 224,
+  "max_regions": 2,
+  "detector_repo": "google/owlvit-base-patch32",
+  "detector_revision": "cbc355fb364588351c5d51c7f74465e8e7ec6f72",
+  "detector_threshold": 0.05,
+  "detector_nms_iou": 0.5,
+  "min_region_area": 0.005,
+  "max_region_area": 0.95,
+  "variants": [
+    "finetune",
+    "region_only",
+    "ag",
+    "shuffled"
+  ],
+  "seeds": [
+    42
+  ],
+  "learning_rates": [
+    1e-05,
+    3e-06
+  ],
+  "fusion_lr_multiplier": 10,
+  "trainable_visual_blocks": 2,
+  "micro_batch": 2,
+  "effective_batch": 16,
+  "updates": 120,
+  "validation_steps": [
+    0,
+    40,
+    80,
+    120
+  ],
+  "preserve_weight": 0.5,
+  "region_alignment_weight": 0.1,
+  "contrastive_weight": 0.5,
+  "class_ce_weight": 0.5,
+  "selection": "Maximum development GZSL harmonic mean H on 10 seen + 4 development-unseen classes; tie by mean U/S then lower mixed CE. Select LR separately per variant. Evaluate 6 final-unseen + 10 final-seen classes after locking all selections. Step zero is eligible and explicitly reported.",
+  "architecture": "Two independent CLIP visual towers initialized from original weights, last two transformer blocks plus final norm/projection trainable; frozen text tower. Attribute/region tokens and global token fused using CAF self-attention with a small nonzero residual gate. Region-only has identical modules with zero text. Shuffled uses identical boxes but wrongly paired text and auxiliary targets.",
+  "loss": "Seen-only CE plus multi-positive symmetric image/text contrastive loss over an effective batch of 16; duplicate class names are positives. Preserve original whole-image embedding. AG adds confidence-weighted region/text cosine loss, no ground-truth class attribute selection at inference.",
+  "precision": "CUDA bfloat16 autocast, float32 optimizer states; activation checkpointing; exact two-pass gradient caching across microbatches, dropout disabled and identical input tensors reused.",
+  "scope": "Exploratory reused iNaturalist data, 20 species. Training grows 200 to 300 images; development seen images now separated from final seen images. Not directly comparable to previous protocols. Unseen relative to adaptation only; no pretraining-overlap guarantee. Structural AG reconstruction, not exact CoCa paper reproduction.",
+  "manifest_sha256": "d8719728183ece936bcf5067451ece7e8e2161f46186b5f8054720fc097221d1",
+  "attributes_sha256": "d733cfe3b762a0dd779619c93dd98a33b3d1620758428a5246915e296bbc33d1"
+}

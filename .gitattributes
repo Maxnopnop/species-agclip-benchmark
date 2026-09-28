@@ -1,0 +1,7 @@
+# These byte-hashed sources must retain their trained-checkpoint line endings.
+/multimodal/models.py text eol=lf
+/multimodal/grounded_data.py text eol=lf
+/multimodal/grounded_model.py text eol=lf
+/multimodal/grounded_experiment.py text eol=lf
+# The Windows JSON writer produced this pinned protocol with CRLF.
+/configs/grounded_v1.json text eol=crlf

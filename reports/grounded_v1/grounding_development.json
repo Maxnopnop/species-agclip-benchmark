@@ -1,0 +1,8 @@
+{
+  "images": 480,
+  "zero_regions": 105,
+  "mean_regions": 1.2645833333333334,
+  "peak_allocated_mib": 649.14599609375,
+  "elapsed_this_call_seconds": 47.103233337402344,
+  "scope": "Detector proposals are weak supervision, not expert-confirmed attribute regions."
+}

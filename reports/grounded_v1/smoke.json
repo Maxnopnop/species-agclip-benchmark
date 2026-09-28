@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "provenance": {
+    "configs/grounded_v1.json": "f6ccdfe48991360bb928cb01dcfe3adda8ddecb18e7bc884577bf02fdb022165",
+    "multimodal/grounded_data.py": "9f56ef680dcf30e9943f048a0520964b3d1c08aff73c6bd40184ee83ba44ce96",
+    "multimodal/grounded_model.py": "83055c722600b074cfb60a0707b692ba9905b95864f8686ac8fe80c3e03d69d7",
+    "multimodal/grounded_experiment.py": "23f240bf04083f8eb5c167343c755fdeb5a6304f4673bf92c0794b9fed8711b4",
+    "multimodal/models.py": "192ffa1e9dfc84d47d0d67b11e61c2613b6734041f22dec65cc13a5afbe54fea"
+  },
+  "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "micro_batch": 2,
+  "effective_batch": 16,
+  "train_images": 300,
+  "development_images": 180,
+  "unique_total_images": 700,
+  "gradient_cache_max_error": 0.0,
+  "teacher_feature_max_error": 0.0003207400441169739,
+  "teacher_cosine_min": 0.9999996423721313,
+  "actual_parameter_changes": {
+    "global_visual.proj": 1.0006129741668701e-05,
+    "attribute_visual.proj": 1.0013580322265625e-05,
+    "caf.linear1.weight": 0.00010002404451370239,
+    "attribute_projection.0.weight": 0.00010001659393310547
+  },
+  "gradient_norms": {
+    "global_visual": 14.620383455597336,
+    "attribute_visual": 0.2618681958671585,
+    "caf": 0.13233889717596117,
+    "attribute_projection": 0.08093851634756033
+  },
+  "full_batch_loss": 0.953279435634613,
+  "replay_max_error": 0.0,
+  "missing_region_exact_fallback": true,
+  "unseen_training_rejected": true,
+  "duplicate_classes_handled": true,
+  "frozen_early_layer_unchanged": true,
+  "peak_allocated_mib": 1184.51904296875,
+  "peak_reserved_mib": 1308.0,
+  "seconds": 2.6621007919311523
+}

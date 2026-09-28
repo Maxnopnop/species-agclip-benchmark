@@ -1,5 +1,7 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
+**本机新起步配置（grounded_v1）：** [部署与运行说明](docs/grounded_starter.md)、[中文实测报告](reports/grounded_v1/summary_zh.md)、[对比表](reports/grounded_v1/comparison.csv)。CLIP ViT-B/32＋OWL-ViT 实际区域＋独立属性视觉分支＋CAF，两个视觉分支都训练末端两层。训练图片由 200 增至 300；保留原始 CLIP、普通微调、区域无文字和打乱属性对照。`grounded_models.cmd` 运行完整流程，`predict_grounded.cmd` 可接受拖入的图片。用户只输入图片，内部仍使用固定文字库和检测器；它不是 CoCa 论文的严格复现。训练与最终评估状态、局限及准确率以该版本报告为准。
+
 **新增类别隔离零样本实验：** [中文结果](reports/zsl_v1/Summary_CN.md)、[ZSL/GZSL 完整报告](reports/zsl_v1/README.md)、[运行说明](docs/zsl_v1.md)。原五种模型重新初始化任务适配模块，使用互不重叠的 10 个训练物种、4 个开发物种和 6 个最终评估物种。类别名称与文字属性可提前提供，最终未见物种图片不参与训练或参数选择。此轮复用已有图片，属于探索性 AG 改编，不是预训练无重叠保证或原论文严格复现。
 
 **最新图片级属性实验：** [中文结果](reports/visible_v1/Summary_CN.md)、[完整指标](reports/visible_v1/README.md)、[复现说明](docs/visible_v1.md)。CLIP ViT-B/16 与 SigLIP 2 使用可见属性监督和区域对齐，另用 FG-CLIP 做小规模复核。分别评价属性识别、定位和物种分类；不把属性指标的改善等同于分类提升。该轮属于验证集探索，保留全图基线、匹配容量对照和错误监督对照。
