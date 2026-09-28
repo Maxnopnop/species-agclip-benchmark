@@ -1,0 +1,19 @@
+{
+  "backbone": "efficientnet_b0",
+  "shots": 10,
+  "seed": 42,
+  "image_path": "train_mini/01158_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Cabera_pusaria/e5066cce-27e7-487e-b91c-ca64457c1748.jpg",
+  "checks": [
+    {
+      "variant": "baseline",
+      "label_matches": true,
+      "top_score_absolute_error": 1.7881393432617188e-07
+    },
+    {
+      "variant": "ag_aux",
+      "label_matches": true,
+      "top_score_absolute_error": 7.748603820800781e-07
+    }
+  ],
+  "note": "One-image smoke check, not a guarantee across devices. Encoder batch padded to 16 to match feature extraction."
+}

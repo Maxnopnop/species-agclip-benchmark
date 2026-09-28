@@ -54,6 +54,11 @@ def main():
             macro_f1_mean=float(np.mean([v['macro_f1'] for v in values]))))
     write_json(out/'summary.json',summary);write_json(out/'selection_locked.json',selected)
     comparisons=[];diagnostics=[]
+    for row in rows:
+        name,shots,seed,variant=(row[k] for k in ('backbone','shots','seed','variant'))
+        checkpoint=torch.load(root/f'{name}_shots{shots}_seed{seed}'/variant/'best.pt',
+                              weights_only=True,map_location='cpu')
+        diagnostics.append(dict(backbone=name,shots=shots,seed=seed,variant=variant,**checkpoint['diagnostic']))
     for item in selected:
         name,shots,ag=item['backbone'],item['shots'],item['selected_ag']
         ensembles={};identity=None
@@ -65,8 +70,6 @@ def main():
                 current=(pred['paths'],pred['labels'].tolist())
                 if identity is not None and current!=identity:raise ValueError('Paired samples differ')
                 identity=current;probabilities.append(pred['probabilities'])
-                checkpoint=torch.load(folder/'best.pt',weights_only=True,map_location='cpu')
-                diagnostics.append(dict(backbone=name,shots=shots,seed=seed,variant=variant,**checkpoint['diagnostic']))
             ensembles[variant]=torch.stack(probabilities).mean(0).argmax(1).numpy()
         for reference in ('baseline','region_only'):
             comparisons.append(dict(backbone=name,shots=shots,selected_ag=ag,reference=reference,images=len(identity[0]),

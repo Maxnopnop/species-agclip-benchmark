@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-28",
+  "real_comparisons": 225,
+  "test_prediction_files": 225,
+  "nonbaseline_branches_with_positive_first_gradient": 180,
+  "protocol_and_statistics_tests": {
+    "command": ".venv/Scripts/python.exe -m unittest -v test_expanded test_statistics",
+    "passed": 5
+  },
+  "inference_check": "inference_validation.json",
+  "statistically_significant_positive_gains_vs_baseline": 0,
+  "notes": [
+    "20-species development set; not formal 100-species evaluation.",
+    "Image encoder batch size fixed to 16 in inference to match cache numerical behavior.",
+    "All results retained, including declines."
+  ]
+}

@@ -2,11 +2,17 @@
 
 课程实验项目，主体位于 `E:\ELEC4240\SpeciesRecognition`。以少量有标签图片将四种 ImageNet 视觉模型对齐到 CLIP 文字空间，再比较五个模型的属性融合效果。
 
-**已完成真实 pilot：五模型 × 三方案，共 15 组比较。** [结果与指标](reports/pilot/README.md)、[对比图](reports/pilot/comparison_5shots.png)、[验证记录](reports/pilot/verification.json)。当前 AG 方案的 Top-1 与相应基线持平；4 类、单个随机种子的结果不足以判断方法优劣。完整 100 类图片包尚在下载，100 类来源核查属性库尚待准备，正式实验未运行。
+**已完成 20 物种、1,000 张真实图片的扩展实验，共 225 组比较。** [完整结果](reports/expanded20/README.md)、[对比图](reports/expanded20/comparison.png)、[实验定义和运行方法](docs/expanded20.md)。5-shot 基线准确率约 60%–75%；AG 改编带来小幅且不一致的变化，15 个“模型 × 样本数”设置中，没有正向提升通过多重比较校正。不能据此声称 AG 显著有效。正式 100 类实验仍待完整数据和来源核查属性库准备完毕。
 
 ## 实验定义
 
 新增 [20 物种扩展实验](docs/expanded20.md)：1,000 张真实图片、58 条来源支持的属性、三种 AG 方案及局部图像无文字对照，共 225 组预设比较。入口为 `expanded_models.cmd`；原 4 类 pilot 保留。扩展实验修正了非零门控、有效训练更新步数与验证指标持平时的检查点选择问题，并将 AG 版本选择锁定在测试之前。
+
+扩展实验比较 `baseline`、`region_only`、`ag_mean`、`ag_attention`、`ag_aux`，使用五个固定重叠裁剪区域；并未使用 OWL-ViT 定位。每个模型分别运行 5/10/20-shot、三个种子。新增五项协议与统计测试通过；单图推理与缓存评估的一致性抽查见 [验证记录](reports/expanded20/verification.json)。用户只输入图片，固定属性向量保存在检查点内部。
+
+## 早期四物种 pilot（保留记录）
+
+下列三变体、OWL-ViT 和 `benchmark.py` 说明适用于旧 pilot，不能与上面的扩展实验混为同一个协议。[旧结果](reports/pilot/README.md)共 15 组比较，AG 的 Top-1 与基线持平。
 
 | Backbone | Initial weights | Stage 1 | Stage 2 comparisons |
 |---|---|---|---|

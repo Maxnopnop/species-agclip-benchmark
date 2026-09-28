@@ -16,7 +16,11 @@ def predict(checkpoint,image_path,device='cuda'):
     encoder,transform,_=load_backbone(name);encoder=encoder.to(device).eval()
     with Image.open(image_path) as im:im=im.convert('RGB')
     views=[im] if variant=='baseline' else [im,*five_crops(im)]
-    features=F.normalize(encoder(torch.stack([transform(v) for v in views]).to(device)).float(),dim=-1)
+    inputs=torch.stack([transform(v) for v in views]).to(device)
+    # Match the cached encoder's batch size. CUDA convolution kernels can
+    # produce small score differences for single-image versus batch inference.
+    padded=inputs.repeat((16+len(views)-1)//len(views),1,1,1)[:16]
+    features=F.normalize(encoder(padded).float(),dim=-1)[:len(views)]
     head=ExpandedHead(name,saved['state_dict'],variant);head.load_state_dict(saved['state_dict']);head=head.to(device).eval()
     regions=features[1:].unsqueeze(0) if variant!='baseline' else torch.zeros(1,5,features.shape[-1],device=device)
     logits,_=head(features[:1],regions);scores,ids=logits.softmax(-1)[0].topk(5)
