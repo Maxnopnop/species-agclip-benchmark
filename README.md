@@ -1,5 +1,7 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
+**新增类别隔离零样本实验：** [中文结果](reports/zsl_v1/Summary_CN.md)、[ZSL/GZSL 完整报告](reports/zsl_v1/README.md)、[运行说明](docs/zsl_v1.md)。原五种模型重新初始化任务适配模块，使用互不重叠的 10 个训练物种、4 个开发物种和 6 个最终评估物种。类别名称与文字属性可提前提供，最终未见物种图片不参与训练或参数选择。此轮复用已有图片，属于探索性 AG 改编，不是预训练无重叠保证或原论文严格复现。
+
 **最新图片级属性实验：** [中文结果](reports/visible_v1/Summary_CN.md)、[完整指标](reports/visible_v1/README.md)、[复现说明](docs/visible_v1.md)。CLIP ViT-B/16 与 SigLIP 2 使用可见属性监督和区域对齐，另用 FG-CLIP 做小规模复核。分别评价属性识别、定位和物种分类；不把属性指标的改善等同于分类提升。该轮属于验证集探索，保留全图基线、匹配容量对照和错误监督对照。
 
 课程实验项目，主体位于 `E:\ELEC4240\SpeciesRecognition`。以少量有标签图片将四种 ImageNet 视觉模型对齐到 CLIP 文字空间，再比较五个模型的属性融合效果。

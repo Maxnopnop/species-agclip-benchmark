@@ -1,0 +1,12 @@
+{
+  "timing": "Post-hoc descriptive reference after final results, no retraining or selection changes",
+  "model": "Original OpenAI CLIP ViT-B/32, same class-name prompts and global-image preprocessing, no task adaptation",
+  "zsl": {
+    "accuracy": 0.9333333373069763,
+    "per_class_accuracy": 0.9333333273728689,
+    "loss": 0.8876276612281799
+  },
+  "gzsl_unseen": 0.8000000019868215,
+  "gzsl_seen": 0.5150000005960464,
+  "gzsl_h": 0.6266159706324214
+}

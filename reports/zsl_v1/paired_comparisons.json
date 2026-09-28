@@ -1,0 +1,162 @@
+[
+  {
+    "backbone": "efficientnet_b0",
+    "reference": "baseline",
+    "reference_accuracy": 0.65,
+    "ag_accuracy": 0.6583333333333333,
+    "improvement_percentage_points": 0.8333333333333334,
+    "ag_fixes": 4,
+    "ag_breaks": 3,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      -3.3333333333333335,
+      5.0
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "reference": "region_only",
+    "reference_accuracy": 0.65,
+    "ag_accuracy": 0.6583333333333333,
+    "improvement_percentage_points": 0.8333333333333334,
+    "ag_fixes": 4,
+    "ag_breaks": 3,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      -3.3333333333333335,
+      5.0
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "resnet18",
+    "reference": "baseline",
+    "reference_accuracy": 0.6333333333333333,
+    "ag_accuracy": 0.6333333333333333,
+    "improvement_percentage_points": 0.0,
+    "ag_fixes": 2,
+    "ag_breaks": 2,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      -3.3333333333333335,
+      3.3333333333333335
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "resnet18",
+    "reference": "region_only",
+    "reference_accuracy": 0.65,
+    "ag_accuracy": 0.6333333333333333,
+    "improvement_percentage_points": -1.6666666666666667,
+    "ag_fixes": 3,
+    "ag_breaks": 5,
+    "mcnemar_exact_two_sided_p": 0.7265625,
+    "paired_stratified_bootstrap_95ci_pp": [
+      -5.833333333333333,
+      2.5000000000000004
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "convnext_tiny",
+    "reference": "baseline",
+    "reference_accuracy": 0.7166666666666667,
+    "ag_accuracy": 0.7083333333333334,
+    "improvement_percentage_points": -0.8333333333333334,
+    "ag_fixes": 2,
+    "ag_breaks": 3,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      -4.166666666666667,
+      2.5
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "convnext_tiny",
+    "reference": "region_only",
+    "reference_accuracy": 0.7166666666666667,
+    "ag_accuracy": 0.7083333333333334,
+    "improvement_percentage_points": -0.8333333333333334,
+    "ag_fixes": 1,
+    "ag_breaks": 2,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      -3.3333333333333335,
+      1.6666666666666667
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "vit_b_16",
+    "reference": "baseline",
+    "reference_accuracy": 0.6416666666666667,
+    "ag_accuracy": 0.6166666666666667,
+    "improvement_percentage_points": -2.5,
+    "ag_fixes": 4,
+    "ag_breaks": 7,
+    "mcnemar_exact_two_sided_p": 0.548828125,
+    "paired_stratified_bootstrap_95ci_pp": [
+      -7.500000000000001,
+      2.5
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "vit_b_16",
+    "reference": "region_only",
+    "reference_accuracy": 0.6583333333333333,
+    "ag_accuracy": 0.6166666666666667,
+    "improvement_percentage_points": -4.166666666666666,
+    "ag_fixes": 0,
+    "ag_breaks": 5,
+    "mcnemar_exact_two_sided_p": 0.0625,
+    "paired_stratified_bootstrap_95ci_pp": [
+      -8.333333333333332,
+      -0.8333333333333334
+    ],
+    "holm_adjusted_p": 0.5,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "reference": "baseline",
+    "reference_accuracy": 0.8166666666666667,
+    "ag_accuracy": 0.9083333333333333,
+    "improvement_percentage_points": 9.166666666666666,
+    "ag_fixes": 12,
+    "ag_breaks": 1,
+    "mcnemar_exact_two_sided_p": 0.00341796875,
+    "paired_stratified_bootstrap_95ci_pp": [
+      4.166666666666667,
+      14.166666666666666
+    ],
+    "holm_adjusted_p": 0.03076171875,
+    "significant_positive_gain": true
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "reference": "region_only",
+    "reference_accuracy": 0.8083333333333333,
+    "ag_accuracy": 0.9083333333333333,
+    "improvement_percentage_points": 10.0,
+    "ag_fixes": 13,
+    "ag_breaks": 1,
+    "mcnemar_exact_two_sided_p": 0.0018310546875,
+    "paired_stratified_bootstrap_95ci_pp": [
+      5.0,
+      15.000000000000002
+    ],
+    "holm_adjusted_p": 0.018310546875,
+    "significant_positive_gain": true
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "implementation_sha256": "a119a70f0273223a9cae2ed63e0701fcd9b00d184537d134b16bb5c52b0f61e1",
+  "protocol_sha256": "98e4fe7d3e5b70dab200e7e8ffe75e67b45da8d0d66534841eb8e1f8749c6d02",
+  "selected": [
+    {
+      "backbone": "efficientnet_b0",
+      "variant": "baseline",
+      "lr": 0.0003,
+      "validation_mean": 0.6416666697089871
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "variant": "region_only",
+      "lr": 0.0003,
+      "validation_mean": 0.6291666716958085
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "variant": "ag_aux",
+      "lr": 0.0003,
+      "validation_mean": 0.6249999981373549
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "variant": "shuffled_attributes",
+      "lr": 0.0003,
+      "validation_mean": 0.629166670764486
+    },
+    {
+      "backbone": "resnet18",
+      "variant": "baseline",
+      "lr": 0.0003,
+      "validation_mean": 0.620833333581686
+    },
+    {
+      "backbone": "resnet18",
+      "variant": "region_only",
+      "lr": 0.0003,
+      "validation_mean": 0.6250000018626451
+    },
+    {
+      "backbone": "resnet18",
+      "variant": "ag_aux",
+      "lr": 0.0003,
+      "validation_mean": 0.6375000036011139
+    },
+    {
+      "backbone": "resnet18",
+      "variant": "shuffled_attributes",
+      "lr": 0.0003,
+      "validation_mean": 0.6208333329608043
+    },
+    {
+      "backbone": "convnext_tiny",
+      "variant": "baseline",
+      "lr": 0.0003,
+      "validation_mean": 0.6666666589056452
+    },
+    {
+      "backbone": "convnext_tiny",
+      "variant": "region_only",
+      "lr": 0.0003,
+      "validation_mean": 0.6583333235854903
+    },
+    {
+      "backbone": "convnext_tiny",
+      "variant": "ag_aux",
+      "lr": 0.0003,
+      "validation_mean": 0.654166655925413
+    },
+    {
+      "backbone": "convnext_tiny",
+      "variant": "shuffled_attributes",
+      "lr": 0.0003,
+      "validation_mean": 0.6416666579122344
+    },
+    {
+      "backbone": "vit_b_16",
+      "variant": "baseline",
+      "lr": 0.0003,
+      "validation_mean": 0.7083333299184839
+    },
+    {
+      "backbone": "vit_b_16",
+      "variant": "region_only",
+      "lr": 0.0003,
+      "validation_mean": 0.712499996026357
+    },
+    {
+      "backbone": "vit_b_16",
+      "variant": "ag_aux",
+      "lr": 0.0003,
+      "validation_mean": 0.7124999985098839
+    },
+    {
+      "backbone": "vit_b_16",
+      "variant": "shuffled_attributes",
+      "lr": 0.0003,
+      "validation_mean": 0.7208333276212215
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "variant": "baseline",
+      "lr": 0.001,
+      "validation_mean": 0.7583333334575096
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "variant": "region_only",
+      "lr": 0.001,
+      "validation_mean": 0.7624999992549419
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "variant": "ag_aux",
+      "lr": 0.0003,
+      "validation_mean": 0.75
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "variant": "shuffled_attributes",
+      "lr": 0.001,
+      "validation_mean": 0.7624999977027377
+    }
+  ]
+}

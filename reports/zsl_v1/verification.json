@@ -1,0 +1,34 @@
+{
+  "unit_tests": "4 passed: class/image disjointness; label restrictions; semantic transfer output and gradient; shuffled target restrictions",
+  "checked_training_configs": 30,
+  "development_cells": 120,
+  "final_cells": 60,
+  "selection_locked_before_final": true,
+  "inference": [
+    {
+      "backbone": "efficientnet_b0",
+      "max_probability_error": 5.960464477539062e-07,
+      "prediction_matches": true
+    },
+    {
+      "backbone": "resnet18",
+      "max_probability_error": 5.960464477539063e-08,
+      "prediction_matches": true
+    },
+    {
+      "backbone": "convnext_tiny",
+      "max_probability_error": 5.364418029785156e-07,
+      "prediction_matches": true
+    },
+    {
+      "backbone": "vit_b_16",
+      "max_probability_error": 5.960464477539063e-08,
+      "prediction_matches": true
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "max_probability_error": 1.1920928955078125e-07,
+      "prediction_matches": true
+    }
+  ]
+}
