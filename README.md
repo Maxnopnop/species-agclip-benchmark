@@ -1,5 +1,7 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
+**当前状态：已按用户要求暂停实验。** [模型可行性与当前结论](reports/cub_followup_v1/feasibility_zh.md)、[三种类别划分复测](reports/cub_resplit_v1/summary_zh.md)。本机部署可行；现有轻量属性优化尚未证明稳定优于匹配的无属性对照。暂停发生在最后一轮 60 组训练及最终评分全部完成之后。
+
 **最新扩展诊断：** [综合研究结论](reports/cub_followup_v1/diagnostic_update_zh.md)、[100 物种 CLIP](reports/cub100_v1/summary_zh.md)、[100 物种 SigLIP 2 修正版](reports/cub_siglip_v2/summary_zh.md)。增加类别规模、三种子匹配对照、公开描述、属性迁移、正则化及特权定位诊断后，尚无稳定属性特有收益。SigLIP 2 的大小写预处理问题已定位修复，错误版本排除比较；不能把修复或主干更换的提升记作 AG 效果。
 
 **冻结全图分支与独立属性 token 连续诊断：** [汇总报告](reports/cub_followup_v1/summary_zh.md)、[运行说明](docs/cub_token_diagnostics.md)。包括三种子、匹配容量对照、属性瓶颈、24／158 属性、稀疏 token／对比损失、B/16 复核及区域分支微调；报告自动区分已完成与待完成版本，并保留负结果和第 0 步选择。不能把属性识别、主干更换或校准的收益直接归因于 AG。

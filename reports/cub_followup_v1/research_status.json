@@ -1,0 +1,13 @@
+{
+  "status": "paused",
+  "reason": "User explicitly requested pause after the current class-partition test and a feasibility-focused summary.",
+  "current_test": "cub_resplit_v1",
+  "current_test_training_cells": 60,
+  "current_test_final_evaluation_complete": true,
+  "valid_fusion_cells_this_followup": 306,
+  "privileged_development_fusion_cells": 30,
+  "excluded_defective_siglip_cells": 30,
+  "probe_regularization_cells": 12,
+  "recorded_local_time": "2026-09-28T23:04:29.765729",
+  "next_experiments_started": false
+}

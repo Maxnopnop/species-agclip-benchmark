@@ -1,0 +1,68 @@
+{
+  "version": "cub_resplit_clip_b16_20260929",
+  "seeds": [
+    42
+  ],
+  "variants": [
+    "region_only",
+    "pooled",
+    "tokens",
+    "permuted",
+    "constant"
+  ],
+  "learning_rates": [
+    0.001,
+    0.0003
+  ],
+  "updates": 400,
+  "validation_steps": [
+    0,
+    100,
+    200,
+    300,
+    400
+  ],
+  "batch_size": 32,
+  "hidden_dim": 128,
+  "max_residual": 0.2,
+  "preserve_weight": 5.0,
+  "probe_learning_rates": [
+    0.01,
+    0.001
+  ],
+  "probe_steps": [
+    0,
+    100,
+    300,
+    600
+  ],
+  "probe_regional_weight": 0.5,
+  "selection": "Development GZSL H, then mean S/U, then lower candidate CE. Step zero is eligible. All 30 cells are completed and selections locked before evaluation.",
+  "scope": "Repeated-class-partition exploratory robustness study on the same 100 CUB species. Three predeclared class partition seeds; each 50 seen/25 development-unseen/25 final-unseen. Fresh probe, train-only attribute vocabulary, and fusion for every partition/backbone. One fusion seed per partition, five matched variants, two learning rates. Shared 2500-photo catalog includes 750 additional images; each run uses 1750. Image encodings may be precomputed, but final classification metrics are not calculated until all six model/partition selections are locked. Prior 100-class results were inspected; this is not independent confirmation. SigLIP text is explicitly lowercased. No privileged profiles/crops.",
+  "tokens": "Three views, one separate token per training-supported attribute. All variants share parameters/budgets and fixed detector; pooled repeats its mean to match sequence length; region_only removes text/confidence; permuted and constant are negative controls.",
+  "inference": "Image only plus fixed detector, class/attribute text assets and trained weights. No image labels, true attributes, or true part locations are inference inputs. Unknown attributes are masked only during probe training and evaluation. Global attribute tokens remain available when detector regions are missing.",
+  "class_selection_seed": 20260928,
+  "detector_prompts": [
+    "a bird head.",
+    "a bird wing.",
+    "a bird breast.",
+    "a bird tail.",
+    "a bird."
+  ],
+  "detector_threshold": 0.05,
+  "detector_nms_iou": 0.5,
+  "min_region_area": 0.005,
+  "max_region_area": 0.95,
+  "max_regions": 2,
+  "class_partition_seeds": [
+    20260929,
+    20260930,
+    20261001
+  ],
+  "backbones": [
+    "clip_b16",
+    "siglip2_b16"
+  ],
+  "backbone": "clip_b16",
+  "split_seed": 20260929
+}

@@ -1,0 +1,536 @@
+{
+  "rows": [
+    {
+      "backbone": "clip_b16",
+      "split_seed": 20260929,
+      "attributes": 212,
+      "native_H": 67.83343106447589,
+      "native_ZSL": 85.59999972581863,
+      "region_only_H": 69.69641302985848,
+      "region_only_ZSL": 85.59999990463257,
+      "region_only_step": 200,
+      "pooled_H": 69.59999980777502,
+      "pooled_ZSL": 85.99999976158142,
+      "pooled_step": 200,
+      "tokens_H": 69.19999987632036,
+      "tokens_ZSL": 85.59999990463257,
+      "tokens_step": 200,
+      "permuted_H": 69.29985551043424,
+      "permuted_ZSL": 85.59999990463257,
+      "permuted_step": 200,
+      "constant_H": 69.1999998241663,
+      "constant_ZSL": 85.59999990463257,
+      "constant_step": 200
+    },
+    {
+      "backbone": "clip_b16",
+      "split_seed": 20260930,
+      "attributes": 235,
+      "native_H": 65.13865032130292,
+      "native_ZSL": 71.19999974966049,
+      "region_only_H": 67.52186586793584,
+      "region_only_ZSL": 70.80000001192093,
+      "region_only_step": 400,
+      "pooled_H": 67.88571442439626,
+      "pooled_ZSL": 70.80000001192093,
+      "pooled_step": 300,
+      "tokens_H": 67.30383483182038,
+      "tokens_ZSL": 71.5999998152256,
+      "tokens_step": 200,
+      "permuted_H": 67.72397668352959,
+      "permuted_ZSL": 70.80000001192093,
+      "permuted_step": 300,
+      "constant_H": 67.30383483182038,
+      "constant_ZSL": 71.5999998152256,
+      "constant_step": 200
+    },
+    {
+      "backbone": "clip_b16",
+      "split_seed": 20261001,
+      "attributes": 214,
+      "native_H": 61.16482074117229,
+      "native_ZSL": 71.19999980926514,
+      "region_only_H": 62.86342227233311,
+      "region_only_ZSL": 73.60000011324883,
+      "region_only_step": 300,
+      "pooled_H": 62.76923083059167,
+      "pooled_ZSL": 73.60000011324883,
+      "pooled_step": 300,
+      "tokens_H": 62.76923083059167,
+      "tokens_ZSL": 73.60000011324883,
+      "tokens_step": 300,
+      "permuted_H": 62.691823965020816,
+      "permuted_ZSL": 73.60000011324883,
+      "permuted_step": 300,
+      "constant_H": 62.76923083059167,
+      "constant_ZSL": 73.60000011324883,
+      "constant_step": 300
+    },
+    {
+      "backbone": "siglip2_b16",
+      "split_seed": 20260929,
+      "attributes": 213,
+      "native_H": 80.8137928568509,
+      "native_ZSL": 95.99999952316284,
+      "region_only_H": 79.8988731821892,
+      "region_only_ZSL": 93.19999980926514,
+      "region_only_step": 300,
+      "pooled_H": 80.2968861489431,
+      "pooled_ZSL": 93.19999980926514,
+      "pooled_step": 300,
+      "tokens_H": 79.49886759863243,
+      "tokens_ZSL": 92.7999997138977,
+      "tokens_step": 300,
+      "permuted_H": 79.99999964982271,
+      "permuted_ZSL": 93.19999980926514,
+      "permuted_step": 300,
+      "constant_H": 79.16767661180813,
+      "constant_ZSL": 92.39999985694885,
+      "constant_step": 400
+    },
+    {
+      "backbone": "siglip2_b16",
+      "split_seed": 20260930,
+      "attributes": 237,
+      "native_H": 73.12496588859443,
+      "native_ZSL": 73.19999948143959,
+      "region_only_H": 73.12496588859443,
+      "region_only_ZSL": 73.19999948143959,
+      "region_only_step": 0,
+      "pooled_H": 73.12496588859443,
+      "pooled_ZSL": 73.19999948143959,
+      "pooled_step": 0,
+      "tokens_H": 73.12496588859443,
+      "tokens_ZSL": 73.19999948143959,
+      "tokens_step": 0,
+      "permuted_H": 73.12496588859443,
+      "permuted_ZSL": 73.19999948143959,
+      "permuted_step": 0,
+      "constant_H": 73.12496588859443,
+      "constant_ZSL": 73.19999948143959,
+      "constant_step": 0
+    },
+    {
+      "backbone": "siglip2_b16",
+      "split_seed": 20261001,
+      "attributes": 214,
+      "native_H": 74.00539072911039,
+      "native_ZSL": 81.19999983906746,
+      "region_only_H": 74.43191471419286,
+      "region_only_ZSL": 79.99999994039536,
+      "region_only_step": 400,
+      "pooled_H": 74.02780723503767,
+      "pooled_ZSL": 79.99999982118607,
+      "pooled_step": 400,
+      "tokens_H": 72.96779426458632,
+      "tokens_ZSL": 80.39999979734421,
+      "tokens_step": 300,
+      "permuted_H": 74.9960368636178,
+      "permuted_ZSL": 79.99999982118607,
+      "permuted_step": 400,
+      "constant_H": 74.26897448968221,
+      "constant_ZSL": 79.59999996423721,
+      "constant_step": 400
+    }
+  ],
+  "descriptive_means": [
+    {
+      "backbone": "clip_b16",
+      "mean_token_vs_region_H": -0.26954521046500685,
+      "mean_token_vs_constant_H": 1.7384688059488933e-08,
+      "token_step_zero_count": 0
+    },
+    {
+      "backbone": "siglip2_b16",
+      "mean_token_vs_region_H": -0.6213753443877721,
+      "mean_token_vs_constant_H": -0.3233297460905315,
+      "token_step_zero_count": 1
+    }
+  ],
+  "conditional_contrasts": [
+    {
+      "version": "cub_resplit_clip_b16_20260929",
+      "control": "region_only",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -0.4964131535381142,
+      "conditional_95_interval": [
+        -1.1510513684444952,
+        0.18435040397375094
+      ],
+      "changed_predictions_per_seed": [
+        16
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20260929",
+      "control": "pooled",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -0.3999999314546585,
+      "conditional_95_interval": [
+        -1.063098164367862,
+        0.19832968249806768
+      ],
+      "changed_predictions_per_seed": [
+        11
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20260929",
+      "control": "permuted",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -0.09985563411387943,
+      "conditional_95_interval": [
+        -0.5170157472933556,
+        0.3058844934113252
+      ],
+      "changed_predictions_per_seed": [
+        9
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20260929",
+      "control": "constant",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": 5.21540641784668e-08,
+      "conditional_95_interval": [
+        -0.4835402595248201,
+        0.4276466972320555
+      ],
+      "changed_predictions_per_seed": [
+        9
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20260930",
+      "control": "region_only",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -0.21803103611546248,
+      "conditional_95_interval": [
+        -1.6574213545493133,
+        1.4716288335718037
+      ],
+      "changed_predictions_per_seed": [
+        53
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20260930",
+      "control": "pooled",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -0.5818795925758735,
+      "conditional_95_interval": [
+        -1.9411328950642566,
+        0.7111586309873421
+      ],
+      "changed_predictions_per_seed": [
+        35
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20260930",
+      "control": "permuted",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -0.4201418517092037,
+      "conditional_95_interval": [
+        -1.6843862885271594,
+        0.8933381983367642
+      ],
+      "changed_predictions_per_seed": [
+        35
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20260930",
+      "control": "constant",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": 0.0,
+      "conditional_95_interval": [
+        0.0,
+        0.0
+      ],
+      "changed_predictions_per_seed": [
+        1
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20261001",
+      "control": "region_only",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -0.09419144174144378,
+      "conditional_95_interval": [
+        -0.706034016752152,
+        0.41054639805065934
+      ],
+      "changed_predictions_per_seed": [
+        13
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20261001",
+      "control": "pooled",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": 0.0,
+      "conditional_95_interval": [
+        -0.1706376916393875,
+        0.22796380478058498
+      ],
+      "changed_predictions_per_seed": [
+        7
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20261001",
+      "control": "permuted",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": 0.07740686557085041,
+      "conditional_95_interval": [
+        0.0,
+        0.24332503212351034
+      ],
+      "changed_predictions_per_seed": [
+        4
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_clip_b16_20261001",
+      "control": "constant",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": 0.0,
+      "conditional_95_interval": [
+        0.0,
+        0.0
+      ],
+      "changed_predictions_per_seed": [
+        3
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20260929",
+      "control": "region_only",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -0.4000055835567764,
+      "conditional_95_interval": [
+        -1.3082256305361493,
+        0.49211179402958044
+      ],
+      "changed_predictions_per_seed": [
+        14
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20260929",
+      "control": "pooled",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -0.7980185503106725,
+      "conditional_95_interval": [
+        -1.6149757334256492,
+        -0.09660092560534395
+      ],
+      "changed_predictions_per_seed": [
+        11
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20260929",
+      "control": "permuted",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -0.5011320511902824,
+      "conditional_95_interval": [
+        -1.118849323258969,
+        0.006948142721971636
+      ],
+      "changed_predictions_per_seed": [
+        10
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20260929",
+      "control": "constant",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": 0.3311909868242964,
+      "conditional_95_interval": [
+        -0.689398020115128,
+        1.4284339886598674
+      ],
+      "changed_predictions_per_seed": [
+        19
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20260930",
+      "control": "region_only",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": 0.0,
+      "conditional_95_interval": [
+        0.0,
+        0.0
+      ],
+      "changed_predictions_per_seed": [
+        0
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20260930",
+      "control": "pooled",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": 0.0,
+      "conditional_95_interval": [
+        0.0,
+        0.0
+      ],
+      "changed_predictions_per_seed": [
+        0
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20260930",
+      "control": "permuted",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": 0.0,
+      "conditional_95_interval": [
+        0.0,
+        0.0
+      ],
+      "changed_predictions_per_seed": [
+        0
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20260930",
+      "control": "constant",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": 0.0,
+      "conditional_95_interval": [
+        0.0,
+        0.0
+      ],
+      "changed_predictions_per_seed": [
+        0
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20261001",
+      "control": "region_only",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -1.4641204496065399,
+      "conditional_95_interval": [
+        -2.6549912138629184,
+        -0.4036262303857651
+      ],
+      "changed_predictions_per_seed": [
+        16
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20261001",
+      "control": "pooled",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -1.0600129704513535,
+      "conditional_95_interval": [
+        -2.192554438414029,
+        0.0
+      ],
+      "changed_predictions_per_seed": [
+        13
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20261001",
+      "control": "permuted",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -2.0282425990314863,
+      "conditional_95_interval": [
+        -3.176506770423548,
+        -0.9567546053006349
+      ],
+      "changed_predictions_per_seed": [
+        17
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    },
+    {
+      "version": "cub_resplit_siglip2_b16_20261001",
+      "control": "constant",
+      "seeds": [
+        42
+      ],
+      "mean_H_delta": -1.3011802250958908,
+      "conditional_95_interval": [
+        -2.388334809577585,
+        -0.16518888437477203
+      ],
+      "changed_predictions_per_seed": [
+        14
+      ],
+      "scope": "Paired within-class image bootstrap, conditional on one trained fusion seed and this class partition. Overlapping partitions are not independent datasets. No aggregate significance claim."
+    }
+  ]
+}
