@@ -1,0 +1,74 @@
+[
+  {
+    "split": "train",
+    "species": "Hippodamia variegata",
+    "images": 5,
+    "detected": 4
+  },
+  {
+    "split": "train",
+    "species": "Geosciurus inauris",
+    "images": 5,
+    "detected": 3
+  },
+  {
+    "split": "train",
+    "species": "Coprosma rotundifolia",
+    "images": 5,
+    "detected": 0
+  },
+  {
+    "split": "train",
+    "species": "Elaeagnus angustifolia",
+    "images": 5,
+    "detected": 0
+  },
+  {
+    "split": "val",
+    "species": "Hippodamia variegata",
+    "images": 5,
+    "detected": 3
+  },
+  {
+    "split": "val",
+    "species": "Geosciurus inauris",
+    "images": 5,
+    "detected": 4
+  },
+  {
+    "split": "val",
+    "species": "Coprosma rotundifolia",
+    "images": 5,
+    "detected": 0
+  },
+  {
+    "split": "val",
+    "species": "Elaeagnus angustifolia",
+    "images": 5,
+    "detected": 0
+  },
+  {
+    "split": "test",
+    "species": "Hippodamia variegata",
+    "images": 5,
+    "detected": 4
+  },
+  {
+    "split": "test",
+    "species": "Geosciurus inauris",
+    "images": 5,
+    "detected": 3
+  },
+  {
+    "split": "test",
+    "species": "Coprosma rotundifolia",
+    "images": 5,
+    "detected": 0
+  },
+  {
+    "split": "test",
+    "species": "Elaeagnus angustifolia",
+    "images": 5,
+    "detected": 0
+  }
+]

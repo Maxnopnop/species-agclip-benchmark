@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from data_tools import ROOT,write_json
+from data_tools import ROOT,write_json,digest
 from multimodal.experiment import aggregate
 
 
@@ -17,7 +17,8 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--runs',default=str(ROOT/'runs'/'pilot_multimodal'))
     p.add_argument('--output',default=str(ROOT/'reports'/'pilot'))
-    p.add_argument('--regions',default=str(ROOT/'cache'/'pilot_multimodal'/'regions.json'))
+    p.add_argument('--regions',help='Region cache; otherwise inferred from the runs directory name')
+    p.add_argument('--manifest',help='Optional matching manifest for split-level coverage')
     args=p.parse_args()
     rows=aggregate(args.runs)
     if not rows:
@@ -47,12 +48,25 @@ def main():
           '|---|---:|---|---:|---:|---:|']
     for r in summary:
         note.append(f"| {r['backbone']} | {r['shots']} | {r['variant']} | {r['seeds']} | {r['top1_accuracy_mean']:.3f} | {r['macro_f1_mean']:.3f} |")
-    regionpath=Path(args.regions)
+    regionpath=Path(args.regions) if args.regions else ROOT/'cache'/Path(args.runs).name/'regions.json'
     if regionpath.exists():
-        regions=json.loads(regionpath.read_text(encoding='utf-8'))['images']
+        region_data=json.loads(regionpath.read_text(encoding='utf-8'))
+        regions=region_data['images']
         counts=[len(v['boxes']) for v in regions.values()]
         note.extend(['',f'Region coverage: {sum(c>0 for c in counts)}/{len(counts)} images have at least one detection; '
                      f'mean {np.mean(counts):.2f} regions per image. Missing regions use the global baseline feature.'])
+        manifestpath=Path(args.manifest) if args.manifest else ROOT/'data'/'pilot'/'manifest.json' if all(r['pilot'] for r in rows) else ROOT/'data'/'manifest.json'
+        if manifestpath.exists() and digest(manifestpath)==region_data['manifest_sha256']:
+            manifest=json.loads(manifestpath.read_text(encoding='utf-8'))
+            coverage=[]
+            for split,images in manifest['splits'].items():
+                for category in manifest['classes']:
+                    selected=[regions[r['path']] for r in images if r['label']==category['label']]
+                    coverage.append(dict(split=split,species=category['name'],images=len(selected),
+                                         detected=sum(bool(v['boxes']) for v in selected)))
+            write_json(out/'region_coverage.json',coverage)
+            note.extend(['','See `region_coverage.json` for detection coverage by species and split. '
+                         'Low coverage limits how often the attribute branch can change the global representation.'])
     note.extend(['','Training-time fields exclude frozen feature extraction, OWL-ViT grounding and downloads. '
                  'They are not end-to-end deployment latency.','',
                  'Top-5 accuracy is uninformative for a four-class pilot. Test metrics should not guide further tuning.'])
@@ -60,13 +74,14 @@ def main():
     for shots in sorted({r['shots'] for r in rows}):
         subset=[r for r in summary if r['shots']==shots]
         names=sorted({r['backbone'] for r in subset})
-        fig,ax=plt.subplots(figsize=(10,4.5))
+        fig,ax=plt.subplots(figsize=(10,5))
         for v,variant in enumerate(('baseline','average','agclip')):
             values=[next(r['top1_accuracy_mean'] for r in subset if r['backbone']==n and r['variant']==variant) for n in names]
             ax.bar(np.arange(len(names))+(v-1)*.24,values,width=.24,label=variant)
         ax.set(xticks=np.arange(len(names)),xticklabels=names,ylim=(0,1.05),ylabel='Held-out Top-1 accuracy',
                title=f'{"Pilot: " if all(r["pilot"] for r in rows) else ""}{shots} training images per species')
-        ax.legend();fig.tight_layout();fig.savefig(out/f'comparison_{shots}shots.png',dpi=160);plt.close(fig)
+        ax.legend(loc='upper center',bbox_to_anchor=(.5,-.1),ncol=3)
+        fig.tight_layout();fig.savefig(out/f'comparison_{shots}shots.png',dpi=160);plt.close(fig)
     print('Report saved:',out)
 
 

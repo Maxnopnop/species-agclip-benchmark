@@ -2,6 +2,8 @@
 
 课程实验项目，主体位于 `E:\ELEC4240\SpeciesRecognition`。以少量有标签图片将四种 ImageNet 视觉模型对齐到 CLIP 文字空间，再比较五个模型的属性融合效果。
 
+**已完成真实 pilot：五模型 × 三方案，共 15 组比较。** [结果与指标](reports/pilot/README.md)、[对比图](reports/pilot/comparison_5shots.png)、[验证记录](reports/pilot/verification.json)。当前 AG 方案的 Top-1 与相应基线持平；4 类、单个随机种子的结果不足以判断方法优劣。完整 100 类图片包尚在下载，100 类来源核查属性库尚待准备，正式实验未运行。
+
 ## 实验定义
 
 | Backbone | Initial weights | Stage 1 | Stage 2 comparisons |

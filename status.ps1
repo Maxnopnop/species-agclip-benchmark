@@ -24,3 +24,13 @@ foreach ($projectFile in @('data\archives\train_mini.tar.gz.part','data\archives
         finally { $projectStream.Dispose() }
     }
 }
+foreach ($projectCache in @('cache\torch\hub\checkpoints','cache\huggingface\hub')) {
+    $projectCachePath = Join-Path $PSScriptRoot $projectCache
+    if (Test-Path -LiteralPath $projectCachePath) {
+        Get-ChildItem -LiteralPath $projectCachePath -File -Recurse | Where-Object { $_.Name -match '\.(partial|incomplete)$' } | ForEach-Object {
+            $projectStream = [System.IO.File]::Open($_.FullName,[System.IO.FileMode]::Open,[System.IO.FileAccess]::Read,[System.IO.FileShare]::ReadWrite)
+            try { Write-Host ('Model download: ' + $_.Name + ' / ' + [Math]::Round($projectStream.Length/1MB,1) + ' MiB') }
+            finally { $projectStream.Dispose() }
+        }
+    }
+}
