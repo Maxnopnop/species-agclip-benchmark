@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "seed": 42,
+  "step": 160,
+  "checks": [
+    {
+      "index": 0,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0,
+      "prediction_matches": true
+    },
+    {
+      "index": 319,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0,
+      "prediction_matches": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "dimension": 768,
+  "matched_trainable_parameters": 104513,
+  "checks": [
+    "step-zero native logits",
+    "invalid views masked",
+    "token gradients nonzero after gate activation",
+    "probe frozen",
+    "equal variant capacity"
+  ]
+}

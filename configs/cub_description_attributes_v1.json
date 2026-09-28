@@ -1,0 +1,402 @@
+{
+  "description_sha256": "6f7d28d5cb0d0c1573b3628f9cd3d62a838af90b253b1ff5fabe25f282d6b328",
+  "mapping_source_sha256": "a76cb244ba6598726a4ddfe1eaadf7eb289f274ed8161fc8b0cbb8876ac54e9c",
+  "scope": "AI-assisted source-backed positive-only mapping from cited field-guide descriptions, before experiment scoring. Not expert-validated. Unstated/unsupported attributes remain unknown. The same written information is available to the description-only baseline.",
+  "species": [
+    {
+      "label": 0,
+      "name": "Pied Kingfisher",
+      "source": "https://ebird.org/species/piekin1",
+      "positive_alternatives": [
+        [
+          "has_primary_color::black",
+          "has_primary_color::white",
+          "has_bill_color::black"
+        ],
+        [
+          "has_primary_color::black",
+          "has_primary_color::white"
+        ]
+      ]
+    },
+    {
+      "label": 1,
+      "name": "Belted Kingfisher",
+      "source": "https://www.allaboutbirds.org/guide/Belted_Kingfisher/id",
+      "positive_alternatives": [
+        [
+          "has_upperparts_color::blue",
+          "has_back_color::blue",
+          "has_underparts_color::white",
+          "has_breast_pattern::multi-colored"
+        ],
+        [
+          "has_upperparts_color::blue",
+          "has_underparts_color::white",
+          "has_belly_color::orange",
+          "has_breast_pattern::multi-colored"
+        ]
+      ]
+    },
+    {
+      "label": 2,
+      "name": "Lazuli Bunting",
+      "source": "https://www.allaboutbirds.org/guide/Lazuli_Bunting/id",
+      "positive_alternatives": [
+        [
+          "has_forehead_color::blue",
+          "has_back_color::blue",
+          "has_breast_color::orange",
+          "has_belly_color::white",
+          "has_bill_shape::cone"
+        ],
+        [
+          "has_upperparts_color::brown",
+          "has_breast_color::buff",
+          "has_wing_color::blue",
+          "has_wing_color::buff",
+          "has_wing_pattern::striped"
+        ]
+      ]
+    },
+    {
+      "label": 3,
+      "name": "Indigo Bunting",
+      "source": "https://www.allaboutbirds.org/guide/Indigo_Bunting/id",
+      "positive_alternatives": [
+        [
+          "has_primary_color::blue",
+          "has_forehead_color::blue",
+          "has_crown_color::blue",
+          "has_bill_shape::cone",
+          "has_bill_color::grey"
+        ],
+        [
+          "has_primary_color::brown",
+          "has_throat_color::white",
+          "has_breast_pattern::striped",
+          "has_wing_color::blue"
+        ]
+      ]
+    },
+    {
+      "label": 4,
+      "name": "Ruby throated Hummingbird",
+      "source": "https://www.allaboutbirds.org/guide/Ruby-throated_Hummingbird/id",
+      "positive_alternatives": [
+        [
+          "has_underparts_color::white",
+          "has_throat_color::red",
+          "has_bill_shape::needle"
+        ],
+        [
+          "has_underparts_color::white",
+          "has_bill_shape::needle",
+          "has_upper_tail_color::black",
+          "has_upper_tail_color::white"
+        ]
+      ]
+    },
+    {
+      "label": 5,
+      "name": "Rufous Hummingbird",
+      "source": "https://www.allaboutbirds.org/guide/Rufous_Hummingbird/id",
+      "positive_alternatives": [
+        [
+          "has_primary_color::orange",
+          "has_belly_color::orange",
+          "has_breast_color::white",
+          "has_throat_color::red",
+          "has_bill_shape::needle"
+        ],
+        [
+          "has_underparts_color::orange",
+          "has_upper_tail_color::brown",
+          "has_bill_shape::needle"
+        ]
+      ]
+    },
+    {
+      "label": 6,
+      "name": "Northern Waterthrush",
+      "source": "https://www.allaboutbirds.org/guide/Northern_Waterthrush/id",
+      "positive_alternatives": [
+        [
+          "has_upperparts_color::brown",
+          "has_underparts_color::buff",
+          "has_breast_pattern::striped",
+          "has_head_pattern::eyebrow"
+        ],
+        [
+          "has_head_pattern::eyebrow",
+          "has_upperparts_color::brown",
+          "has_breast_pattern::striped"
+        ]
+      ]
+    },
+    {
+      "label": 7,
+      "name": "Louisiana Waterthrush",
+      "source": "https://www.allaboutbirds.org/guide/Louisiana_Waterthrush/id",
+      "positive_alternatives": [
+        [
+          "has_upperparts_color::brown",
+          "has_underparts_color::white",
+          "has_breast_pattern::striped",
+          "has_head_pattern::eyebrow"
+        ],
+        [
+          "has_head_pattern::eyebrow",
+          "has_upperparts_color::brown",
+          "has_underparts_color::white"
+        ]
+      ]
+    },
+    {
+      "label": 8,
+      "name": "Brandt Cormorant",
+      "source": "https://www.allaboutbirds.org/guide/Brandts_Cormorant/id",
+      "positive_alternatives": [
+        [
+          "has_primary_color::black",
+          "has_throat_color::blue",
+          "has_throat_color::buff"
+        ],
+        [
+          "has_primary_color::black",
+          "has_throat_color::brown",
+          "has_bill_shape::hooked_seabird"
+        ]
+      ]
+    },
+    {
+      "label": 9,
+      "name": "Red faced Cormorant",
+      "source": "https://www.allaboutbirds.org/guide/Red-faced_Cormorant/id",
+      "positive_alternatives": [
+        [
+          "has_primary_color::black",
+          "has_underparts_color::white"
+        ],
+        [
+          "has_primary_color::brown"
+        ]
+      ]
+    },
+    {
+      "label": 10,
+      "name": "Forsters Tern",
+      "source": "https://www.allaboutbirds.org/guide/Forsters_Tern/id",
+      "positive_alternatives": [
+        [
+          "has_back_color::grey",
+          "has_underparts_color::white",
+          "has_head_pattern::capped",
+          "has_crown_color::black",
+          "has_leg_color::orange",
+          "has_bill_color::orange",
+          "has_bill_color::black"
+        ],
+        [
+          "has_primary_color::white",
+          "has_crown_color::white",
+          "has_head_pattern::masked",
+          "has_bill_color::black"
+        ]
+      ]
+    },
+    {
+      "label": 11,
+      "name": "Black Tern",
+      "source": "https://www.allaboutbirds.org/guide/Black_Tern/id",
+      "positive_alternatives": [
+        [
+          "has_back_color::grey",
+          "has_underparts_color::black",
+          "has_crown_color::black",
+          "has_breast_color::black"
+        ],
+        [
+          "has_upperparts_color::grey",
+          "has_underparts_color::white",
+          "has_head_pattern::capped",
+          "has_head_pattern::masked"
+        ]
+      ]
+    },
+    {
+      "label": 12,
+      "name": "Long tailed Jaeger",
+      "source": "https://www.allaboutbirds.org/guide/Long-tailed_Jaeger/id",
+      "positive_alternatives": [
+        [
+          "has_tail_shape::pointed_tail",
+          "has_back_color::brown",
+          "has_crown_color::black",
+          "has_nape_color::yellow"
+        ],
+        [
+          "has_wing_shape::long-wings",
+          "has_wing_color::brown",
+          "has_wing_pattern::multi-colored"
+        ]
+      ]
+    },
+    {
+      "label": 13,
+      "name": "Pomarine Jaeger",
+      "source": "https://www.allaboutbirds.org/guide/Pomarine_Jaeger/id",
+      "positive_alternatives": [
+        [
+          "has_shape::gull-like",
+          "has_back_color::black",
+          "has_wing_color::white"
+        ],
+        [
+          "has_upperparts_color::brown",
+          "has_back_pattern::striped",
+          "has_tail_pattern::striped"
+        ]
+      ]
+    },
+    {
+      "label": 14,
+      "name": "Pine Grosbeak",
+      "source": "https://www.allaboutbirds.org/guide/Pine_Grosbeak/id",
+      "positive_alternatives": [
+        [
+          "has_primary_color::red",
+          "has_primary_color::grey",
+          "has_wing_color::grey",
+          "has_wing_color::white",
+          "has_wing_pattern::striped"
+        ],
+        [
+          "has_primary_color::grey",
+          "has_forehead_color::orange",
+          "has_forehead_color::yellow",
+          "has_wing_color::grey",
+          "has_wing_color::white",
+          "has_wing_pattern::striped"
+        ]
+      ]
+    },
+    {
+      "label": 15,
+      "name": "Evening Grosbeak",
+      "source": "https://www.allaboutbirds.org/guide/Evening_Grosbeak/id",
+      "positive_alternatives": [
+        [
+          "has_bill_shape::cone",
+          "has_primary_color::yellow",
+          "has_primary_color::black",
+          "has_head_pattern::eyebrow",
+          "has_wing_color::white"
+        ],
+        [
+          "has_bill_shape::cone",
+          "has_primary_color::grey",
+          "has_wing_color::black",
+          "has_wing_color::white"
+        ]
+      ]
+    },
+    {
+      "label": 16,
+      "name": "Hooded Oriole",
+      "source": "https://www.allaboutbirds.org/guide/Hooded_Oriole/id",
+      "positive_alternatives": [
+        [
+          "has_primary_color::orange",
+          "has_primary_color::yellow",
+          "has_head_pattern::masked",
+          "has_throat_color::black",
+          "has_wing_color::black",
+          "has_wing_color::white",
+          "has_wing_pattern::striped"
+        ],
+        [
+          "has_primary_color::olive",
+          "has_back_color::grey",
+          "has_wing_color::white",
+          "has_wing_pattern::striped",
+          "has_tail_shape::rounded_tail"
+        ]
+      ]
+    },
+    {
+      "label": 17,
+      "name": "Orchard Oriole",
+      "source": "https://www.allaboutbirds.org/guide/Orchard_Oriole/id",
+      "positive_alternatives": [
+        [
+          "has_back_color::black",
+          "has_crown_color::black",
+          "has_throat_color::black",
+          "has_underparts_color::brown"
+        ],
+        [
+          "has_primary_color::olive",
+          "has_primary_color::yellow",
+          "has_wing_color::white",
+          "has_wing_pattern::striped"
+        ]
+      ]
+    },
+    {
+      "label": 18,
+      "name": "Black billed Cuckoo",
+      "source": "https://www.allaboutbirds.org/guide/Black-billed_Cuckoo/id",
+      "positive_alternatives": [
+        [
+          "has_upperparts_color::brown",
+          "has_underparts_color::white",
+          "has_head_pattern::eyering",
+          "has_bill_color::black"
+        ],
+        [
+          "has_wing_color::brown",
+          "has_upper_tail_color::white"
+        ]
+      ]
+    },
+    {
+      "label": 19,
+      "name": "Yellow billed Cuckoo",
+      "source": "https://www.allaboutbirds.org/guide/Yellow-billed_Cuckoo/id",
+      "positive_alternatives": [
+        [
+          "has_back_color::brown",
+          "has_underparts_color::white",
+          "has_head_pattern::eyering",
+          "has_head_pattern::masked"
+        ],
+        [
+          "has_under_tail_color::brown",
+          "has_under_tail_color::white",
+          "has_tail_pattern::striped"
+        ]
+      ]
+    }
+  ],
+  "description_blends": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "attribute_weights": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    1,
+    2
+  ],
+  "permutation_seeds": [
+    42,
+    43,
+    44
+  ]
+}

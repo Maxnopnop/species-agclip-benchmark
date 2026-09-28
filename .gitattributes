@@ -27,3 +27,13 @@
 /configs/cub100_v1.json text eol=lf
 /cub100_experiment.py text eol=lf
 /multimodal/cub100_data.py text eol=lf
+/diagnose_cub_*.py text eol=lf
+/build_cub_description_attributes.py text eol=lf
+/configs/cub_descriptions_v1.json text eol=lf
+/configs/cub_description_attributes_v1.json text eol=crlf
+/configs/cub_siglip_v1.json text eol=lf
+/cub_siglip_experiment.py text eol=lf
+/configs/cub_siglip_v2.json text eol=lf
+/cub_siglip_v2_experiment.py text eol=lf
+/configs/cub_oracle_fusion_v1.json text eol=lf
+/cub_oracle_fusion_experiment.py text eol=lf

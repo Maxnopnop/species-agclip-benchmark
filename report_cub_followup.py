@@ -16,7 +16,7 @@ LABELS={'cub_tokens_v1':'B/32 · 24 · dense','cub_bottleneck_v1':'B/32 · attri
 def mean_sd(values):return float(np.mean(values)),float(np.std(values,ddof=1)) if len(values)>1 else 0.
 
 
-def paired_summary(version,results,control):
+def paired_summary(version,results,control,seen_classes=None):
     ag={r['seed']:r for r in results if r['variant']=='tokens'};base={r['seed']:r for r in results if r['variant']==control}
     seeds=sorted(set(ag)&set(base))
     if not seeds:return None
@@ -26,7 +26,7 @@ def paired_summary(version,results,control):
         y=torch.load((ROOT/base[seed]['checkpoint']).parent/'final_predictions.pt',weights_only=True)
         assert torch.equal(x['labels'],y['labels'])
         pp.append(x['predictions'].numpy());bb.append(y['predictions'].numpy())
-    labels=x['labels'].numpy();pp=np.stack(pp);bb=np.stack(bb);classes=sorted(set(labels));seen=set(range(0,20,2))
+    labels=x['labels'].numpy();pp=np.stack(pp);bb=np.stack(bb);classes=sorted(set(labels));seen=set(range(0,20,2) if seen_classes is None else seen_classes)
     def h(pred,indices):
         per=np.stack([(pred[:,indices[labels[indices]==cl]]==cl).mean(-1)*100 for cl in classes],-1)
         s=per[:,[cl in seen for cl in classes]].mean(-1);u=per[:,[cl not in seen for cl in classes]].mean(-1)

@@ -1,5 +1,7 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
+**最新扩展诊断：** [综合研究结论](reports/cub_followup_v1/diagnostic_update_zh.md)、[100 物种 CLIP](reports/cub100_v1/summary_zh.md)、[100 物种 SigLIP 2 修正版](reports/cub_siglip_v2/summary_zh.md)。增加类别规模、三种子匹配对照、公开描述、属性迁移、正则化及特权定位诊断后，尚无稳定属性特有收益。SigLIP 2 的大小写预处理问题已定位修复，错误版本排除比较；不能把修复或主干更换的提升记作 AG 效果。
+
 **冻结全图分支与独立属性 token 连续诊断：** [汇总报告](reports/cub_followup_v1/summary_zh.md)、[运行说明](docs/cub_token_diagnostics.md)。包括三种子、匹配容量对照、属性瓶颈、24／158 属性、稀疏 token／对比损失、B/16 复核及区域分支微调；报告自动区分已完成与待完成版本，并保留负结果和第 0 步选择。不能把属性识别、主干更换或校准的收益直接归因于 AG。
 
 **CUB 人工属性诊断：** [中文报告](reports/cub_attributes_v1/summary_zh.md)、[运行与协议说明](docs/cub_attributes_v1.md)。采用官方 CUB 逐图属性／可见部位标注，固定 20 个物种和 24 条属性，对比自动属性、人工标注、打乱监督及额外区域监督，并用冻结特征线性探针单独检验属性可学习性。分类最优与属性最优检查点分别锁定；真实测试属性和部位不作为输入。入口 `cub_models.cmd`，单图入口 `predict_cub.py`。完整状态、成绩及第 0 步选择说明见该版本报告。

@@ -1,0 +1,125 @@
+{
+  "records": [
+    {
+      "variant": "detected",
+      "selected": {
+        "lr": 0.01,
+        "step": 300,
+        "common_regional_map": 0.5145093836823995,
+        "global_map": 0.5047048910648805
+      },
+      "history": [
+        {
+          "lr": 0.01,
+          "step": 0,
+          "common_regional_map": 0.4067316871186897,
+          "global_map": 0.39395588113862623
+        },
+        {
+          "lr": 0.01,
+          "step": 100,
+          "common_regional_map": 0.4943527184726121,
+          "global_map": 0.5108402795251656
+        },
+        {
+          "lr": 0.01,
+          "step": 300,
+          "common_regional_map": 0.5145093836823995,
+          "global_map": 0.5047048910648805
+        },
+        {
+          "lr": 0.01,
+          "step": 600,
+          "common_regional_map": 0.5104627148786267,
+          "global_map": 0.4916787334111034
+        },
+        {
+          "lr": 0.001,
+          "step": 0,
+          "common_regional_map": 0.4067316871186897,
+          "global_map": 0.39395588113862623
+        },
+        {
+          "lr": 0.001,
+          "step": 100,
+          "common_regional_map": 0.37312337391430384,
+          "global_map": 0.4321695158410235
+        },
+        {
+          "lr": 0.001,
+          "step": 300,
+          "common_regional_map": 0.41664276954889135,
+          "global_map": 0.4719993293165976
+        },
+        {
+          "lr": 0.001,
+          "step": 600,
+          "common_regional_map": 0.47415124850605,
+          "global_map": 0.49958131756824026
+        }
+      ]
+    },
+    {
+      "variant": "oracle_location",
+      "selected": {
+        "lr": 0.01,
+        "step": 300,
+        "common_regional_map": 0.5386077418155503,
+        "global_map": 0.5111803203322934
+      },
+      "history": [
+        {
+          "lr": 0.01,
+          "step": 0,
+          "common_regional_map": 0.4265197040543571,
+          "global_map": 0.39395588113862623
+        },
+        {
+          "lr": 0.01,
+          "step": 100,
+          "common_regional_map": 0.5082587318288941,
+          "global_map": 0.5121754533721714
+        },
+        {
+          "lr": 0.01,
+          "step": 300,
+          "common_regional_map": 0.5386077418155503,
+          "global_map": 0.5111803203322934
+        },
+        {
+          "lr": 0.01,
+          "step": 600,
+          "common_regional_map": 0.5353584875670674,
+          "global_map": 0.49793387156297975
+        },
+        {
+          "lr": 0.001,
+          "step": 0,
+          "common_regional_map": 0.4265197040543571,
+          "global_map": 0.39395588113862623
+        },
+        {
+          "lr": 0.001,
+          "step": 100,
+          "common_regional_map": 0.38740770296613036,
+          "global_map": 0.4334251817990285
+        },
+        {
+          "lr": 0.001,
+          "step": 300,
+          "common_regional_map": 0.42900037626591647,
+          "global_map": 0.4726740671374073
+        },
+        {
+          "lr": 0.001,
+          "step": 600,
+          "common_regional_map": 0.48336234344758955,
+          "global_map": 0.4996748621025026
+        }
+      ]
+    }
+  ],
+  "common_development_regional_labels": 15189,
+  "source_sha256": "d96b7ceee2f9d4849e5a8c6c6ebdcc2cd0ee47422b9f7ddafacd801724db497c",
+  "scope": "Development-only localization diagnostic. True annotated part points define two square crops, so oracle_location is NOT deployable, NOT an AG classification result and NOT a theoretical upper bound. Both feature sets use identical common evaluation label masks and identical probe grids; training crops/supervision differ. No final images were accessed."
+}

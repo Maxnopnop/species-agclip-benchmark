@@ -1,0 +1,361 @@
+{
+  "protocol": {
+    "source_sha256": "349d65ad7ad04db8ae9a86e0a72c21f20dd86bf35e8f8d366464e5aa46ae7c96",
+    "parent_probe_sha256": "8c8816b6a07f565c9831a4ac364a0da54a1c64c5e69e91d186bdec79a618605f",
+    "manifest_sha256": "cf25f035b5fa011e2a60e24d1f3ea4d7cfaa40aae3adf03032a715a6a36c47fe",
+    "modes": [
+      [
+        "baseline",
+        false,
+        0.0
+      ],
+      [
+        "balanced",
+        true,
+        0.0
+      ],
+      [
+        "anchor_001",
+        false,
+        0.001
+      ],
+      [
+        "anchor_01",
+        false,
+        0.01
+      ],
+      [
+        "balanced_anchor_001",
+        true,
+        0.001
+      ],
+      [
+        "balanced_anchor_01",
+        true,
+        0.01
+      ]
+    ],
+    "learning_rates": [
+      0.01,
+      0.001
+    ],
+    "steps": [
+      0,
+      100,
+      300,
+      600
+    ],
+    "selection": "Mean of seen and unseen development global/regional attribute mAP; same criterion for all modes. No species classification score used. Fixed seed, full-batch linear probes; no fusion run in this diagnostic.",
+    "scope": "Exploratory follow-up after cub100 final results were inspected. Separate locked checkpoints, never overwrite parent probes. Positive weights use only seen training targets. Weight anchoring uses frozen text initialization; biases receive ordinary AdamW decay."
+  },
+  "selected": [
+    {
+      "mode": "baseline",
+      "lr": 0.01,
+      "step": 300,
+      "score": 0.43469680148159484,
+      "groups": {
+        "seen": {
+          "global_map": 0.49266686982011265,
+          "regional_map": 0.47684662319399007,
+          "selection_map": 0.48475674650705136
+        },
+        "unseen": {
+          "global_map": 0.3844823139242509,
+          "regional_map": 0.38479139898802567,
+          "selection_map": 0.3846368564561383
+        }
+      }
+    },
+    {
+      "mode": "balanced",
+      "lr": 0.01,
+      "step": 300,
+      "score": 0.4385641439888479,
+      "groups": {
+        "seen": {
+          "global_map": 0.49471252164041096,
+          "regional_map": 0.4837624398170927,
+          "selection_map": 0.48923748072875184
+        },
+        "unseen": {
+          "global_map": 0.386229301706077,
+          "regional_map": 0.389552312791811,
+          "selection_map": 0.387890807248944
+        }
+      }
+    },
+    {
+      "mode": "anchor_001",
+      "lr": 0.01,
+      "step": 600,
+      "score": 0.4360358140748343,
+      "groups": {
+        "seen": {
+          "global_map": 0.49346332209015153,
+          "regional_map": 0.46921059671366044,
+          "selection_map": 0.481336959401906
+        },
+        "unseen": {
+          "global_map": 0.3913582317404926,
+          "regional_map": 0.3901111057550326,
+          "selection_map": 0.39073466874776264
+        }
+      }
+    },
+    {
+      "mode": "anchor_01",
+      "lr": 0.01,
+      "step": 600,
+      "score": 0.4116895165653763,
+      "groups": {
+        "seen": {
+          "global_map": 0.44338532148291615,
+          "regional_map": 0.43651913228977113,
+          "selection_map": 0.4399522268863436
+        },
+        "unseen": {
+          "global_map": 0.383726526327067,
+          "regional_map": 0.3831270861617509,
+          "selection_map": 0.38342680624440895
+        }
+      }
+    },
+    {
+      "mode": "balanced_anchor_001",
+      "lr": 0.01,
+      "step": 600,
+      "score": 0.44351924294181744,
+      "groups": {
+        "seen": {
+          "global_map": 0.5009703979630964,
+          "regional_map": 0.48224955997885116,
+          "selection_map": 0.4916099789709738
+        },
+        "unseen": {
+          "global_map": 0.3954206030503243,
+          "regional_map": 0.3954364107749978,
+          "selection_map": 0.39542850691266107
+        }
+      }
+    },
+    {
+      "mode": "balanced_anchor_01",
+      "lr": 0.01,
+      "step": 600,
+      "score": 0.4298386645200175,
+      "groups": {
+        "seen": {
+          "global_map": 0.4758713832879668,
+          "regional_map": 0.4635391586296916,
+          "selection_map": 0.4697052709588292
+        },
+        "unseen": {
+          "global_map": 0.39100681043619645,
+          "regional_map": 0.3889373057262153,
+          "selection_map": 0.3899720580812059
+        }
+      }
+    }
+  ],
+  "final": [
+    {
+      "mode": "baseline",
+      "selection": {
+        "mode": "baseline",
+        "lr": 0.01,
+        "step": 300,
+        "score": 0.43469680148159484,
+        "groups": {
+          "seen": {
+            "global_map": 0.49266686982011265,
+            "regional_map": 0.47684662319399007,
+            "selection_map": 0.48475674650705136
+          },
+          "unseen": {
+            "global_map": 0.3844823139242509,
+            "regional_map": 0.38479139898802567,
+            "selection_map": 0.3846368564561383
+          }
+        }
+      },
+      "groups": {
+        "seen": {
+          "global_map": 0.47499093282083815,
+          "regional_map": 0.46506643490731003,
+          "selection_map": 0.4700286838640741
+        },
+        "unseen": {
+          "global_map": 0.3726930019141771,
+          "regional_map": 0.3714630687371268,
+          "selection_map": 0.372078035325652
+        }
+      }
+    },
+    {
+      "mode": "balanced",
+      "selection": {
+        "mode": "balanced",
+        "lr": 0.01,
+        "step": 300,
+        "score": 0.4385641439888479,
+        "groups": {
+          "seen": {
+            "global_map": 0.49471252164041096,
+            "regional_map": 0.4837624398170927,
+            "selection_map": 0.48923748072875184
+          },
+          "unseen": {
+            "global_map": 0.386229301706077,
+            "regional_map": 0.389552312791811,
+            "selection_map": 0.387890807248944
+          }
+        }
+      },
+      "groups": {
+        "seen": {
+          "global_map": 0.4746613813661718,
+          "regional_map": 0.4714999060545869,
+          "selection_map": 0.4730806437103794
+        },
+        "unseen": {
+          "global_map": 0.36954737273734156,
+          "regional_map": 0.373504899215348,
+          "selection_map": 0.37152613597634476
+        }
+      }
+    },
+    {
+      "mode": "anchor_001",
+      "selection": {
+        "mode": "anchor_001",
+        "lr": 0.01,
+        "step": 600,
+        "score": 0.4360358140748343,
+        "groups": {
+          "seen": {
+            "global_map": 0.49346332209015153,
+            "regional_map": 0.46921059671366044,
+            "selection_map": 0.481336959401906
+          },
+          "unseen": {
+            "global_map": 0.3913582317404926,
+            "regional_map": 0.3901111057550326,
+            "selection_map": 0.39073466874776264
+          }
+        }
+      },
+      "groups": {
+        "seen": {
+          "global_map": 0.4772974086054996,
+          "regional_map": 0.4646236601893356,
+          "selection_map": 0.4709605343974176
+        },
+        "unseen": {
+          "global_map": 0.3758150512063282,
+          "regional_map": 0.36800231803724726,
+          "selection_map": 0.3719086846217877
+        }
+      }
+    },
+    {
+      "mode": "anchor_01",
+      "selection": {
+        "mode": "anchor_01",
+        "lr": 0.01,
+        "step": 600,
+        "score": 0.4116895165653763,
+        "groups": {
+          "seen": {
+            "global_map": 0.44338532148291615,
+            "regional_map": 0.43651913228977113,
+            "selection_map": 0.4399522268863436
+          },
+          "unseen": {
+            "global_map": 0.383726526327067,
+            "regional_map": 0.3831270861617509,
+            "selection_map": 0.38342680624440895
+          }
+        }
+      },
+      "groups": {
+        "seen": {
+          "global_map": 0.4414962812278414,
+          "regional_map": 0.43584538387014127,
+          "selection_map": 0.4386708325489913
+        },
+        "unseen": {
+          "global_map": 0.36989239702498666,
+          "regional_map": 0.36092186235490026,
+          "selection_map": 0.3654071296899435
+        }
+      }
+    },
+    {
+      "mode": "balanced_anchor_001",
+      "selection": {
+        "mode": "balanced_anchor_001",
+        "lr": 0.01,
+        "step": 600,
+        "score": 0.44351924294181744,
+        "groups": {
+          "seen": {
+            "global_map": 0.5009703979630964,
+            "regional_map": 0.48224955997885116,
+            "selection_map": 0.4916099789709738
+          },
+          "unseen": {
+            "global_map": 0.3954206030503243,
+            "regional_map": 0.3954364107749978,
+            "selection_map": 0.39542850691266107
+          }
+        }
+      },
+      "groups": {
+        "seen": {
+          "global_map": 0.4788106791816423,
+          "regional_map": 0.4761819317927111,
+          "selection_map": 0.4774963054871767
+        },
+        "unseen": {
+          "global_map": 0.37994360587758175,
+          "regional_map": 0.3751515068221265,
+          "selection_map": 0.37754755634985415
+        }
+      }
+    },
+    {
+      "mode": "balanced_anchor_01",
+      "selection": {
+        "mode": "balanced_anchor_01",
+        "lr": 0.01,
+        "step": 600,
+        "score": 0.4298386645200175,
+        "groups": {
+          "seen": {
+            "global_map": 0.4758713832879668,
+            "regional_map": 0.4635391586296916,
+            "selection_map": 0.4697052709588292
+          },
+          "unseen": {
+            "global_map": 0.39100681043619645,
+            "regional_map": 0.3889373057262153,
+            "selection_map": 0.3899720580812059
+          }
+        }
+      },
+      "groups": {
+        "seen": {
+          "global_map": 0.4627409087642681,
+          "regional_map": 0.4567894075087706,
+          "selection_map": 0.45976515813651936
+        },
+        "unseen": {
+          "global_map": 0.37873409819949183,
+          "regional_map": 0.36479930242687486,
+          "selection_map": 0.3717667003131834
+        }
+      }
+    }
+  ]
+}

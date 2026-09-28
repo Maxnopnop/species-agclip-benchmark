@@ -1,0 +1,286 @@
+{
+  "records": [
+    {
+      "attributes": 24,
+      "training_minimum_certainty": 3,
+      "known_training_targets": 7902,
+      "selection": {
+        "lr": 0.01,
+        "step": 100,
+        "strict_global_map": 0.5803689554509878,
+        "strict_regional_map": 0.5753479877588847,
+        "selection_map": 0.5778584716049362
+      },
+      "history": [
+        {
+          "lr": 0.01,
+          "step": 0,
+          "strict_global_map": 0.40367641238436675,
+          "strict_regional_map": 0.4009318689432206,
+          "selection_map": 0.40230414066379366
+        },
+        {
+          "lr": 0.01,
+          "step": 100,
+          "strict_global_map": 0.5803689554509878,
+          "strict_regional_map": 0.5753479877588847,
+          "selection_map": 0.5778584716049362
+        },
+        {
+          "lr": 0.01,
+          "step": 300,
+          "strict_global_map": 0.5669937206151939,
+          "strict_regional_map": 0.5619013437431772,
+          "selection_map": 0.5644475321791855
+        },
+        {
+          "lr": 0.01,
+          "step": 600,
+          "strict_global_map": 0.5518222461293143,
+          "strict_regional_map": 0.5489894392092493,
+          "selection_map": 0.5504058426692817
+        },
+        {
+          "lr": 0.001,
+          "step": 0,
+          "strict_global_map": 0.40367641238436675,
+          "strict_regional_map": 0.4009318689432206,
+          "selection_map": 0.40230414066379366
+        },
+        {
+          "lr": 0.001,
+          "step": 100,
+          "strict_global_map": 0.5158907286650222,
+          "strict_regional_map": 0.4935444066669783,
+          "selection_map": 0.5047175676660003
+        },
+        {
+          "lr": 0.001,
+          "step": 300,
+          "strict_global_map": 0.5636069907936219,
+          "strict_regional_map": 0.550639096086385,
+          "selection_map": 0.5571230434400034
+        },
+        {
+          "lr": 0.001,
+          "step": 600,
+          "strict_global_map": 0.5751704958909606,
+          "strict_regional_map": 0.5681237215032799,
+          "selection_map": 0.5716471086971202
+        }
+      ]
+    },
+    {
+      "attributes": 24,
+      "training_minimum_certainty": 4,
+      "known_training_targets": 5550,
+      "selection": {
+        "lr": 0.01,
+        "step": 100,
+        "strict_global_map": 0.5855517012269399,
+        "strict_regional_map": 0.5755863315637351,
+        "selection_map": 0.5805690163953374
+      },
+      "history": [
+        {
+          "lr": 0.01,
+          "step": 0,
+          "strict_global_map": 0.40367641238436675,
+          "strict_regional_map": 0.4009318689432206,
+          "selection_map": 0.40230414066379366
+        },
+        {
+          "lr": 0.01,
+          "step": 100,
+          "strict_global_map": 0.5855517012269399,
+          "strict_regional_map": 0.5755863315637351,
+          "selection_map": 0.5805690163953374
+        },
+        {
+          "lr": 0.01,
+          "step": 300,
+          "strict_global_map": 0.561151402349615,
+          "strict_regional_map": 0.5667200567051073,
+          "selection_map": 0.5639357295273612
+        },
+        {
+          "lr": 0.01,
+          "step": 600,
+          "strict_global_map": 0.5486059737733225,
+          "strict_regional_map": 0.5581357606933026,
+          "selection_map": 0.5533708672333126
+        },
+        {
+          "lr": 0.001,
+          "step": 0,
+          "strict_global_map": 0.40367641238436675,
+          "strict_regional_map": 0.4009318689432206,
+          "selection_map": 0.40230414066379366
+        },
+        {
+          "lr": 0.001,
+          "step": 100,
+          "strict_global_map": 0.5105941724285199,
+          "strict_regional_map": 0.4863044065750904,
+          "selection_map": 0.4984492895018051
+        },
+        {
+          "lr": 0.001,
+          "step": 300,
+          "strict_global_map": 0.5589798932832862,
+          "strict_regional_map": 0.541290190253014,
+          "selection_map": 0.5501350417681501
+        },
+        {
+          "lr": 0.001,
+          "step": 600,
+          "strict_global_map": 0.5818424314054501,
+          "strict_regional_map": 0.5665465453918072,
+          "selection_map": 0.5741944883986286
+        }
+      ]
+    },
+    {
+      "attributes": 158,
+      "training_minimum_certainty": 3,
+      "known_training_targets": 53198,
+      "selection": {
+        "lr": 0.01,
+        "step": 300,
+        "strict_global_map": 0.53518886959595,
+        "strict_regional_map": 0.521492253764219,
+        "selection_map": 0.5283405616800845
+      },
+      "history": [
+        {
+          "lr": 0.01,
+          "step": 0,
+          "strict_global_map": 0.40770426229076956,
+          "strict_regional_map": 0.39857373426637177,
+          "selection_map": 0.4031389982785707
+        },
+        {
+          "lr": 0.01,
+          "step": 100,
+          "strict_global_map": 0.5310926532646523,
+          "strict_regional_map": 0.5101929267196587,
+          "selection_map": 0.5206427899921555
+        },
+        {
+          "lr": 0.01,
+          "step": 300,
+          "strict_global_map": 0.53518886959595,
+          "strict_regional_map": 0.521492253764219,
+          "selection_map": 0.5283405616800845
+        },
+        {
+          "lr": 0.01,
+          "step": 600,
+          "strict_global_map": 0.5239160542588638,
+          "strict_regional_map": 0.517047001755012,
+          "selection_map": 0.5204815280069379
+        },
+        {
+          "lr": 0.001,
+          "step": 0,
+          "strict_global_map": 0.40770426229076956,
+          "strict_regional_map": 0.39857373426637177,
+          "selection_map": 0.4031389982785707
+        },
+        {
+          "lr": 0.001,
+          "step": 100,
+          "strict_global_map": 0.4549041846714866,
+          "strict_regional_map": 0.38112871321200725,
+          "selection_map": 0.41801644894174694
+        },
+        {
+          "lr": 0.001,
+          "step": 300,
+          "strict_global_map": 0.49276068649537225,
+          "strict_regional_map": 0.4246204629217647,
+          "selection_map": 0.45869057470856844
+        },
+        {
+          "lr": 0.001,
+          "step": 600,
+          "strict_global_map": 0.5162136086794261,
+          "strict_regional_map": 0.4861449255050015,
+          "selection_map": 0.5011792670922138
+        }
+      ]
+    },
+    {
+      "attributes": 158,
+      "training_minimum_certainty": 4,
+      "known_training_targets": 36399,
+      "selection": {
+        "lr": 0.01,
+        "step": 300,
+        "strict_global_map": 0.5282083443488832,
+        "strict_regional_map": 0.5130101196692481,
+        "selection_map": 0.5206092320090656
+      },
+      "history": [
+        {
+          "lr": 0.01,
+          "step": 0,
+          "strict_global_map": 0.40770426229076956,
+          "strict_regional_map": 0.39857373426637177,
+          "selection_map": 0.4031389982785707
+        },
+        {
+          "lr": 0.01,
+          "step": 100,
+          "strict_global_map": 0.5255859296756488,
+          "strict_regional_map": 0.5071386718435908,
+          "selection_map": 0.5163623007596199
+        },
+        {
+          "lr": 0.01,
+          "step": 300,
+          "strict_global_map": 0.5282083443488832,
+          "strict_regional_map": 0.5130101196692481,
+          "selection_map": 0.5206092320090656
+        },
+        {
+          "lr": 0.01,
+          "step": 600,
+          "strict_global_map": 0.5172182372707474,
+          "strict_regional_map": 0.5063868766559383,
+          "selection_map": 0.5118025569633429
+        },
+        {
+          "lr": 0.001,
+          "step": 0,
+          "strict_global_map": 0.40770426229076956,
+          "strict_regional_map": 0.39857373426637177,
+          "selection_map": 0.4031389982785707
+        },
+        {
+          "lr": 0.001,
+          "step": 100,
+          "strict_global_map": 0.45569264760296296,
+          "strict_regional_map": 0.3781453955946272,
+          "selection_map": 0.41691902159879507
+        },
+        {
+          "lr": 0.001,
+          "step": 300,
+          "strict_global_map": 0.4895412062951969,
+          "strict_regional_map": 0.4297154866010655,
+          "selection_map": 0.4596283464481312
+        },
+        {
+          "lr": 0.001,
+          "step": 600,
+          "strict_global_map": 0.5181032247357665,
+          "strict_regional_map": 0.48388575894219327,
+          "selection_map": 0.5009944918389799
+        }
+      ]
+    }
+  ],
+  "source_sha256": "96f65bfe5a83ce128ba21eec7c7864ec73bdc41a18c94cffd0235f4fbd8815f5",
+  "scope": "Development-only label-quality diagnostic. Both training thresholds evaluated and selected on exactly the same certainty-4 development targets. Unknown/visibility masks retained. Selected development performance is not a final test or proof that certainty-4 labels are true."
+}

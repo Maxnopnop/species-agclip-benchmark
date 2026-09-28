@@ -10,7 +10,7 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--version',default='cub_tokens_v1');parser.add_argument('--seed',type=int,default=42);a=parser.parse_args();configure(a.version)
     p,m=exp.prepare();lock=json.loads((exp.OUT/'selection_locked.json').read_text());chosen=next(r for r in lock['selected'] if r['variant']=='tokens' and r['seed']==a.seed)
     checkpoint=ROOT/chosen['checkpoint'];cached=torch.load(checkpoint.parent/'final_predictions.pt',weights_only=True);checks=[]
-    for i in [0,200]:
+    for i in [0,len(cached['labels'])-1]:
         result,logits,probabilities=predict(checkpoint,Path(m['image_root'])/cached['paths'][i],p['seen_classes']+p['eval_unseen_classes'])
         torch.testing.assert_close(logits,cached['logits'][i],rtol=1e-4,atol=1e-4)
         torch.testing.assert_close(probabilities,cached['probability'][i],rtol=1e-4,atol=1e-4)

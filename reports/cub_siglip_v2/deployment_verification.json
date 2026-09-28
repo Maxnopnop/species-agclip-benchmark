@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "index": 0,
+      "max_logit_error": 5.960464477539062e-07,
+      "max_probability_error": 1.7881393432617188e-07,
+      "prediction_matches": true
+    },
+    {
+      "index": 749,
+      "max_logit_error": 7.152557373046875e-07,
+      "max_probability_error": 1.7881393432617188e-07,
+      "prediction_matches": true
+    }
+  ]
+}

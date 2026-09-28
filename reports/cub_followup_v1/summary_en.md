@@ -1,6 +1,6 @@
 # Frozen-global attribute-token diagnostics
 
-Completed versions: 5; training cells: 162. Pending: cub_regional_tokens_v1.
+Completed versions: 6; training cells: 186. Pending: none.
 
 No stable attribute-specific classification benefit is established. Attribute prediction, backbone replacement and seen/unseen calibration must be distinguished from AG gains. All controls and step-zero selections are retained below.
 
@@ -37,3 +37,7 @@ Independent tokens, an attribute-only residual, 24 versus 158 attributes, confid
 | cub_b16_v1 | tokens | 83.49 ± 0.08 | 96.67 ± 0.00 | 160/160/80 |
 | cub_b16_v1 | permuted | 83.49 ± 0.08 | 96.67 ± 0.00 | 160/160/80 |
 | cub_b16_v1 | constant | 83.49 ± 0.08 | 96.67 ± 0.00 | 160/160/80 |
+| cub_regional_tokens_v1 | tokens | 75.46 ± 0.30 | 93.33 ± 0.00 | 160/160/160 |
+| cub_regional_tokens_v1 | region_only | 75.46 ± 0.30 | 93.33 ± 0.00 | 160/160/160 |
+| cub_regional_tokens_v1 | pooled | 75.28 ± 0.61 | 93.33 ± 0.00 | 160/160/160 |
+| cub_regional_tokens_v1 | no_attribute_loss | 75.46 ± 0.30 | 93.33 ± 0.00 | 160/160/160 |

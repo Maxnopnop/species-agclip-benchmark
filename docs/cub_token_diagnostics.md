@@ -11,6 +11,14 @@ The evolving combined report is [summary_zh.md](../reports/cub_followup_v1/summa
 | cub_sparse_v1 | Dense/top-8 crossed with CE/symmetric contrastive loss and controls | 48 |
 | cub_b16_v1 | Same 158-attribute dense experiment using CLIP ViT-B/16 | 30 |
 | cub_regional_tokens_v1 | Freeze global features, tune only regional visual tail and fusion | 24 |
+| cub100_v1 | 100 new project species, 500 train images, 230 attributes, B/16 | 30 |
+| cub_siglip_v2 | Corrected lowercase SigLIP 2 on the same cub100 split | 30 |
+
+`cub_siglip_v1` is excluded: its capitalized class prompts exposed a fast Gemma tokenizer normalization defect. See its `INVALIDATED.md` and `inference_audit.json`; the corrected v2 retrains all controls. The same issue qualifies earlier SigLIP results in `visible_v1`; old code/caches remain immutable for audit. CLIP results are unaffected by this specific tokenizer issue.
+
+Additional diagnostics: `diagnose_cub_certainty.py`, `diagnose_cub_regions.py`, `diagnose_cub_oracle_regions.py`, `diagnose_cub_class_attributes.py`, `diagnose_cub_oracle_transfer.py`, `diagnose_cub_descriptions.py`, `diagnose_cub_mapped_attributes.py`, `diagnose_cub_attribute_transfer.py`, and `diagnose_cub_probe_regularization.py`. Class-profile and region oracles explicitly use privileged information and are not deployable results. Public-description and positive-only mapping alternatives have source links in versioned configs; they use no held-out image annotations.
+
+The new-species CLIP report is `reports/cub100_v1/summary_zh.md`; SigLIP's corrected report is `reports/cub_siglip_v2/summary_zh.md`. The original six-version report covers 186 training cells on the reused 20 species only. Do not mix these counts or metrics with the 100-species experiments.
 
 All fusion versions use seeds 42, 43, 44 and two learning rates, selected by development GZSL H, mean S/U and candidate CE in that order. Selections are locked before each version's final evaluation. Three fusion seeds do not cover split/pretraining/probe variability. This is reused-data exploratory research, not an independent confirmation or full AG-CLIP paper reproduction.
 
@@ -55,9 +63,15 @@ verify_cub_token_deployment.py --version cub_tokens_v1
 verify_cub_token_deployment.py --version cub_bottleneck_v1 --seed 43
 verify_cub_token_deployment.py --version cub_rich_v1
 verify_cub_token_deployment.py --version cub_b16_v1
+predict_cub_tokens.py E:\path\bird.jpg --version cub100_v1 --variant tokens --seed 42
+predict_cub_regional.py E:\path\bird.jpg
+predict_cub_siglip.py E:\path\bird.jpg --variant tokens --seed 42
+verify_cub_token_deployment.py --version cub100_v1
+verify_cub_regional_deployment.py
+verify_cub_siglip_deployment.py
 ```
 
-The default prediction candidate set is all 20 species; final benchmark metrics restrict candidates to 10 seen + 6 final-unseen species. These are different inference settings. No benchmark ground-truth label chooses inference regions or attribute prompts. Softmax scores are not calibrated probabilities.
+The default prediction candidate set is all 20 species (or 100 in cub100/SigLIP); final benchmark metrics restrict candidates to 10 seen + 6 final-unseen species (or 50 + 25). These are different inference settings. No benchmark ground-truth label chooses inference regions or attribute prompts. Softmax scores are not calibrated probabilities.
 
 The GPU gradient-cache test for regional training compares gradients against a direct micro-batched reference, checks frozen global logits and readout, and rejects held-out training labels. Deployment checks regenerate detector boxes and image features from original photos before comparing logits/probabilities to cached evaluation.
 

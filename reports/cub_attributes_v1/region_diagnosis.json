@@ -1,0 +1,41 @@
+{
+  "version": "cub_attributes_v1",
+  "stage": "development_only",
+  "images": 380,
+  "regions": 744,
+  "no_region_images": 0,
+  "query_counts": {
+    "4": 386,
+    "3": 135,
+    "0": 36,
+    "1": 180,
+    "2": 7
+  },
+  "box_area_fraction": {
+    "mean": 0.2109403212907338,
+    "median": 0.15059735201132335,
+    "p10": 0.028210067415730337,
+    "p90": 0.4873723076072535
+  },
+  "global_region_cosine": {
+    "mean": 0.8129677750090117,
+    "median": 0.8512217402458191,
+    "p10": 0.5961192846298218,
+    "p90": 0.95095095038414
+  },
+  "global_region_cosine_above_095_fraction": 0.10618279569892473,
+  "two_region_iou": {
+    "mean": 0.22422286428405117,
+    "median": 0.1987859925662407,
+    "p10": 0.07454245999207224,
+    "p90": 0.41208342388624614
+  },
+  "two_region_iou_above_080_fraction": 0.0,
+  "global_positive_attributes_retained_in_any_region": {
+    "mean": 0.8263942294082437,
+    "median": 0.9166666865348816,
+    "p10": 0.5,
+    "p90": 1.0
+  },
+  "scope": "Descriptive diagnostics only. Keypoint-based label retention is not localization IoU against true part masks or proof that an attribute is visible. Similar frozen embeddings indicate redundancy, not detector correctness."
+}
