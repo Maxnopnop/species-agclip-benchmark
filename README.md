@@ -1,0 +1,90 @@
+# Species recognition: five backbones with attribute-guided adaptation
+
+课程实验项目，主体位于 `E:\ELEC4240\SpeciesRecognition`。以少量有标签图片将四种 ImageNet 视觉模型对齐到 CLIP 文字空间，再比较五个模型的属性融合效果。
+
+## 实验定义
+
+| Backbone | Initial weights | Stage 1 | Stage 2 comparisons |
+|---|---|---|---|
+| EfficientNet-B0 | ImageNet-1K V1 | Train visual-to-text projection | Baseline / average / AG-CLIP adaptation |
+| ResNet-18 | ImageNet-1K V1 | Train visual-to-text projection | Same |
+| ConvNeXt-Tiny | ImageNet-1K V1 | Train visual-to-text projection | Same |
+| ViT-B/16 | ImageNet-1K V1 | Train visual-to-text projection | Same |
+| CLIP ViT-B/32 | OpenAI CLIP | Train residual visual adapter | Same |
+
+- 共享冻结的 OpenAI CLIP ViT-B/32 文字编码器。第一阶段以图像和正确类别名称提示构造分类交叉熵，学习图文匹配分数。它是**有监督小样本文字空间适配**，不是从头训练通用 CLIP，也不能由此声称掌握任意文本检索或未见物种零样本能力。
+- 初始实验冻结五个视觉主干，缓存全图与局部区域特征；训练投影/残差适配层及属性融合层。未进行全主干微调或随机图像增强，便于在 8 GB 显存上完成公平的第一轮验证。
+- AG-CLIP 改编：固定视觉属性描述 → OWL-ViT 区域定位 → 局部视觉特征与属性文字编码 → Cross-Attention Fusion → 类别文字相似度。属于论文思路的**自定义实现**，不是官方代码或原论文的严格复现；未实现论文完整的 CoCa 与 LLM 属性挖掘流程。
+- 三个变体均从同一个第一阶段检查点开始，并获得相同的额外训练轮数：`baseline` 继续训练对齐层；`average` 学习属性编码并平均融合；`agclip` 学习属性编码与交叉注意力融合。平均融合也有可训练的属性编码器。
+- 每张图均使用同一份属性提示集合，不按测试图片真实类别选择提示。验证集 macro-F1 选择检查点；测试集只报告结果。无区域检出时退回全图特征。
+- **用户预测时只需提供图片，但 AG 分支内部仍使用固定属性文字库与定位器。**这不同于“文字仅训练使用、部署完全不需要属性模块”的早期方案。
+
+## 两种数据规模
+
+**真实图片 pilot**：从官方 iNaturalist 2021 压缩包已下载部分中读取完整 JPEG，4 个物种共 60 张，每类 5 训练 / 5 验证 / 5 留出测试，固定种子。包括昆虫、哺乳动物和两种植物。它不代表完整物种分布，也不是正式的 100 物种结果。单张图片经过解码与 SHA256 记录；部分压缩包尚不能通过完整档案 MD5 校验。四类实验中 Top-5 恒为 100%，不用于评价。
+
+**正式方案**：100 物种，植物、昆虫、鸟类、哺乳动物、真菌各 20 类；每组 10 个属，每属 2 类。每类 40 张候选训练 / 10 验证 / 10 测试，共 6,000 张。训练与内部验证来自官方 train_mini，测试来自官方 val。`configs/benchmark.json` 定义 5/10/20-shot × 3 seeds × 5 backbones × 3 variants，共 135 组最终比较。
+
+官方图片包需要整体下载（train_mini 约 42 GB + val 约 8.4 GB）。目前下载与 pilot 可同时进行，只解压所需图片。主数据下载未完成时不能运行正式矩阵。
+
+`configs/pilot_attributes.json` 包含四个 pilot 物种的来源链接和经来源核对的 15 条视觉属性。它不是生物学专家审核，也不保证属性在每张图片中可见。`configs/attributes.json` 是早期通用调试词表，不应冒充已核查的 100 物种属性集。正式矩阵入口会要求另行准备覆盖全部 100 类的来源核对属性 JSON；不能直接使用 pilot 词表。
+
+## 在本机运行
+
+双击 `check_progress.cmd` 查看进度；双击 `pilot_models.cmd` 运行或重启真实 pilot。首次需要下载 CLIP、OWL-ViT 和视觉主干权重，所有缓存位于 E 盘本项目 `cache`。已完成实验会保留；未完成模型会从已保存的第一阶段检查点重新运行比较阶段。不要同时启动两个相同工作流。
+
+```powershell
+cd E:\ELEC4240\SpeciesRecognition
+# 官方完整数据：已经有后台下载时不要重复启动
+.\.venv\Scripts\python.exe data_tools.py download
+# 已下载前缀至少包含 4 个完整类别后，准备独立 pilot
+.\.venv\Scripts\python.exe make_pilot.py
+# 顺序处理五个模型（默认每类 5 张，第一阶段 10 轮、比较阶段各 10 轮）
+.\.venv\Scripts\python.exe benchmark.py all
+# 仅重跑/补齐训练，无需重新定位和提取图像特征
+.\.venv\Scripts\python.exe benchmark.py train
+# 导出表格与图表，不复制数据图片或模型权重
+.\.venv\Scripts\python.exe report_results.py
+# 对一张新图片运行已训练的 AG 模型（替换图片路径）
+.\.venv\Scripts\python.exe predict_multimodal.py --checkpoint runs\pilot_multimodal\efficientnet_b0_shots5_seed42\agclip\best.pt --attributes configs\pilot_attributes.json --image E:\path\photo.jpg
+# 正式 100 类数据与已核查属性均准备完毕后
+.\.venv\Scripts\python.exe run_matrix.py --attributes configs\main_attributes.json
+# 自动验证数据泄漏保护、断点下载、五个真实架构的前向传播、梯度及检查点重载
+.\.venv\Scripts\python.exe -m unittest -v test_project test_multimodal test_experiment
+```
+
+`benchmark.py --help` 可指定模型、样本数、随机种子、轮数及独立输出目录。改变实验设置时指定新的 `--output`；改变数据或属性时还要指定新的 `--cache`。缓存检查元数据与属性文件哈希，禁止静默混用。
+
+## 结果文件
+
+- `runs/pilot_multimodal/status.json`：当前阶段或失败原因。
+- `runs/pilot_multimodal/comparison.csv`：五模型 × 三变体汇总。
+- 每个模型目录中的 `alignment/best.pt`：第一阶段适配层；各变体包含 `best.pt`、`history.csv`、`metrics.json`、`predictions.json`、`confusion_matrix.csv`。
+- `reports/pilot/`：可上传的汇总报告与图表；实际生成后才存在。
+- 原来的纯图片 EfficientNet 分类实验保留在 `run.py`，说明见 [legacy guide](docs/legacy_efficientnet.md)。其全模型微调训练预算与当前冻结主干方案不同，不能直接作为控制条件归因提升。
+
+对比 Top-1、macro-F1，并在正式多种子结果中报告均值及标准差。先检查是否改善，不预设 AG 必然有效。记录的比较训练耗时不含检测器、特征提取与下载，不能当作端到端推理耗时。预训练数据是否与 iNaturalist 图片重叠无法由此实验排除。
+
+## 环境与重建
+
+本机 Python 3.12、PyTorch 2.11.0+cu128、Torchvision 0.26.0+cu128，RTX 5060 Laptop 8 GB。项目 venv 复用 `E:\conda-envs\comp4471` 已有底层依赖；新装 OpenCLIP、Transformers 等在项目 venv 内，不修改原课程环境。
+
+在另一台 Windows CUDA 机器上建立独立环境：
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu128
+.\.venv\Scripts\python.exe data_tools.py prepare
+```
+
+需将本机的 `data/manifest.json`、`data/pilot/manifest.json` 中 `image_root` 改为新位置；不要搬走旧 venv。CPU 仅适合程序检查或较慢的试验，可给 benchmark 加 `--device cpu`。
+
+## 数据、权重与引用
+
+数据仅用于课程教学与非商业研究，遵循官方及单张图片许可，保留元数据署名。Git 排除 `data/`、`cache/`、`runs/`、虚拟环境、密钥和权重；不重新分发图片。代码使用 PyTorch、Torchvision、OpenCLIP 与 Transformers 的公开 API。
+
+- [iNaturalist 2021 official release](https://github.com/visipedia/inat_comp/tree/master/2021)
+- [CLIP paper](https://proceedings.mlr.press/v139/radford21a.html) and [OpenCLIP implementation](https://github.com/mlfoundations/open_clip)
+- [Google OWL-ViT model](https://huggingface.co/google/owlvit-base-patch32)
+- [AG-CLIP: Attribute-Guided CLIP for Zero-Shot Fine-Grained Recognition](https://doi.org/10.1109/OJCS.2026.3654171)
+- Pilot attribute sources are recorded individually in `configs/pilot_attributes.json`.

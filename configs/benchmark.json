@@ -1,0 +1,17 @@
+{
+  "protocol": "supervised_few_shot_alignment_then_attribute_adaptation",
+  "backbones": ["efficientnet_b0", "resnet18", "convnext_tiny", "vit_b_16", "clip_vit_b32"],
+  "text_encoder": "OpenAI CLIP ViT-B/32 via open_clip_torch",
+  "visual_backbones_frozen": true,
+  "detector": "google/owlvit-base-patch32",
+  "shots": [5, 10, 20],
+  "seeds": [42, 43, 44],
+  "alignment_epochs": 30,
+  "comparison_epochs": 20,
+  "variants": ["baseline", "average", "agclip"],
+  "selection_metric": "validation_macro_f1",
+  "test_policy": "report only after settings fixed",
+  "comparison_rule": "All comparison variants start from the SAME stage-one alignment checkpoint; baseline also receives comparison_epochs additional training.",
+  "initial_pilot": {"shots": 5, "seed": 42, "alignment_epochs": 10, "comparison_epochs": 10},
+  "claim_limit": "Small-sample supervised text-space adaptation, not general CLIP pretraining or unseen-species zero-shot performance. AG-CLIP adaptation, not exact original replication."
+}

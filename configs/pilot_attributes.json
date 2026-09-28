@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "status": "source_checked_pilot_vocabulary",
+  "description": "Visible attribute phrases extracted by the assistant from the cited references and checked against their descriptions. Union vocabulary is supplied to every image; no ground-truth class is used to select prompts. Only the four pilot species are covered.",
+  "species_descriptions_reviewed": true,
+  "review_scope": "Assistant checked source support; not a claim of expert biological validation. Attributes may be absent, occluded or variable in an individual photo.",
+  "prompts": [
+    "red or orange insect wing cases with black spots",
+    "a black insect pronotum with pale edges",
+    "pale markings on a black insect pronotum",
+    "reddish brown fur on an animal back",
+    "white fur on an animal underside",
+    "small animal ears",
+    "a long pale animal tail",
+    "long narrow green leaves",
+    "silvery leaf undersides",
+    "silvery young twigs",
+    "silvery pale fruit",
+    "rounded leaves with fine hairs",
+    "purple blotches on leaves",
+    "pairs of rounded leaves",
+    "small red fruit on short stalks"
+  ],
+  "species": [
+    {
+      "category_id": 328,
+      "name": "Hippodamia variegata",
+      "source_urls": ["https://databases.nbair.res.in/Featured_insects/Hippodamia-variegata.php", "https://www.bugguide.net/node/view/14091"],
+      "description": "The wing cases range from orange to red and carry a variable pattern of dark spots. The black pronotum has pale borders and pale markings.",
+      "attribute_ids": [0, 1, 2]
+    },
+    {
+      "category_id": 4827,
+      "name": "Geosciurus inauris",
+      "source_urls": ["https://animaldiversity.org/accounts/Xerus_inauris/", "https://www.mammaldiversity.org/taxon/1001835/"],
+      "description": "This squirrel has a reddish-brown back, pale ventral fur, small ears and a conspicuous long pale tail. The reference uses the synonym Xerus inauris.",
+      "attribute_ids": [3, 4, 5, 6]
+    },
+    {
+      "category_id": 9296,
+      "name": "Elaeagnus angustifolia",
+      "source_urls": ["https://snr.unl.edu/data/trees/identification/basictree.aspx?sid=29"],
+      "description": "Leaves are elongated and slender with a silver-toned lower surface. New twigs and the fruit also have a pale silvery appearance.",
+      "attribute_ids": [7, 8, 9, 10]
+    },
+    {
+      "category_id": 8333,
+      "name": "Coprosma rotundifolia",
+      "source_urls": ["https://www.nzpcn.org.nz/flora/species/coprosma-rotundifolia/"],
+      "description": "The paired, broadly rounded leaves have fine hairs and may show purple patches. Small red fruit can appear on short stalks; fruit color varies.",
+      "attribute_ids": [11, 12, 13, 14]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "status": "pilot_generic_vocabulary",
+  "description": "A fixed label-independent vocabulary for pipeline and pilot experiments. These prompts describe visible appearances, not verified facts about particular species. No prompts are selected using an image's ground-truth species.",
+  "sources": [
+    "https://www.researchgate.net/publication/399822501_AG-CLIP_Attribute-Guided_CLIP_for_Zero-Shot_Fine-Grained_Recognition",
+    "https://huggingface.co/google/owlvit-base-patch32"
+  ],
+  "prompts": [
+    "a red flower", "a yellow flower", "a white flower", "a purple flower",
+    "a broad leaf", "a narrow leaf", "a serrated leaf", "a needle shaped leaf",
+    "a mushroom cap", "mushroom gills", "a spotted mushroom cap", "a mushroom stalk",
+    "a spotted insect wing", "a striped insect body", "an insect antenna", "an insect leg",
+    "a red bird head", "a black bird head", "a white bird breast", "a striped bird wing",
+    "a long bird beak", "a short bird beak", "a bird tail", "a bird crest",
+    "a striped animal coat", "a spotted animal coat", "a long animal tail", "a short animal tail",
+    "a pointed animal ear", "a rounded animal ear", "an animal horn", "brown fur"
+  ],
+  "species_descriptions_reviewed": false,
+  "formal_study_requirement": "Before final proposal experiments, add source-backed, manually reviewed species descriptions and mine attributes; freeze the resulting union vocabulary using training/validation only. This pilot vocabulary is not a reproduction of the paper's LLM attribute mining."
+}
