@@ -1,0 +1,27 @@
+{
+  "reviewer": "Assistant visual inspection of four local contact sheets, 2026-09-28",
+  "scope": "One preselected validation image per species, center crop, top-1 retrieved attribute from existing seed42 ag_attention checkpoints. This is descriptive review, not expert ground truth, a species-identification audit, or a measured general attribute accuracy.",
+  "categories": {"supported": "Visible crop evidence supports the main descriptive claim", "unsupported": "A key claimed object, color, structure or view is not supported by the displayed crop", "uncertain": "Resolution, anatomy or partial visibility prevents a reliable judgment", "background": "Prompt describes visible background rather than the target organism"},
+  "items": [
+    {"label":0,"efficientnet_b0":"uncertain","clip_vit_b32":"supported","note":"Pale moth wings are visible; fine marginal fringe detail is harder to resolve."},
+    {"label":1,"efficientnet_b0":"unsupported","clip_vit_b32":"uncertain","note":"Pale wings are visible but the claimed black spots are not clear; exact hindwing attribution is uncertain."},
+    {"label":2,"efficientnet_b0":"uncertain","clip_vit_b32":"uncertain","note":"The butterfly occupies a small area; fine fringe and antenna details need a closer expert review."},
+    {"label":3,"efficientnet_b0":"uncertain","clip_vit_b32":"uncertain","note":"Brown wings and pale marks are visible, but forewing versus hindwing and the exact fringe line are not confidently assessed."},
+    {"label":4,"efficientnet_b0":"background","clip_vit_b32":"uncertain","note":"EfficientNet retrieves tufted green grass, which describes the background. The butterfly is tiny, making the claimed fringe detail unreliable."},
+    {"label":5,"efficientnet_b0":"unsupported","clip_vit_b32":"unsupported","note":"The displayed view shows pale spotted wing undersides, not bright blue upper wings. No sex judgment is made."},
+    {"label":6,"efficientnet_b0":"unsupported","clip_vit_b32":"supported","note":"Wings are mainly pale gray-brown rather than dark walnut; a pale margin is visible."},
+    {"label":7,"efficientnet_b0":"supported","clip_vit_b32":"supported","note":"Dark brown moth wings are visible."},
+    {"label":8,"efficientnet_b0":"supported","clip_vit_b32":"supported","note":"Orange, black and pale yellow wing markings are visible, although center cropping clips parts of the butterflies."},
+    {"label":9,"efficientnet_b0":"unsupported","clip_vit_b32":"unsupported","note":"Open upper wings have red-orange patches and white spots. Yellow markings and a plain brown hindwing underside are not supported by this view."},
+    {"label":10,"efficientnet_b0":"supported","clip_vit_b32":"supported","note":"Small broad, heart-like grass seed heads are visible against the hand."},
+    {"label":11,"efficientnet_b0":"uncertain","clip_vit_b32":"unsupported","note":"The crop emphasizes a narrow grass inflorescence. Folded leaves are difficult to verify and heart-shaped seed heads are not evident."},
+    {"label":12,"efficientnet_b0":"unsupported","clip_vit_b32":"supported","note":"A yellow daisy-like flower is visible; the cactus-flower claim is unsupported."},
+    {"label":13,"efficientnet_b0":"unsupported","clip_vit_b32":"unsupported","note":"The crop shows leaves and dried vegetation, with neither a barrel cactus nor visible yellow daisy heads."},
+    {"label":14,"efficientnet_b0":"unsupported","clip_vit_b32":"unsupported","note":"The visible cactus has branching segments; the upright barrel-shape claim is not supported."},
+    {"label":15,"efficientnet_b0":"supported","clip_vit_b32":"supported","note":"An upright barrel-shaped cactus is clearly visible."},
+    {"label":16,"efficientnet_b0":"supported","clip_vit_b32":"uncertain","note":"Smooth-edged substantial leaves are visible. Forked thorns are difficult to distinguish confidently from branches and leaf stalks."},
+    {"label":17,"efficientnet_b0":"unsupported","clip_vit_b32":"uncertain","note":"Leaves and inflated fruit are visible, not yellow daisy heads. Leaf fleshiness is not confidently established from the crop."},
+    {"label":18,"efficientnet_b0":"unsupported","clip_vit_b32":"supported","note":"Small yellow-green structures around tiny flowers are visible; a daisy-type head is unsupported."},
+    {"label":19,"efficientnet_b0":"unsupported","clip_vit_b32":"unsupported","note":"Pale upright flower clusters are visible; no small red berries are evident."}
+  ]
+}

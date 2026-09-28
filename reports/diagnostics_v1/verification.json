@@ -1,0 +1,10 @@
+{
+  "completed_training_runs": 96,
+  "training_and_validation_only": true,
+  "frozen_tail_unchanged_runs": 48,
+  "trainable_tail_nonzero_gradient_and_change_runs": 48,
+  "tests_passed": 3,
+  "test_command": ".venv/Scripts/python.exe -m unittest -v test_diagnostics",
+  "visual_samples": 20,
+  "posthoc_intervention_records": 72
+}

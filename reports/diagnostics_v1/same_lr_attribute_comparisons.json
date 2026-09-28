@@ -1,0 +1,194 @@
+[
+  {
+    "backbone": "efficientnet_b0",
+    "regime": "frozen",
+    "lr": 0.001,
+    "control": "zero",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "regime": "frozen",
+    "lr": 0.001,
+    "control": "permuted",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "regime": "frozen",
+    "lr": 0.0003,
+    "control": "zero",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "regime": "frozen",
+    "lr": 0.0003,
+    "control": "permuted",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "regime": "tail",
+    "lr": 0.001,
+    "control": "zero",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.5000000000000004
+    ],
+    "mean_gain_pp": 0.16666666666666682
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "regime": "tail",
+    "lr": 0.001,
+    "control": "permuted",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "regime": "tail",
+    "lr": 0.0003,
+    "control": "zero",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "regime": "tail",
+    "lr": 0.0003,
+    "control": "permuted",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "regime": "frozen",
+    "lr": 0.001,
+    "control": "zero",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "regime": "frozen",
+    "lr": 0.001,
+    "control": "permuted",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "regime": "frozen",
+    "lr": 0.0003,
+    "control": "zero",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "regime": "frozen",
+    "lr": 0.0003,
+    "control": "permuted",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "regime": "tail",
+    "lr": 0.001,
+    "control": "zero",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "regime": "tail",
+    "lr": 0.001,
+    "control": "permuted",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "regime": "tail",
+    "lr": 0.0003,
+    "control": "zero",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "regime": "tail",
+    "lr": 0.0003,
+    "control": "permuted",
+    "per_seed_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0
+  }
+]

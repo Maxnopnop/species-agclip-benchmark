@@ -1,0 +1,33 @@
+[
+  {
+    "backbone": "efficientnet_b0",
+    "images": 800,
+    "splits": [
+      "train",
+      "val"
+    ],
+    "prefix_shape": [
+      800,
+      6,
+      192,
+      7,
+      7
+    ],
+    "max_encoder_reconstruction_error": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "images": 800,
+    "splits": [
+      "train",
+      "val"
+    ],
+    "prefix_shape": [
+      800,
+      6,
+      50,
+      768
+    ],
+    "max_encoder_reconstruction_error": 0.0
+  }
+]

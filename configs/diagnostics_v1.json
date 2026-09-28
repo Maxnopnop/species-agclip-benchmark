@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "backbones": ["efficientnet_b0", "clip_vit_b32"],
+  "shots": 10,
+  "seeds": [42, 43, 44],
+  "modes": ["baseline", "matched", "permuted", "zero"],
+  "regimes": ["frozen", "tail"],
+  "head_learning_rates": [0.001, 0.0003],
+  "tail_lr_ratio": 0.1,
+  "updates": 100,
+  "batch_size": 16,
+  "validation_steps": [50, 100],
+  "initialization": "Existing 10-shot alignment checkpoint for the corresponding seed; new attention fusion initialized identically for matched/permuted/zero.",
+  "text_control": "Same attention architecture. Select top-4 attributes using unchanged retrieval keys; matched values, fixed random derangement of values per seed, or zero values. No auxiliary attribute loss in this controlled comparison.",
+  "tail_definition": "EfficientNet final MBConv stage plus final convolution; CLIP final transformer block plus ln_post and visual projection. Earlier layers frozen. BatchNorm running statistics and stochastic depth stay in eval mode in both regimes.",
+  "selection": "Choose one head learning rate per backbone/regime/mode by mean validation macro-F1 over three seeds; ties by validation loss. Same two-candidate budget everywhere.",
+  "scope": "Exploratory diagnostics on existing training and validation splits only. No new test evaluation and no confirmatory significance claims. Validation has been reused for development.",
+  "visual_audit": "One validation image per species chosen by fixed seed, center crop, existing ag_attention checkpoint seed42. Assistant assessment of visible prompt support, not expert attribute annotation.",
+  "cache": "Float32 activations immediately before trainable tail, train/validation only. Reconstructed features checked against full encoder. No random image augmentation, consistent with previous experiment."
+}

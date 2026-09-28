@@ -1,0 +1,362 @@
+[
+  {
+    "backbone": "efficientnet_b0",
+    "label": 0,
+    "species": "Cabera pusaria",
+    "path": "train_mini/01158_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Cabera_pusaria/f9451c8e-b3b6-4b14-b4c9-a1df964f925e.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 17,
+    "prompt": "a photo showing pale fringe along moth forewings."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 1,
+    "species": "Heterophleps triguttaria",
+    "path": "train_mini/01227_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Heterophleps_triguttaria/772d3b8c-2ab3-4283-97c3-bb3ff7792256.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 11,
+    "prompt": "a photo showing white wing undersides with black spots."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 2,
+    "species": "Euphyes vestris",
+    "path": "train_mini/01367_Animalia_Arthropoda_Insecta_Lepidoptera_Hesperiidae_Euphyes_vestris/c0af7f39-edaa-4869-8f23-1d9521376df4.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 17,
+    "prompt": "a photo showing pale fringe along moth forewings."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 3,
+    "species": "Panoquina ocola",
+    "path": "train_mini/01388_Animalia_Arthropoda_Insecta_Lepidoptera_Hesperiidae_Panoquina_ocola/19ce1467-d06b-441e-89c5-588821967514.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 8,
+    "prompt": "a photo showing dark brown wings with pale forewing spots."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 4,
+    "species": "Icaricia acmon",
+    "path": "train_mini/01484_Animalia_Arthropoda_Insecta_Lepidoptera_Lycaenidae_Icaricia_acmon/915ec529-d6e3-478e-9b9c-2fe1e075a5ae.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 28,
+    "prompt": "a photo showing tufted green grass."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 5,
+    "species": "Icaricia lupini",
+    "path": "train_mini/01486_Animalia_Arthropoda_Insecta_Lepidoptera_Lycaenidae_Icaricia_lupini/1e9ef1bb-6e22-4b4c-87f5-e4a8943ad132.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 13,
+    "prompt": "a photo showing bright blue male butterfly wings."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 6,
+    "species": "Agrotis segetum",
+    "path": "train_mini/01569_Animalia_Arthropoda_Insecta_Lepidoptera_Noctuidae_Agrotis_segetum/2a7d2708-ce1a-41f9-89b6-907134ea603b.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 20,
+    "prompt": "a photo showing dark walnut brown moth wings."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 7,
+    "species": "Ochropleura plecta",
+    "path": "train_mini/01670_Animalia_Arthropoda_Insecta_Lepidoptera_Noctuidae_Ochropleura_plecta/89b2c888-b48c-4f86-b58a-4eb71421434f.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 20,
+    "prompt": "a photo showing dark walnut brown moth wings."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 8,
+    "species": "Aglais urticae",
+    "path": "train_mini/01771_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Aglais_urticae/5abb0f3f-9a3c-42df-ba1f-9a2987583953.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 22,
+    "prompt": "a photo showing orange butterfly wings with black and yellow markings."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 9,
+    "species": "Anartia amathea",
+    "path": "train_mini/01775_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Anartia_amathea/d141046d-b4c4-4d0f-b5d9-6aa0c3d9a0c3.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 22,
+    "prompt": "a photo showing orange butterfly wings with black and yellow markings."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 10,
+    "species": "Briza minor",
+    "path": "train_mini/06343_Plantae_Tracheophyta_Liliopsida_Poales_Poaceae_Briza_minor/767f4672-1800-40f4-a1b7-d8ae9cc8e653.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 29,
+    "prompt": "a photo showing small heart shaped grass seed heads."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 11,
+    "species": "Koeleria macrantha",
+    "path": "train_mini/06385_Plantae_Tracheophyta_Liliopsida_Poales_Poaceae_Koeleria_macrantha/db1aa67a-97eb-485d-9578-ca06e435c719.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 31,
+    "prompt": "a photo showing narrow folded grass leaves."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 12,
+    "species": "Grindelia stricta",
+    "path": "train_mini/06814_Plantae_Tracheophyta_Magnoliopsida_Asterales_Asteraceae_Grindelia_stricta/d1cdcd34-35e9-4fc4-996b-72a729199d38.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 41,
+    "prompt": "a photo showing yellow green cactus flowers."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 13,
+    "species": "Solidago sempervirens",
+    "path": "train_mini/07006_Plantae_Tracheophyta_Magnoliopsida_Asterales_Asteraceae_Solidago_sempervirens/eb0ad1ce-f2cf-4d2e-a55e-0d5779770904.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 42,
+    "prompt": "a photo showing upright barrel shaped cactus."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 14,
+    "species": "Cylindropuntia whipplei",
+    "path": "train_mini/07356_Plantae_Tracheophyta_Magnoliopsida_Caryophyllales_Cactaceae_Cylindropuntia_whipplei/ee885507-023b-4cd8-9dda-ae9926f56897.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 42,
+    "prompt": "a photo showing upright barrel shaped cactus."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 15,
+    "species": "Ferocactus cylindraceus",
+    "path": "train_mini/07376_Plantae_Tracheophyta_Magnoliopsida_Caryophyllales_Cactaceae_Ferocactus_cylindraceus/99190732-1a98-4d33-857d-26afec2f3c7f.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 42,
+    "prompt": "a photo showing upright barrel shaped cactus."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 16,
+    "species": "Carissa bispinosa",
+    "path": "train_mini/08264_Plantae_Tracheophyta_Magnoliopsida_Gentianales_Apocynaceae_Carissa_bispinosa/fb1dcc25-0635-4c89-9eb9-61d155e1284e.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 37,
+    "prompt": "a photo showing smooth edged fleshy leaves."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 17,
+    "species": "Gomphocarpus cancellatus",
+    "path": "train_mini/08272_Plantae_Tracheophyta_Magnoliopsida_Gentianales_Apocynaceae_Gomphocarpus_cancellatus/ab30902a-476b-4780-a7d8-5a17f9f5ac17.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 33,
+    "prompt": "a photo showing yellow daisy like flower heads."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 18,
+    "species": "Chrysosplenium alternifolium",
+    "path": "train_mini/09649_Plantae_Tracheophyta_Magnoliopsida_Saxifragales_Saxifragaceae_Chrysosplenium_alternifolium/edc421ed-4b87-4980-940e-d39b1839c697.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 33,
+    "prompt": "a photo showing yellow daisy like flower heads."
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "label": 19,
+    "species": "Heuchera cylindrica",
+    "path": "train_mini/09652_Plantae_Tracheophyta_Magnoliopsida_Saxifragales_Saxifragaceae_Heuchera_cylindrica/65f231eb-c3f1-4d21-9013-12b6d11bbf78.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 48,
+    "prompt": "a photo showing small red oval berries."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 0,
+    "species": "Cabera pusaria",
+    "path": "train_mini/01158_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Cabera_pusaria/f9451c8e-b3b6-4b14-b4c9-a1df964f925e.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 0,
+    "prompt": "a photo showing white moth wings."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 1,
+    "species": "Heterophleps triguttaria",
+    "path": "train_mini/01227_Animalia_Arthropoda_Insecta_Lepidoptera_Geometridae_Heterophleps_triguttaria/772d3b8c-2ab3-4283-97c3-bb3ff7792256.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 19,
+    "prompt": "a photo showing very white hindwings."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 2,
+    "species": "Euphyes vestris",
+    "path": "train_mini/01367_Animalia_Arthropoda_Insecta_Lepidoptera_Hesperiidae_Euphyes_vestris/c0af7f39-edaa-4869-8f23-1d9521376df4.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 27,
+    "prompt": "a photo showing slender butterfly antennae."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 3,
+    "species": "Panoquina ocola",
+    "path": "train_mini/01388_Animalia_Arthropoda_Insecta_Lepidoptera_Hesperiidae_Panoquina_ocola/19ce1467-d06b-441e-89c5-588821967514.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 18,
+    "prompt": "a photo showing thin dark line inside the wing fringe."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 4,
+    "species": "Icaricia acmon",
+    "path": "train_mini/01484_Animalia_Arthropoda_Insecta_Lepidoptera_Lycaenidae_Icaricia_acmon/915ec529-d6e3-478e-9b9c-2fe1e075a5ae.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 18,
+    "prompt": "a photo showing thin dark line inside the wing fringe."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 5,
+    "species": "Icaricia lupini",
+    "path": "train_mini/01486_Animalia_Arthropoda_Insecta_Lepidoptera_Lycaenidae_Icaricia_lupini/1e9ef1bb-6e22-4b4c-87f5-e4a8943ad132.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 13,
+    "prompt": "a photo showing bright blue male butterfly wings."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 6,
+    "species": "Agrotis segetum",
+    "path": "train_mini/01569_Animalia_Arthropoda_Insecta_Lepidoptera_Noctuidae_Agrotis_segetum/2a7d2708-ce1a-41f9-89b6-907134ea603b.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 17,
+    "prompt": "a photo showing pale fringe along moth forewings."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 7,
+    "species": "Ochropleura plecta",
+    "path": "train_mini/01670_Animalia_Arthropoda_Insecta_Lepidoptera_Noctuidae_Ochropleura_plecta/89b2c888-b48c-4f86-b58a-4eb71421434f.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 20,
+    "prompt": "a photo showing dark walnut brown moth wings."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 8,
+    "species": "Aglais urticae",
+    "path": "train_mini/01771_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Aglais_urticae/5abb0f3f-9a3c-42df-ba1f-9a2987583953.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 22,
+    "prompt": "a photo showing orange butterfly wings with black and yellow markings."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 9,
+    "species": "Anartia amathea",
+    "path": "train_mini/01775_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Anartia_amathea/d141046d-b4c4-4d0f-b5d9-6aa0c3d9a0c3.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 9,
+    "prompt": "a photo showing plain brown hindwing underside."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 10,
+    "species": "Briza minor",
+    "path": "train_mini/06343_Plantae_Tracheophyta_Liliopsida_Poales_Poaceae_Briza_minor/767f4672-1800-40f4-a1b7-d8ae9cc8e653.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 29,
+    "prompt": "a photo showing small heart shaped grass seed heads."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 11,
+    "species": "Koeleria macrantha",
+    "path": "train_mini/06385_Plantae_Tracheophyta_Liliopsida_Poales_Poaceae_Koeleria_macrantha/db1aa67a-97eb-485d-9578-ca06e435c719.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 29,
+    "prompt": "a photo showing small heart shaped grass seed heads."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 12,
+    "species": "Grindelia stricta",
+    "path": "train_mini/06814_Plantae_Tracheophyta_Magnoliopsida_Asterales_Asteraceae_Grindelia_stricta/d1cdcd34-35e9-4fc4-996b-72a729199d38.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 33,
+    "prompt": "a photo showing yellow daisy like flower heads."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 13,
+    "species": "Solidago sempervirens",
+    "path": "train_mini/07006_Plantae_Tracheophyta_Magnoliopsida_Asterales_Asteraceae_Solidago_sempervirens/eb0ad1ce-f2cf-4d2e-a55e-0d5779770904.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 33,
+    "prompt": "a photo showing yellow daisy like flower heads."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 14,
+    "species": "Cylindropuntia whipplei",
+    "path": "train_mini/07356_Plantae_Tracheophyta_Magnoliopsida_Caryophyllales_Cactaceae_Cylindropuntia_whipplei/ee885507-023b-4cd8-9dda-ae9926f56897.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 42,
+    "prompt": "a photo showing upright barrel shaped cactus."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 15,
+    "species": "Ferocactus cylindraceus",
+    "path": "train_mini/07376_Plantae_Tracheophyta_Magnoliopsida_Caryophyllales_Cactaceae_Ferocactus_cylindraceus/99190732-1a98-4d33-857d-26afec2f3c7f.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 42,
+    "prompt": "a photo showing upright barrel shaped cactus."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 16,
+    "species": "Carissa bispinosa",
+    "path": "train_mini/08264_Plantae_Tracheophyta_Magnoliopsida_Gentianales_Apocynaceae_Carissa_bispinosa/fb1dcc25-0635-4c89-9eb9-61d155e1284e.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 45,
+    "prompt": "a photo showing forked thorns on woody branches."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 17,
+    "species": "Gomphocarpus cancellatus",
+    "path": "train_mini/08272_Plantae_Tracheophyta_Magnoliopsida_Gentianales_Apocynaceae_Gomphocarpus_cancellatus/ab30902a-476b-4780-a7d8-5a17f9f5ac17.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 37,
+    "prompt": "a photo showing smooth edged fleshy leaves."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 18,
+    "species": "Chrysosplenium alternifolium",
+    "path": "train_mini/09649_Plantae_Tracheophyta_Magnoliopsida_Saxifragales_Saxifragaceae_Chrysosplenium_alternifolium/edc421ed-4b87-4980-940e-d39b1839c697.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 53,
+    "prompt": "a photo showing flat yellow green bracts surrounding tiny flowers."
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "label": 19,
+    "species": "Heuchera cylindrica",
+    "path": "train_mini/09652_Plantae_Tracheophyta_Magnoliopsida_Saxifragales_Saxifragaceae_Heuchera_cylindrica/65f231eb-c3f1-4d21-9013-12b6d11bbf78.jpg",
+    "crop": "center_65_percent",
+    "top1_attribute_id": 48,
+    "prompt": "a photo showing small red oval berries."
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "counts": {
+    "efficientnet_b0": {
+      "uncertain": 4,
+      "unsupported": 10,
+      "background": 1,
+      "supported": 5
+    },
+    "clip_vit_b32": {
+      "supported": 8,
+      "uncertain": 6,
+      "unsupported": 6
+    }
+  },
+  "note": "Descriptive assistant review of 20 fixed samples, not an expert-labeled attribute benchmark."
+}

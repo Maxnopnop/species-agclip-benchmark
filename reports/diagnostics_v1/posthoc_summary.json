@@ -1,0 +1,194 @@
+[
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_mean",
+    "mode": "matched",
+    "accuracy_mean": 0.7566666666666667,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_mean",
+    "mode": "permuted",
+    "accuracy_mean": 0.7566666666666667,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0011437027521121006
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_mean",
+    "mode": "zero",
+    "accuracy_mean": 0.7566666666666667,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0015745511433730524
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_mean",
+    "mode": "no_branch",
+    "accuracy_mean": 0.76,
+    "mean_flipped_predictions": 1.3333333333333333,
+    "mean_probability_l1": 0.012297892632583777
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_attention",
+    "mode": "matched",
+    "accuracy_mean": 0.7566666666666667,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_attention",
+    "mode": "permuted",
+    "accuracy_mean": 0.7566666666666667,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.00037433664450266707
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_attention",
+    "mode": "zero",
+    "accuracy_mean": 0.7566666666666667,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0006861058354843408
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_attention",
+    "mode": "no_branch",
+    "accuracy_mean": 0.7566666666666667,
+    "mean_flipped_predictions": 1,
+    "mean_probability_l1": 0.011508463571468988
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_aux",
+    "mode": "matched",
+    "accuracy_mean": 0.7666666666666667,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_aux",
+    "mode": "permuted",
+    "accuracy_mean": 0.7666666666666667,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0003181723683762054
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_aux",
+    "mode": "zero",
+    "accuracy_mean": 0.7666666666666667,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0008044205994034807
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "variant": "ag_aux",
+    "mode": "no_branch",
+    "accuracy_mean": 0.765,
+    "mean_flipped_predictions": 3.3333333333333335,
+    "mean_probability_l1": 0.025405700628956158
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_mean",
+    "mode": "matched",
+    "accuracy_mean": 0.8066666666666666,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_mean",
+    "mode": "permuted",
+    "accuracy_mean": 0.8083333333333333,
+    "mean_flipped_predictions": 0.3333333333333333,
+    "mean_probability_l1": 0.022996992493669193
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_mean",
+    "mode": "zero",
+    "accuracy_mean": 0.8016666666666666,
+    "mean_flipped_predictions": 1,
+    "mean_probability_l1": 0.03134298572937647
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_mean",
+    "mode": "no_branch",
+    "accuracy_mean": 0.7983333333333333,
+    "mean_flipped_predictions": 2.3333333333333335,
+    "mean_probability_l1": 0.04511247326930364
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_attention",
+    "mode": "matched",
+    "accuracy_mean": 0.8033333333333333,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_attention",
+    "mode": "permuted",
+    "accuracy_mean": 0.8016666666666666,
+    "mean_flipped_predictions": 0.3333333333333333,
+    "mean_probability_l1": 0.009719502025594315
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_attention",
+    "mode": "zero",
+    "accuracy_mean": 0.7983333333333333,
+    "mean_flipped_predictions": 1,
+    "mean_probability_l1": 0.013568683993071318
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_attention",
+    "mode": "no_branch",
+    "accuracy_mean": 0.7966666666666666,
+    "mean_flipped_predictions": 1.3333333333333333,
+    "mean_probability_l1": 0.026197394356131554
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_aux",
+    "mode": "matched",
+    "accuracy_mean": 0.8066666666666666,
+    "mean_flipped_predictions": 0,
+    "mean_probability_l1": 0.0
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_aux",
+    "mode": "permuted",
+    "accuracy_mean": 0.8033333333333333,
+    "mean_flipped_predictions": 1.3333333333333333,
+    "mean_probability_l1": 0.019031852192711085
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_aux",
+    "mode": "zero",
+    "accuracy_mean": 0.8033333333333333,
+    "mean_flipped_predictions": 2.3333333333333335,
+    "mean_probability_l1": 0.025181802610556286
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "variant": "ag_aux",
+    "mode": "no_branch",
+    "accuracy_mean": 0.8066666666666666,
+    "mean_flipped_predictions": 1.6666666666666667,
+    "mean_probability_l1": 0.033841523652275406
+  }
+]
