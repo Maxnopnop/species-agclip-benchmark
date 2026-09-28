@@ -1,0 +1,307 @@
+{
+  "version": 2,
+  "species_descriptions_reviewed": true,
+  "review_scope": "Source-supported assistant paraphrases; not expert annotations. Traits can vary by sex, life stage, variety, season or view. Positive class-level descriptors are weak supervision, not image-level presence labels.",
+  "inference_policy": "Identical full attribute bank for every image. No true labels used to choose crops or retrieve attribute text at inference.",
+  "prompts": [
+    "a photo showing white moth wings.",
+    "a photo showing parallel lines crossing pale forewings.",
+    "a photo showing spotted moth wings.",
+    "a photo showing two or three visible spots on moth wings.",
+    "a photo showing very dark brown butterfly wings.",
+    "a photo showing yellow orange head and thorax.",
+    "a photo showing small pale spots on a female forewing.",
+    "a photo showing long narrow forewings extending beyond hindwings.",
+    "a photo showing dark brown wings with pale forewing spots.",
+    "a photo showing plain brown hindwing underside.",
+    "a photo showing blue male butterfly wings with narrow dark edges.",
+    "a photo showing white wing undersides with black spots.",
+    "a photo showing orange red band near the hindwing edge.",
+    "a photo showing bright blue male butterfly wings.",
+    "a photo showing black border inside orange hindwing markings.",
+    "a photo showing ash gray wing underside with small round black spots.",
+    "a photo showing shiny scales near the hindwing edge.",
+    "a photo showing pale fringe along moth forewings.",
+    "a photo showing thin dark line inside the wing fringe.",
+    "a photo showing very white hindwings.",
+    "a photo showing dark walnut brown moth wings.",
+    "a photo showing contrasting pale stripe along the forewing leading edge.",
+    "a photo showing orange butterfly wings with black and yellow markings.",
+    "a photo showing blue crescent markings along wing edges.",
+    "a photo showing white patches near the forewing tip.",
+    "a photo showing dark butterfly wings with large red or orange patches.",
+    "a photo showing band of white spots across butterfly wings.",
+    "a photo showing slender butterfly antennae.",
+    "a photo showing tufted green grass.",
+    "a photo showing small heart shaped grass seed heads.",
+    "a photo showing pale green seed heads on slender branching stalks.",
+    "a photo showing narrow folded grass leaves.",
+    "a photo showing dense upright spike shaped grass flower cluster.",
+    "a photo showing yellow daisy like flower heads.",
+    "a photo showing green narrow spreading bracts around a flower head.",
+    "a photo showing stem leaves without leaf stalks.",
+    "a photo showing yellow flower heads with central disk and outer rays.",
+    "a photo showing smooth edged fleshy leaves.",
+    "a photo showing alternate simple leaves along a stem.",
+    "a photo showing branching cactus with cylindrical green segments.",
+    "a photo showing pale cactus spines arranged around stem bumps.",
+    "a photo showing yellow green cactus flowers.",
+    "a photo showing upright barrel shaped cactus.",
+    "a photo showing vertical ribs on a cylindrical cactus stem.",
+    "a photo showing long curved cactus spines.",
+    "a photo showing forked thorns on woody branches.",
+    "a photo showing paired glossy dark green oval leaves.",
+    "a photo showing small white tubular flowers.",
+    "a photo showing small red oval berries.",
+    "a photo showing paired broad pointed oval leaves.",
+    "a photo showing rounded clusters of pale cream flowers.",
+    "a photo showing inflated green fruit with long projections.",
+    "a photo showing small heart shaped leaves arranged alternately.",
+    "a photo showing flat yellow green bracts surrounding tiny flowers.",
+    "a photo showing low growing herbaceous plant.",
+    "a photo showing rounded lobed basal leaves on long stalks.",
+    "a photo showing dense upright cluster of cream colored flowers.",
+    "a photo showing glandular hairs on flowering stems."
+  ],
+  "species": [
+    {
+      "category_id": 1158,
+      "name": "Cabera pusaria",
+      "source_urls": [
+        "https://www.ukmoths.org.uk/species/cabera-pusaria/"
+      ],
+      "attribute_ids": [
+        0,
+        1
+      ]
+    },
+    {
+      "category_id": 1227,
+      "name": "Heterophleps triguttaria",
+      "source_urls": [
+        "https://www.bugguide.net/node/view/281990/bgimage"
+      ],
+      "attribute_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "category_id": 1367,
+      "name": "Euphyes vestris",
+      "source_urls": [
+        "https://www.butterfliesandmoths.org/species/Euphyes-vestris"
+      ],
+      "attribute_ids": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "category_id": 1388,
+      "name": "Panoquina ocola",
+      "source_urls": [
+        "https://www.butterfliesandmoths.org/node/5912"
+      ],
+      "attribute_ids": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "category_id": 1484,
+      "name": "Icaricia acmon",
+      "source_urls": [
+        "https://www.butterfliesandmoths.org/species/Plebejus-acmon"
+      ],
+      "attribute_ids": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "category_id": 1486,
+      "name": "Icaricia lupini",
+      "source_urls": [
+        "https://butterfly.ucdavis.edu/butterfly/plebejus/lupini"
+      ],
+      "attribute_ids": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "category_id": 1569,
+      "name": "Agrotis segetum",
+      "source_urls": [
+        "https://www.ukmoths.org.uk/species/agrotis-segetum/"
+      ],
+      "attribute_ids": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "category_id": 1670,
+      "name": "Ochropleura plecta",
+      "source_urls": [
+        "https://bugsandweeds.co.uk/macro-moths-m-o"
+      ],
+      "attribute_ids": [
+        20,
+        21
+      ]
+    },
+    {
+      "category_id": 1771,
+      "name": "Aglais urticae",
+      "source_urls": [
+        "https://www.yorkshirebutterflies.org.uk/yorkshire-species/small-tortoiseshell"
+      ],
+      "attribute_ids": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "category_id": 1775,
+      "name": "Anartia amathea",
+      "source_urls": [
+        "https://sta.uwi.edu/fst/lifesciences/sites/default/files/lifesciences/images/Anartia%20amathea%20-%20Scarlet%20Peacock%20Butterfly.pdf"
+      ],
+      "attribute_ids": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "category_id": 6343,
+      "name": "Briza minor",
+      "source_urls": [
+        "https://www.nzpcn.org.nz/flora/species/briza-minor/"
+      ],
+      "attribute_ids": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "category_id": 6385,
+      "name": "Koeleria macrantha",
+      "source_urls": [
+        "https://burkeherbarium.org/imagecollection/taxon.php?Taxon=Koeleria+macrantha"
+      ],
+      "attribute_ids": [
+        28,
+        31,
+        32
+      ]
+    },
+    {
+      "category_id": 6814,
+      "name": "Grindelia stricta",
+      "source_urls": [
+        "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Grindelia+stricta+var.+stricta"
+      ],
+      "attribute_ids": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "category_id": 7006,
+      "name": "Solidago sempervirens",
+      "source_urls": [
+        "https://gobotany.nativeplanttrust.org/species/solidago/sempervirens/?key=dichotomous"
+      ],
+      "attribute_ids": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "category_id": 7356,
+      "name": "Cylindropuntia whipplei",
+      "source_urls": [
+        "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=242415154"
+      ],
+      "attribute_ids": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "category_id": 7376,
+      "name": "Ferocactus cylindraceus",
+      "source_urls": [
+        "https://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=242415346"
+      ],
+      "attribute_ids": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "category_id": 8264,
+      "name": "Carissa bispinosa",
+      "source_urls": [
+        "https://pza.sanbi.org/carissa-bispinosa"
+      ],
+      "attribute_ids": [
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "category_id": 8272,
+      "name": "Gomphocarpus cancellatus",
+      "source_urls": [
+        "https://pza.sanbi.org/gomphocarpus-cancellatus"
+      ],
+      "attribute_ids": [
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "category_id": 9649,
+      "name": "Chrysosplenium alternifolium",
+      "source_urls": [
+        "https://www.garten.uni-rostock.de/ihr-besuch/pflanze-des-monats/2023/wechselblaettriges-milzkraut-chrysosplenium-alternifolium/"
+      ],
+      "attribute_ids": [
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "category_id": 9652,
+      "name": "Heuchera cylindrica",
+      "source_urls": [
+        "https://burkeherbarium.org/imagecollection/taxon.php?Taxon=Heuchera+cylindrica"
+      ],
+      "attribute_ids": [
+        55,
+        56,
+        57
+      ]
+    }
+  ]
+}

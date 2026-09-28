@@ -6,6 +6,8 @@
 
 ## 实验定义
 
+新增 [20 物种扩展实验](docs/expanded20.md)：1,000 张真实图片、58 条来源支持的属性、三种 AG 方案及局部图像无文字对照，共 225 组预设比较。入口为 `expanded_models.cmd`；原 4 类 pilot 保留。扩展实验修正了非零门控、有效训练更新步数与验证指标持平时的检查点选择问题，并将 AG 版本选择锁定在测试之前。
+
 | Backbone | Initial weights | Stage 1 | Stage 2 comparisons |
 |---|---|---|---|
 | EfficientNet-B0 | ImageNet-1K V1 | Train visual-to-text projection | Baseline / average / AG-CLIP adaptation |

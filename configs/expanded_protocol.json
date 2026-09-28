@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dataset": "expanded20_development",
+  "backbones": ["efficientnet_b0", "resnet18", "convnext_tiny", "vit_b_16", "clip_vit_b32"],
+  "shots": [5, 10, 20],
+  "seeds": [42, 43, 44],
+  "variants": ["baseline", "region_only", "ag_mean", "ag_attention", "ag_aux"],
+  "alignment_steps": 200,
+  "comparison_steps": 200,
+  "aux_weight": 0.1,
+  "batch_size": 32,
+  "validation_interval_steps": 20,
+  "checkpoint_rule": "max validation macro-F1, then min validation cross-entropy",
+  "ag_selection": "highest mean validation macro-F1 over three seeds, then lowest mean validation cross-entropy; locked before test evaluation",
+  "crop_policy": "five deterministic overlapping corner/center crops, same for all region variants; not a detector or verified anatomical grounding",
+  "attribute_bank": "58 source-derived visual descriptors; no test images or test labels used in descriptions",
+  "training": "Frozen visual and text encoders, trained projection and 128-dimensional fusion; equal steps, batches, learning rate and seed across variants",
+  "statistics": "Report all variants; paired McNemar and paired image bootstrap for three-seed probability ensembles; Holm correction across 15 settings times 2 reference comparisons",
+  "claim": "AG-CLIP-inspired development variants, not exact original-paper reproduction; gains and statistical significance are not guaranteed"
+}

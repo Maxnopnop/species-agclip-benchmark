@@ -16,6 +16,10 @@ $projectStatus = Join-Path $PSScriptRoot 'runs\pilot_multimodal\status.json'
 if (Test-Path -LiteralPath $projectStatus) { Get-Content -LiteralPath $projectStatus }
 Read-LiveTail (Join-Path $PSScriptRoot 'work\pilot_multimodal.log')
 Write-Host 'DOWNLOAD FILE SIZES'
+Write-Host 'EXPANDED 20-SPECIES WORKFLOW'
+$expandedStatus = Join-Path $PSScriptRoot 'runs\expanded20\status.json'
+if (Test-Path -LiteralPath $expandedStatus) { Get-Content -LiteralPath $expandedStatus }
+Read-LiveTail (Join-Path $PSScriptRoot 'work\expanded_train.log')
 foreach ($projectFile in @('data\archives\train_mini.tar.gz.part','data\archives\val.tar.gz.part','cache\clip\ViT-B-32.pt')) {
     $projectPath = Join-Path $PSScriptRoot $projectFile
     if (Test-Path -LiteralPath $projectPath) {
