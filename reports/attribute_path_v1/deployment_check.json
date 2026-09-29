@@ -1,0 +1,134 @@
+{
+  "seed": 42,
+  "candidate_set": "development",
+  "candidate_count": 75,
+  "attribute_branch_top5": [
+    {
+      "label": 3,
+      "name": "Marsh Wren",
+      "score": 10.014175415039062
+    },
+    {
+      "label": 63,
+      "name": "Grasshopper Sparrow",
+      "score": 9.773154258728027
+    },
+    {
+      "label": 0,
+      "name": "House Wren",
+      "score": 9.712529182434082
+    },
+    {
+      "label": 64,
+      "name": "Savannah Sparrow",
+      "score": 9.708017349243164
+    },
+    {
+      "label": 7,
+      "name": "Tree Sparrow",
+      "score": 9.49597454071045
+    }
+  ],
+  "part_peaks_normalized": {
+    "head": [
+      0.75,
+      0.4722222222222222
+    ],
+    "wing": [
+      0.32142857142857145,
+      0.5277777777777778
+    ],
+    "breast": [
+      0.5357142857142857,
+      0.5833333333333334
+    ],
+    "tail": [
+      0.10714285714285714,
+      0.5277777777777778
+    ]
+  },
+  "largest_absolute_contributions": [
+    {
+      "attribute": "has_primary_color::brown",
+      "evidence": 1.1573033332824707,
+      "contribution": 0.6714115142822266
+    },
+    {
+      "attribute": "has_crown_color::brown",
+      "evidence": 1.2408920526504517,
+      "contribution": 0.6019163131713867
+    },
+    {
+      "attribute": "has_shape::perching-like",
+      "evidence": 0.8416957259178162,
+      "contribution": 0.5546433925628662
+    },
+    {
+      "attribute": "has_nape_color::brown",
+      "evidence": 1.1157726049423218,
+      "contribution": 0.506184458732605
+    },
+    {
+      "attribute": "has_underparts_color::buff",
+      "evidence": 1.2278671264648438,
+      "contribution": 0.5056222677230835
+    },
+    {
+      "attribute": "has_forehead_color::brown",
+      "evidence": 1.1034995317459106,
+      "contribution": 0.5031077265739441
+    },
+    {
+      "attribute": "has_wing_color::brown",
+      "evidence": 0.8204087018966675,
+      "contribution": 0.4896688163280487
+    },
+    {
+      "attribute": "has_back_color::brown",
+      "evidence": 1.0360736846923828,
+      "contribution": 0.4789373576641083
+    },
+    {
+      "attribute": "has_belly_color::buff",
+      "evidence": 1.0645883083343506,
+      "contribution": 0.4299837350845337
+    },
+    {
+      "attribute": "has_upperparts_color::brown",
+      "evidence": 0.7949419617652893,
+      "contribution": 0.4099707305431366
+    }
+  ],
+  "note": "Research attribute branch, not the recommended strongest classifier. Scores/contributions are not calibrated probabilities or causal explanations.",
+  "siglip2_native_top5": [
+    {
+      "label": 3,
+      "name": "Marsh Wren",
+      "score": 3.2028634548187256
+    },
+    {
+      "label": 0,
+      "name": "House Wren",
+      "score": 3.1717729568481445
+    },
+    {
+      "label": 53,
+      "name": "Henslow Sparrow",
+      "score": 2.6667370796203613
+    },
+    {
+      "label": 69,
+      "name": "Rock Wren",
+      "score": 2.6616039276123047
+    },
+    {
+      "label": 17,
+      "name": "Field Sparrow",
+      "score": 2.661376476287842
+    }
+  ],
+  "image_id": 11529,
+  "cached_evidence_max_error": 1.4215707778930664e-05,
+  "checkpoint_reload_matches": true,
+  "ground_truth_inputs_used": false
+}

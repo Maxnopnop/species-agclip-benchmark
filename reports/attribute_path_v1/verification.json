@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "completed_localizers": 3,
+  "completed_readout_runs": 18,
+  "finite_checkpoints": true,
+  "source_hashes_match": true,
+  "unit_tests_passed": 3,
+  "image_only_reload_max_error": 1.4215707778930664e-05,
+  "final_test_images_used": 0,
+  "code_files": {
+    "multimodal/attribute_path_v1.py": "4e525ff8106aece654e94abd2ae0ad28203aa86c027a162a717e5132f296daf0",
+    "attribute_path_experiment.py": "0f70248eec42eaa4738138c2ebd6b02b409155babd4e9db5f416109acf8d3972",
+    "analyze_attribute_path.py": "f20e177e8790441eeb948be1caf5fca47c3d57a2fb8ba0b15c0e1c4a5ce07499",
+    "export_attribute_path.py": "0d3fe99fcb191cbd36f33bb06fc95e31804819093e7cfd6493545c88208e7200",
+    "predict_attribute_path.py": "c5ddba3d8f2876b6cfdc5c5a86e3cab9e900405a96ecf3b8ca49e6f6c5925707",
+    "report_attribute_path.py": "cc1319b585b7a522e0a1e04b256da97d25ef168d49af4887f1f8ee461386b413",
+    "test_attribute_path.py": "cefdd8e6c041bc49448552c7232c5a1b874e69c7ec58d06df74aad62641c1363"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "source": {
+    "multimodal\\attribute_path_v1.py": "4e525ff8106aece654e94abd2ae0ad28203aa86c027a162a717e5132f296daf0",
+    "configs\\attribute_path_v1.json": "1abfa34a03dc49d5d3f879db9339a5f3893cf34671f676c4addcf1b4a365f5c9",
+    "data\\cub100_v1\\manifest.json": "cf25f035b5fa011e2a60e24d1f3ea4d7cfaa40aae3adf03032a715a6a36c47fe",
+    "cache\\four_routes_v1\\models\\fgclip2_base\\config.json": "030a2f607e2090c2bd580be40361f228e7849381f025e5e2dc8955c84d53fb8f",
+    "cache\\four_routes_v1\\models\\fgclip2_base\\modeling_fgclip2.py": "190fd0710336a885b74a1a2b3a7054824cd095d28348833ff45f5c0a3458c2d1",
+    "cache\\four_routes_v1\\models\\fgclip2_base\\configuration_fgclip2.py": "a554895ce535aacb123cbca527376b8bf97186201f80130d4925b44895674187"
+  },
+  "training_images": 500,
+  "development_images": 500,
+  "final_test_images_used": 0,
+  "seeds": [
+    42,
+    43,
+    44
+  ]
+}

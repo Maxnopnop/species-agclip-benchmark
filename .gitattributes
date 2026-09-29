@@ -39,3 +39,12 @@
 /cub_oracle_fusion_experiment.py text eol=lf
 /configs/cub_resplit*.json text eol=lf
 /cub_resplit_experiment.py text eol=lf
+/multimodal/attribute_path_v1.py text eol=lf
+/configs/attribute_path_v1.json text eol=lf
+/configs/attribute_path_v1_assets.json text eol=lf
+/attribute_path_experiment.py text eol=lf
+/analyze_attribute_path.py text eol=lf
+/export_attribute_path.py text eol=lf
+/predict_attribute_path.py text eol=lf
+/test_attribute_path.py text eol=lf
+/report_attribute_path.py text eol=lf

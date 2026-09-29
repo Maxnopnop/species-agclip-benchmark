@@ -1,6 +1,8 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
-**最新进展（2026-09-29）：已按新授权完成四条属性路线的文献、源码和轻量开发集检查。** [四路线完整报告](docs/four_attribute_routes_2026-09-29.md)、[DAZLE/TransZero 决策路径](docs/dazle_transzero_decision_path_2026-09-29.md)、[文献总览](docs/agclip_literature_review_2026-09-28.md)。发现 DEAL 公开 ViT 路径的解释损失梯度问题；真实描述未稳定胜过随机语义对照；FG-CLIP 2 已在本机运行，但全图识别未超过既有 SigLIP 2，局部查询存在翅膀／尾部混淆。本轮没有启动新的训练矩阵或使用最终测试集调参。
+**最新进展（2026-09-29）：已完成属性定位修复与明确属性评分的第一轮训练。** [结果与图表](reports/attribute_path_v1/summary_zh.md)、[运行说明](docs/attribute_path_v1.md)。现有关键点监督将四部位开发命中率从 53.65% 提高到三种子平均 86.55%；修复定位后的纯属性分支 H 为 49.63%，高于原始定位 47.10% 和错误部位对照 43.78%，但仍低于原始 SigLIP 2 的 75.46%。已完成 3 个定位训练、18 个分类训练及图片输入推理检查；这是开发集机制验证，不是完整 AG-CLIP/DAZLE/TransZero 复现或最终确认性成绩。
+
+**前置文献核查：** [四路线完整报告](docs/four_attribute_routes_2026-09-29.md)、[DAZLE/TransZero 决策路径](docs/dazle_transzero_decision_path_2026-09-29.md)、[文献总览](docs/agclip_literature_review_2026-09-28.md)。发现 DEAL 公开 ViT 路径的解释损失梯度问题；真实描述未稳定胜过随机语义对照；FG-CLIP 2 已在本机运行，但全图识别未超过既有 SigLIP 2，局部查询存在翅膀／尾部混淆。这一前置研究轮只做轻量检查，后续定位修复见上段。
 
 **此前训练暂停记录：** [模型可行性与当时结论](reports/cub_followup_v1/feasibility_zh.md)、[三种类别划分复测](reports/cub_resplit_v1/summary_zh.md)。本机部署可行；现有轻量属性优化尚未证明稳定优于匹配的无属性对照。此前暂停发生在最后一轮 60 组训练及最终评分全部完成之后，原实验结果保持不变。
 
