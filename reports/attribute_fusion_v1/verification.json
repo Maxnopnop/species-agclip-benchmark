@@ -1,0 +1,24 @@
+{
+  "protocol_source_matches": true,
+  "checkpoint_reconstructions": 18,
+  "crossfit_predictions_replayed": 18,
+  "unit_tests": "3 passed before protocol lock",
+  "unseen_error_transitions": [
+    {
+      "seed": 42,
+      "unseen_new_errors": 8,
+      "unseen_new_errors_predicted_seen": 4
+    },
+    {
+      "seed": 43,
+      "unseen_new_errors": 7,
+      "unseen_new_errors_predicted_seen": 3
+    },
+    {
+      "seed": 44,
+      "unseen_new_errors": 8,
+      "unseen_new_errors_predicted_seen": 4
+    }
+  ],
+  "report_source_sha256": "395dbb9a9a60fd08b06505d2ce0cc0f0bae15e8a24c7334f825149a1414431c3"
+}

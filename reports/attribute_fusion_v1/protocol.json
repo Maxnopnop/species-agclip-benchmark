@@ -1,0 +1,39 @@
+{
+  "locked_at_utc": "2026-09-29T11:04:32.003070+00:00",
+  "source": {
+    "configs\\attribute_fusion_v1.json": "5363f7b4f33efb586a28c55f4544dca9bcc795bba527736c425cc887cdc573f2",
+    "attribute_fusion_experiment.py": "4e40cef071bd52017343d96c4568e7b87a818558dc5baad5d1b4f4d3ab64b0bc"
+  },
+  "config": {
+    "version": "attribute_fusion_v1",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "variants": [
+      "global",
+      "uniform",
+      "native_part",
+      "position_prior",
+      "learned_part",
+      "wrong_part"
+    ],
+    "weights": [
+      0.0,
+      0.05,
+      0.1,
+      0.2,
+      0.5
+    ],
+    "formula": "z(native_scores) + weight * z(attribute_scores), where z standardizes each image across the same 75 candidate classes with population standard deviation, floor 1e-8.",
+    "folds": 5,
+    "fold_seed": 20260929,
+    "selection": "For each variant and fold, maximize mean GZSL H across all three fixed training seeds on the other four folds. Ties within 1e-10 choose the smaller weight. Use the same chosen weight for all three seeds on the held-out fold. Primary metrics pool out-of-fold predictions. Full-development fixed-weight curves are descriptive only.",
+    "controls": "Zero weight must exactly preserve native predictions. All six branches receive the same fusion search. Learned_part and wrong_part share localization training and readout budgets; other branches lack the additional localization training.",
+    "scope": "Previously reused development data only: 50 seen and 25 development-unseen classes, 500 images. No model updates, image filtering, final-set access, new backbone, per-class weights, or post-result expansion of the search. Cross-fitting does not undo earlier development-set reuse.",
+    "uncertainty": "Paired class-bootstrap intervals condition on the trained models and selected out-of-fold predictions; they do not repeat weight selection or represent an independent confirmatory test.",
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260930
+  }
+}
