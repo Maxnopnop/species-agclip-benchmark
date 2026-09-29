@@ -1,0 +1,143 @@
+{
+  "status": "research_only_training_paused",
+  "class_profile_file": "E:\\ELEC4240\\SpeciesRecognition\\data\\cub\\CUB_200_2011\\attributes\\class_attribute_labels_continuous.txt",
+  "class_profile_sha256": "2f253a4be38f8c55f30d8456e845edf3d45bd6349504b4401ef464b78a4647bb",
+  "full_profile_shape": [
+    200,
+    312
+  ],
+  "profile_finite": true,
+  "profile_range": [
+    0.0,
+    100.0
+  ],
+  "selected_100_profile_shape": [
+    100,
+    312
+  ],
+  "existing_train_supported_attributes": 230,
+  "selected_profile_shape_after_attribute_filter": [
+    100,
+    230
+  ],
+  "exact_duplicate_rows_full_312": 0,
+  "development_cached_feature_shape": [
+    1000,
+    3,
+    512
+  ],
+  "spatial_patch_cache_in_this_feature_file": false,
+  "xlsa17_att_splits_found": [],
+  "official_code_sources": [
+    {
+      "repo": "hbdat/cvpr20_DAZLE",
+      "commit": "e5a04601d8368903008fd96dee3d95dde398aa51",
+      "file": "core/DAZLE.py",
+      "url": "https://raw.githubusercontent.com/hbdat/cvpr20_DAZLE/e5a04601d8368903008fd96dee3d95dde398aa51/core/DAZLE.py",
+      "sha256": "2bb795311f2b47aa8caca58c90de5bf482654c00c43b178e5281713c27111c00",
+      "bytes": 12283
+    },
+    {
+      "repo": "hbdat/cvpr20_DAZLE",
+      "commit": "e5a04601d8368903008fd96dee3d95dde398aa51",
+      "file": "core/CUBDataLoader.py",
+      "url": "https://raw.githubusercontent.com/hbdat/cvpr20_DAZLE/e5a04601d8368903008fd96dee3d95dde398aa51/core/CUBDataLoader.py",
+      "sha256": "41b88e09493466b5dd888c1ad2f0a2cfeb63e30b2c4ced58d5903a12ebf56961",
+      "bytes": 9015
+    },
+    {
+      "repo": "hbdat/cvpr20_DAZLE",
+      "commit": "e5a04601d8368903008fd96dee3d95dde398aa51",
+      "file": "extract_feature/extract_feature_map_ResNet_101_CUB.py",
+      "url": "https://raw.githubusercontent.com/hbdat/cvpr20_DAZLE/e5a04601d8368903008fd96dee3d95dde398aa51/extract_feature/extract_feature_map_ResNet_101_CUB.py",
+      "sha256": "a5a61816f8eb1b15e89608c13a2d6125d9c0021dafab4909778310d75bd170e1",
+      "bytes": 4622
+    },
+    {
+      "repo": "shiming-chen/TransZero",
+      "commit": "7c10cdbe76d36ec209b59127a6b1bb02fbd93852",
+      "file": "model.py",
+      "url": "https://raw.githubusercontent.com/shiming-chen/TransZero/7c10cdbe76d36ec209b59127a6b1bb02fbd93852/model.py",
+      "sha256": "251208189af95fcb044a49f8296a853d786d88b9618e379ac4a86f9fc0569d08",
+      "bytes": 18894
+    },
+    {
+      "repo": "shiming-chen/TransZero",
+      "commit": "7c10cdbe76d36ec209b59127a6b1bb02fbd93852",
+      "file": "dataset.py",
+      "url": "https://raw.githubusercontent.com/shiming-chen/TransZero/7c10cdbe76d36ec209b59127a6b1bb02fbd93852/dataset.py",
+      "sha256": "6b62de9e911f5f6e9a3b39723f7ad9878a0fe034fafeecee80d32e78fa20a774",
+      "bytes": 22532
+    },
+    {
+      "repo": "shiming-chen/TransZero",
+      "commit": "7c10cdbe76d36ec209b59127a6b1bb02fbd93852",
+      "file": "preprocessing.py",
+      "url": "https://raw.githubusercontent.com/shiming-chen/TransZero/7c10cdbe76d36ec209b59127a6b1bb02fbd93852/preprocessing.py",
+      "sha256": "9b4f1e698a6f69eaf77fd175e0ee4003bf457069f040028f8d140aa86b1557e7",
+      "bytes": 4935
+    },
+    {
+      "repo": "shiming-chen/TransZero",
+      "commit": "7c10cdbe76d36ec209b59127a6b1bb02fbd93852",
+      "file": "wandb_config/cub_gzsl.yaml",
+      "url": "https://raw.githubusercontent.com/shiming-chen/TransZero/7c10cdbe76d36ec209b59127a6b1bb02fbd93852/wandb_config/cub_gzsl.yaml",
+      "sha256": "c46a1dc816f00108fa3a54d342d2e46e3e8bdd24080a23a4a695619997c2aae1",
+      "bytes": 566
+    },
+    {
+      "repo": "shiming-chen/TransZero",
+      "commit": "7c10cdbe76d36ec209b59127a6b1bb02fbd93852",
+      "file": "train_cub.py",
+      "url": "https://raw.githubusercontent.com/shiming-chen/TransZero/7c10cdbe76d36ec209b59127a6b1bb02fbd93852/train_cub.py",
+      "sha256": "74436fcffb287057a83ad1616c70bb1040e119a7876741dfdd6af4124f7fadac",
+      "bytes": 2854
+    }
+  ],
+  "illustrative_only_not_experimental_result": {
+    "class_profiles": [
+      [
+        0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      [
+        0.0,
+        0.7071067811865475,
+        0.7071067811865475
+      ]
+    ],
+    "image_attribute_scores": [
+      [
+        0.8,
+        0.2,
+        0.6
+      ],
+      [
+        0.2,
+        0.8,
+        0.6
+      ],
+      [
+        0.0,
+        0.0,
+        0.6
+      ]
+    ],
+    "class_scores": [
+      [
+        0.9899494936611665,
+        0.565685424949238
+      ],
+      [
+        0.565685424949238,
+        0.9899494936611665
+      ],
+      [
+        0.42426406871192845,
+        0.42426406871192845
+      ]
+    ]
+  },
+  "scope": "Metadata and source audit only. No training, evaluation inference, accuracy scoring, or selection using held-out image annotations. Class profiles are fixed benchmark side information; their upstream aggregation provenance is not established by this shape audit."
+}

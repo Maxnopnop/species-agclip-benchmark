@@ -1,0 +1,59 @@
+{
+  "scope": "Descriptive paired counts on all 500 development images; not macro H or an independent confirmatory test.",
+  "comparisons": {
+    "class_name": {
+      "dclip_correct_control_wrong": 19,
+      "dclip_wrong_control_correct": 15,
+      "both_correct": 331,
+      "both_wrong": 135
+    },
+    "dclip_four": {
+      "dclip_correct_control_wrong": 0,
+      "dclip_wrong_control_correct": 0,
+      "both_correct": 350,
+      "both_wrong": 150
+    },
+    "generic_templates_four": {
+      "dclip_correct_control_wrong": 21,
+      "dclip_wrong_control_correct": 11,
+      "both_correct": 329,
+      "both_wrong": 139
+    },
+    "shuffled_descriptions_42": {
+      "dclip_correct_control_wrong": 19,
+      "dclip_wrong_control_correct": 11,
+      "both_correct": 331,
+      "both_wrong": 139
+    },
+    "waffle_inspired_four_42": {
+      "dclip_correct_control_wrong": 18,
+      "dclip_wrong_control_correct": 15,
+      "both_correct": 332,
+      "both_wrong": 135
+    },
+    "shuffled_descriptions_43": {
+      "dclip_correct_control_wrong": 17,
+      "dclip_wrong_control_correct": 18,
+      "both_correct": 333,
+      "both_wrong": 132
+    },
+    "waffle_inspired_four_43": {
+      "dclip_correct_control_wrong": 6,
+      "dclip_wrong_control_correct": 15,
+      "both_correct": 344,
+      "both_wrong": 135
+    },
+    "shuffled_descriptions_44": {
+      "dclip_correct_control_wrong": 20,
+      "dclip_wrong_control_correct": 17,
+      "both_correct": 330,
+      "both_wrong": 133
+    },
+    "waffle_inspired_four_44": {
+      "dclip_correct_control_wrong": 9,
+      "dclip_wrong_control_correct": 20,
+      "both_correct": 341,
+      "both_wrong": 130
+    }
+  }
+}

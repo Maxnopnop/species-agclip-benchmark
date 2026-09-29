@@ -1,0 +1,179 @@
+{
+  "_id": "68ecb1311c9d6461412eb90f",
+  "id": "qihoo360/fg-clip2-base",
+  "private": false,
+  "pipeline_tag": "zero-shot-image-classification",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fgclip2",
+    "text-generation",
+    "clip",
+    "zero-shot-image-classification",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2510.10921",
+    "arxiv:2505.05071",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "downloads": 2161,
+  "likes": 28,
+  "modelId": "qihoo360/fg-clip2-base",
+  "author": "qihoo360",
+  "sha": "430fbc8a912c86fd4de601381b6245a0edab22f0",
+  "lastModified": "2025-11-06T09:46:16.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "Fgclip2Model"
+    ],
+    "auto_map": {
+      "AutoConfig": "modeling_fgclip2.Fgclip2Config",
+      "AutoModelForCausalLM": "modeling_fgclip2.Fgclip2Model"
+    },
+    "model_type": "fgclip2",
+    "tokenizer_config": {
+      "bos_token": "<bos>",
+      "eos_token": "<eos>",
+      "pad_token": "<pad>",
+      "unk_token": "<unk>",
+      "use_default_system_prompt": false
+    }
+  },
+  "cardData": {
+    "language": [
+      "en",
+      "zh"
+    ],
+    "library_name": "transformers",
+    "license": "apache-2.0",
+    "pipeline_tag": "zero-shot-image-classification",
+    "tags": [
+      "clip"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForCausalLM",
+    "custom_class": "modeling_fgclip2.Fgclip2Model",
+    "pipeline_tag": "text-generation"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "d6cf487961efb01076134b9321cbc800995da7ad",
+      "size": 1750
+    },
+    {
+      "rfilename": "FGCLIP2_compare_all_n.png",
+      "blobId": "c9c1a1c536e2094ef64615b7e5d3adfba50e9005",
+      "size": 1382672,
+      "lfs": {
+        "sha256": "46eec8b9ce633f22a568e035b86fa92dd4faf84486e76765b8e1509e91067c63",
+        "size": 1382672,
+        "pointerSize": 132
+      }
+    },
+    {
+      "rfilename": "FGCLIP2_dfcolor_cat_all_2K.png",
+      "blobId": "f773f52a396278744bc10c852c6b40d3d0bcc351",
+      "size": 880510,
+      "lfs": {
+        "sha256": "5133c792ddcb6f3bf17d27823a7bed5b821b2a9747f085be2db0c4a5a12ad0e6",
+        "size": 880510,
+        "pointerSize": 131
+      }
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "37161c3313eb55d431c5680583721b05fd04ef4d",
+      "size": 10294
+    },
+    {
+      "rfilename": "cn_re_demo.png",
+      "blobId": "2302a313babd323368d47b22863099ca7e1646c2",
+      "size": 180886,
+      "lfs": {
+        "sha256": "7d8ec16cad9741b6480c413f940460162a92ba808fdd1fcf5329fb8ffafb5dac",
+        "size": 180886,
+        "pointerSize": 131
+      }
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "2ad35bbec5f7c2120f50294f207e793891dce09d",
+      "size": 1107
+    },
+    {
+      "rfilename": "configuration_fgclip2.py",
+      "blobId": "be2bc5ea41eaf9c0b58aea1f0d69d770e8630ceb",
+      "size": 13267
+    },
+    {
+      "rfilename": "model.safetensors",
+      "blobId": "0962bc87516007b251854f756957482af155acd0",
+      "size": 1535264416,
+      "lfs": {
+        "sha256": "5328bf1538afb4b7f4aa844f749655285d0d79490f31a25aeefc5603d9b173fe",
+        "size": 1535264416,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "modeling_fgclip2.py",
+      "blobId": "0e0e9e19c27766666cacafa4f468142830f0894b",
+      "size": 60139
+    },
+    {
+      "rfilename": "preprocessor_config.json",
+      "blobId": "0b394ef874fa00123ca80d5456646592a052e50e",
+      "size": 393
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "8d6368f7e735fbe4781bf6e956b7c6ad0586df80",
+      "size": 636
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "f09cc022e166541fe83243037fd684e7f1e98dbf",
+      "size": 34356304,
+      "lfs": {
+        "sha256": "58a1696e79c9d97937389ed116f552a15c84811d7b8023918b86f4bc5775b1b0",
+        "size": 34356304,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "tokenizer.model",
+      "blobId": "796efe9ab515c15e146ce7588e6d7b9b8134dbf8",
+      "size": 4241003,
+      "lfs": {
+        "sha256": "61a7b147390c64585d6c3543dd6fc636906c9af3865a5548f27f31aee1d4c8e2",
+        "size": 4241003,
+        "pointerSize": 132
+      }
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "4a4ff7eb80376befb0d7e78c78c42f635b26e89c",
+      "size": 40160
+    }
+  ],
+  "spaces": [
+    "qihoo360/FG-CLIP2-Retrieval-demo",
+    "qihoo360/FG-CLIP2-Densefeature-demo"
+  ],
+  "createdAt": "2025-10-13T07:58:41.000Z",
+  "safetensors": {
+    "parameters": {
+      "F32": 383803394
+    },
+    "total": 383803394
+  },
+  "usedStorage": 1576305791
+}

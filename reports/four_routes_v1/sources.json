@@ -1,0 +1,79 @@
+[
+  {
+    "repo": "deep-real/DEAL",
+    "revision": "3a00f994c0855e3f90e1243791a921591c6623f6",
+    "file": "train.py",
+    "url": "https://raw.githubusercontent.com/deep-real/DEAL/3a00f994c0855e3f90e1243791a921591c6623f6/train.py",
+    "sha256": "bd7f41ed1f1282b18bb85809f7e97a33e0640e3cc00e1c6d64baa5238840e5e7"
+  },
+  {
+    "repo": "deep-real/DEAL",
+    "revision": "3a00f994c0855e3f90e1243791a921591c6623f6",
+    "file": "loss.py",
+    "url": "https://raw.githubusercontent.com/deep-real/DEAL/3a00f994c0855e3f90e1243791a921591c6623f6/loss.py",
+    "sha256": "3384cd6156d324a7a3c75aa556db80fde439dcf59193d6b20fc90398ec14f8d0"
+  },
+  {
+    "repo": "deep-real/DEAL",
+    "revision": "3a00f994c0855e3f90e1243791a921591c6623f6",
+    "file": "explainer.py",
+    "url": "https://raw.githubusercontent.com/deep-real/DEAL/3a00f994c0855e3f90e1243791a921591c6623f6/explainer.py",
+    "sha256": "cfc831756eb8aa20c43b926e39584e9c8c171e3b96e09d25dca7cb5126f9490a"
+  },
+  {
+    "repo": "deep-real/DEAL",
+    "revision": "3a00f994c0855e3f90e1243791a921591c6623f6",
+    "file": "CLIP/clip/model.py",
+    "url": "https://raw.githubusercontent.com/deep-real/DEAL/3a00f994c0855e3f90e1243791a921591c6623f6/CLIP/clip/model.py",
+    "sha256": "b28fb3ffbadd1b46f26d7d02c85723a138a6c23b6407224c630dc079b6e986b0"
+  },
+  {
+    "repo": "deep-real/DEAL",
+    "revision": "3a00f994c0855e3f90e1243791a921591c6623f6",
+    "file": "CLIP/clip/auxilary.py",
+    "url": "https://raw.githubusercontent.com/deep-real/DEAL/3a00f994c0855e3f90e1243791a921591c6623f6/CLIP/clip/auxilary.py",
+    "sha256": "7beb9f6331c2dd3542109b87278a1458e2b289df74ccecb9286ae022f7f88914"
+  },
+  {
+    "repo": "deep-real/DEAL",
+    "revision": "3a00f994c0855e3f90e1243791a921591c6623f6",
+    "file": "descriptors/my_cub.json",
+    "url": "https://raw.githubusercontent.com/deep-real/DEAL/3a00f994c0855e3f90e1243791a921591c6623f6/descriptors/my_cub.json",
+    "sha256": "bcbaa7a24270b1f31597dc47bbfa95db82ba4f89af99ac0eb695c811124192be"
+  },
+  {
+    "repo": "ExplainableML/WaffleCLIP",
+    "revision": "7a1b8ee48e31285f62ecd839fecb6b89cbef81f1",
+    "file": "base_main.py",
+    "url": "https://raw.githubusercontent.com/ExplainableML/WaffleCLIP/7a1b8ee48e31285f62ecd839fecb6b89cbef81f1/base_main.py",
+    "sha256": "26442c60ffb5d65c327e3428b17deebac96bc1e02f177aa97aafd81d709f20f8"
+  },
+  {
+    "repo": "ExplainableML/WaffleCLIP",
+    "revision": "7a1b8ee48e31285f62ecd839fecb6b89cbef81f1",
+    "file": "waffle_tools.py",
+    "url": "https://raw.githubusercontent.com/ExplainableML/WaffleCLIP/7a1b8ee48e31285f62ecd839fecb6b89cbef81f1/waffle_tools.py",
+    "sha256": "9e084d8064d78ad018ed4f829e9364b1e2d5c825c779f23e444e006ff455b5fa"
+  },
+  {
+    "repo": "ExplainableML/WaffleCLIP",
+    "revision": "7a1b8ee48e31285f62ecd839fecb6b89cbef81f1",
+    "file": "descriptors/descriptors_cub.json",
+    "url": "https://raw.githubusercontent.com/ExplainableML/WaffleCLIP/7a1b8ee48e31285f62ecd839fecb6b89cbef81f1/descriptors/descriptors_cub.json",
+    "sha256": "983966040fd8747d89ee9b0f311eeab3b5f4b318e062dd0529c9bb57e2282597"
+  },
+  {
+    "repo": "360CVGroup/FG-CLIP",
+    "revision": "b1af1cda8ae62089664251670c7819b25e07a0bc",
+    "file": "README_en.md",
+    "url": "https://raw.githubusercontent.com/360CVGroup/FG-CLIP/b1af1cda8ae62089664251670c7819b25e07a0bc/README_en.md",
+    "sha256": "7375fe33feca531f29215171919d4bc5963a35f36fe8c547560c59a0e9cf69f9"
+  },
+  {
+    "repo": "360CVGroup/FG-CLIP",
+    "revision": "b1af1cda8ae62089664251670c7819b25e07a0bc",
+    "file": "fgclip2/train/local_trainer.py",
+    "url": "https://raw.githubusercontent.com/360CVGroup/FG-CLIP/b1af1cda8ae62089664251670c7819b25e07a0bc/fgclip2/train/local_trainer.py",
+    "sha256": "3281a5d5e45145473bfdaeb478755f2604257d20cca69c2fc785caeca19bcdd3"
+  }
+]

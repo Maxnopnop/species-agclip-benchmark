@@ -1,6 +1,8 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
-**当前状态：已按用户要求暂停实验。** [模型可行性与当前结论](reports/cub_followup_v1/feasibility_zh.md)、[三种类别划分复测](reports/cub_resplit_v1/summary_zh.md)。本机部署可行；现有轻量属性优化尚未证明稳定优于匹配的无属性对照。暂停发生在最后一轮 60 组训练及最终评分全部完成之后。
+**最新进展（2026-09-29）：已按新授权完成四条属性路线的文献、源码和轻量开发集检查。** [四路线完整报告](docs/four_attribute_routes_2026-09-29.md)、[DAZLE/TransZero 决策路径](docs/dazle_transzero_decision_path_2026-09-29.md)、[文献总览](docs/agclip_literature_review_2026-09-28.md)。发现 DEAL 公开 ViT 路径的解释损失梯度问题；真实描述未稳定胜过随机语义对照；FG-CLIP 2 已在本机运行，但全图识别未超过既有 SigLIP 2，局部查询存在翅膀／尾部混淆。本轮没有启动新的训练矩阵或使用最终测试集调参。
+
+**此前训练暂停记录：** [模型可行性与当时结论](reports/cub_followup_v1/feasibility_zh.md)、[三种类别划分复测](reports/cub_resplit_v1/summary_zh.md)。本机部署可行；现有轻量属性优化尚未证明稳定优于匹配的无属性对照。此前暂停发生在最后一轮 60 组训练及最终评分全部完成之后，原实验结果保持不变。
 
 **最新扩展诊断：** [综合研究结论](reports/cub_followup_v1/diagnostic_update_zh.md)、[100 物种 CLIP](reports/cub100_v1/summary_zh.md)、[100 物种 SigLIP 2 修正版](reports/cub_siglip_v2/summary_zh.md)。增加类别规模、三种子匹配对照、公开描述、属性迁移、正则化及特权定位诊断后，尚无稳定属性特有收益。SigLIP 2 的大小写预处理问题已定位修复，错误版本排除比较；不能把修复或主干更换的提升记作 AG 效果。
 

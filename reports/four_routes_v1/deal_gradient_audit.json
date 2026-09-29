@@ -1,0 +1,9 @@
+{
+  "upstream_commit": "3a00f994c0855e3f90e1243791a921591c6623f6",
+  "source_sha256": "cfc831756eb8aa20c43b926e39584e9c8c171e3b96e09d25dca7cb5126f9490a",
+  "official_heatmap_requires_grad": false,
+  "official_regularizer_requires_grad": false,
+  "official_gradient_difference": 0.0,
+  "differentiable_candidate_gradient_norm": 8.15577220916748,
+  "scope": "Exact extracted official interpret/loss functions on a synthetic attention fixture. No training, no species accuracy, no claim about unpublished author code or RN50 path."
+}

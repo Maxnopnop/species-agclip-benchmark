@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-29",
+  "status": "requested_four_route_research_and_light_checks_complete",
+  "previous_experiment_commit": "5614a25",
+  "new_optimizer_steps": 0,
+  "final_test_images_used": 0,
+  "completed": [
+    "DEAL paper/code/gradient audit",
+    "AG-CLIP paper versus local adaptations",
+    "DCLIP/Waffle-inspired matched-budget controls",
+    "FG-CLIP2 pinned local deployment, global/region interfaces, development classification and pointing"
+  ],
+  "limitations": [
+    "No full DEAL/AG-CLIP reproduction",
+    "Development-only exploratory results",
+    "No stable attribute-specific classification gain established",
+    "FG-CLIP2 pointing does not establish color/pattern attribute accuracy"
+  ],
+  "checks": {
+    "source_hashes_match": true,
+    "cached_classification_recomputed": true,
+    "development_roles_only": true,
+    "pointing_records": 289,
+    "local_model_integrity_verified": true
+  },
+  "source_sha256": {
+    "audit_deal_gradient.py": "09aab35037ee97a1901de980797345121d3dbd0114a9e2a1c2bed689c6043f4e",
+    "check_semantic_controls.py": "f2711722ddb5e585dcae51800b39e04579167c0fa75a0edf945232007da10a56",
+    "check_fgclip2_candidate.py": "f537b3b54f4bc8a5cc6591b7294365f040ff32f3a51e957d1e22c99d2fa76145",
+    "prepare_four_routes.py": "b4b5d009165d91c7a92eb5532d47b05c763dd7b1a6d91495f64c7f4eb6b1db7d",
+    "plot_four_routes.py": "8acb414b6aeef5ea908d2efe4a8c3407cceb23544b4f39b42e12dd8b141fecd4"
+  }
+}
