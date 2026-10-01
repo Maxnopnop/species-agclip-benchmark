@@ -1,0 +1,180 @@
+{
+  "comparisons": {
+    "repaired_local/guarded vs repaired_local/plain": {
+      "delta_H": 1.593937657130084,
+      "conditional_class_bootstrap_95": [
+        -1.2184500555320164,
+        4.323984013207432
+      ]
+    },
+    "repaired_local/guarded vs native_local/plain": {
+      "delta_H": 1.8846415341815117,
+      "conditional_class_bootstrap_95": [
+        -1.2642316248103043,
+        5.134398832138902
+      ]
+    },
+    "repaired_local/guarded vs native_local/guarded": {
+      "delta_H": 0.14619473598816057,
+      "conditional_class_bootstrap_95": [
+        -0.3306448868777355,
+        0.631595753311702
+      ]
+    },
+    "repaired_local/guarded vs wrong_local/plain": {
+      "delta_H": 1.883956147902083,
+      "conditional_class_bootstrap_95": [
+        -1.2386966640990273,
+        4.9725937339863355
+      ]
+    },
+    "repaired_local/guarded vs wrong_local/guarded": {
+      "delta_H": 0.4909934040908155,
+      "conditional_class_bootstrap_95": [
+        -0.4287209818267033,
+        1.4859474235313275
+      ]
+    },
+    "repaired_local/guarded vs uniform_local/plain": {
+      "delta_H": 2.3232457419669004,
+      "conditional_class_bootstrap_95": [
+        -0.619448533597771,
+        4.989327705575517
+      ]
+    },
+    "repaired_local/guarded vs uniform_local/guarded": {
+      "delta_H": 2.505277253765911,
+      "conditional_class_bootstrap_95": [
+        0.9305530722341547,
+        4.191025617073419
+      ]
+    },
+    "repaired_local/guarded vs whole_local/plain": {
+      "delta_H": 1.940032187430333,
+      "conditional_class_bootstrap_95": [
+        -1.078232559420218,
+        5.135978670557892
+      ]
+    },
+    "repaired_local/guarded vs whole_local/guarded": {
+      "delta_H": 2.0651559280632057,
+      "conditional_class_bootstrap_95": [
+        0.4533545412442706,
+        3.799214498094348
+      ]
+    },
+    "repaired_local/guarded vs whole_global/plain": {
+      "delta_H": -0.2674345918480867,
+      "conditional_class_bootstrap_95": [
+        -3.63775600458247,
+        2.9651917603629467
+      ]
+    },
+    "repaired_local/guarded vs whole_global/guarded": {
+      "delta_H": 2.9136786982447376,
+      "conditional_class_bootstrap_95": [
+        0.8725936645178184,
+        5.169549672806663
+      ]
+    },
+    "repaired_local/guarded vs semantic_shuffle_982/plain": {
+      "delta_H": 4.027739976228631,
+      "conditional_class_bootstrap_95": [
+        1.6885916809376282,
+        6.463654333574888
+      ]
+    },
+    "repaired_local/guarded vs semantic_shuffle_982/guarded": {
+      "delta_H": 4.027739976228631,
+      "conditional_class_bootstrap_95": [
+        1.6885916809376282,
+        6.463654333574888
+      ]
+    },
+    "repaired_local/guarded vs semantic_shuffle_983/plain": {
+      "delta_H": 4.464630666310811,
+      "conditional_class_bootstrap_95": [
+        2.1364074493221694,
+        6.890546540588736
+      ]
+    },
+    "repaired_local/guarded vs semantic_shuffle_983/guarded": {
+      "delta_H": 4.464630666310811,
+      "conditional_class_bootstrap_95": [
+        2.1364074493221694,
+        6.890546540588736
+      ]
+    },
+    "repaired_local/guarded vs semantic_shuffle_984/plain": {
+      "delta_H": 4.089044529487211,
+      "conditional_class_bootstrap_95": [
+        1.7310984365972248,
+        6.611440498555469
+      ]
+    },
+    "repaired_local/guarded vs semantic_shuffle_984/guarded": {
+      "delta_H": 4.367508932578673,
+      "conditional_class_bootstrap_95": [
+        2.0185695167687507,
+        6.845501631608874
+      ]
+    },
+    "repaired_local/guarded vs native_calibration/plain": {
+      "delta_H": 4.027739976228631,
+      "conditional_class_bootstrap_95": [
+        1.6885916809376282,
+        6.463654333574888
+      ]
+    },
+    "repaired_local/guarded vs native_calibration/guarded": {
+      "delta_H": 4.027739976228631,
+      "conditional_class_bootstrap_95": [
+        1.6885916809376282,
+        6.463654333574888
+      ]
+    },
+    "repaired_local/guarded vs baseline": {
+      "delta_H": 4.027739976228631,
+      "conditional_class_bootstrap_95": [
+        1.6885916809376282,
+        6.463654333574888
+      ]
+    },
+    "repaired_local/standalone vs native_local/standalone": {
+      "delta_H": 3.6105842726758866,
+      "conditional_class_bootstrap_95": [
+        1.6505758464968743,
+        5.826100446025003
+      ]
+    },
+    "repaired_local/standalone vs wrong_local/standalone": {
+      "delta_H": 9.402548526232358,
+      "conditional_class_bootstrap_95": [
+        5.1996755730171085,
+        13.676796318102538
+      ]
+    },
+    "repaired_local/standalone vs uniform_local/standalone": {
+      "delta_H": 15.160274091794115,
+      "conditional_class_bootstrap_95": [
+        8.915252769097755,
+        20.943152355003637
+      ]
+    },
+    "repaired_local/standalone vs whole_local/standalone": {
+      "delta_H": 10.405246525463951,
+      "conditional_class_bootstrap_95": [
+        3.478767184165515,
+        18.617584201461874
+      ]
+    },
+    "repaired_local/standalone vs whole_global/standalone": {
+      "delta_H": 9.841525682198423,
+      "conditional_class_bootstrap_95": [
+        -2.818221526743289,
+        23.517188057986235
+      ]
+    }
+  },
+  "scope": "Conditional paired class bootstrap; reused development data; selected policies fixed; no multiplicity correction or retraining/selection uncertainty. Exploratory, not confirmatory."
+}

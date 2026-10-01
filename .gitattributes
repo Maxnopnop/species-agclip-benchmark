@@ -52,3 +52,9 @@
 /attribute_fusion_experiment.py text eol=lf
 /test_attribute_fusion.py text eol=lf
 /report_attribute_fusion.py text eol=lf
+/configs/local_attribute_v1.json text eol=lf
+/local_attribute_experiment.py text eol=lf
+/test_local_attribute.py text eol=lf
+/predict_local_attribute.py text eol=lf
+/verify_local_attribute.py text eol=lf
+/report_local_attribute.py text eol=lf

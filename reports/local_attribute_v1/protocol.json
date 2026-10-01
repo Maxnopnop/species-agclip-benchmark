@@ -1,0 +1,72 @@
+{
+  "locked_at_utc": "2026-09-30T23:59:52.961396+00:00",
+  "source": {
+    "files": {
+      "configs\\local_attribute_v1.json": "198f7f01e1ded47af7b755a273358d907dbb3f8bfb9f92564ba74bcee2b400a4",
+      "local_attribute_experiment.py": "6a58cd57b38672d38800e4e4c0895aa7f2038bc90c1005fdb121dec6963a1695",
+      "attribute_fusion_experiment.py": "4e40cef071bd52017343d96c4568e7b87a818558dc5baad5d1b4f4d3ab64b0bc",
+      "cache\\attribute_path_v1\\dense.pt": "95d2175d4f4ee56853ee974df4be730448232a4dc38826bd38ebb28ae1baba9e",
+      "runs\\attribute_path_v1\\localizers.pt": "6e70fda57f8d9179cb1e48cf13309968a267fa261032b7171e1108d6e2beb95a",
+      "cache\\cub_siglip_v1\\features_development.pt": "925f63ca6f3ba3e1054056d9f1f63c785aa2bad020482bbc15b290ee825bc6a2",
+      "cache\\cub_siglip_v2\\text.pt": "0fc74753141ec384f7f5a439053d212d65fbe1d498aea22ef001a06ed85b20fb"
+    },
+    "previous": {
+      "multimodal\\attribute_path_v1.py": "4e525ff8106aece654e94abd2ae0ad28203aa86c027a162a717e5132f296daf0",
+      "configs\\attribute_path_v1.json": "1abfa34a03dc49d5d3f879db9339a5f3893cf34671f676c4addcf1b4a365f5c9",
+      "data\\cub100_v1\\manifest.json": "cf25f035b5fa011e2a60e24d1f3ea4d7cfaa40aae3adf03032a715a6a36c47fe",
+      "cache\\four_routes_v1\\models\\fgclip2_base\\config.json": "030a2f607e2090c2bd580be40361f228e7849381f025e5e2dc8955c84d53fb8f",
+      "cache\\four_routes_v1\\models\\fgclip2_base\\modeling_fgclip2.py": "190fd0710336a885b74a1a2b3a7054824cd095d28348833ff45f5c0a3458c2d1",
+      "cache\\four_routes_v1\\models\\fgclip2_base\\configuration_fgclip2.py": "a554895ce535aacb123cbca527376b8bf97186201f80130d4925b44895674187"
+    }
+  },
+  "config": {
+    "version": "local_attribute_v1",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "variants": [
+      "repaired_local",
+      "native_local",
+      "wrong_local",
+      "uniform_local",
+      "whole_local",
+      "whole_global"
+    ],
+    "readout_steps": 400,
+    "readout_lr": 0.01,
+    "readout_batch": 64,
+    "readout_scale": 20.0,
+    "semantic_permutations": [
+      982,
+      983,
+      984
+    ],
+    "weights": [
+      0.0,
+      0.05,
+      0.1,
+      0.2,
+      0.5
+    ],
+    "seen_penalties": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "native_margin_threshold": 0.5,
+    "max_unseen_new_error_fraction": 0.01,
+    "folds": 5,
+    "fold_seed": 20260929,
+    "bootstrap_seed": 20261001,
+    "bootstrap_replicates": 2000,
+    "training": "Frozen previous FG-CLIP2 cache/localizers. Train 18 fresh readouts: three seeds, six feature/subset arms. BCE on known train_seen attributes plus CE restricted to 50 seen classes, each weight 1. Final step only. First five arms use exactly the same 144 local attributes; whole_global uses the other 86 and is a dimensionality-unmatched complement. Class prototypes are renormalized within each subset. Never use development annotations for training.",
+    "pure_local_scope": "No explicit global feature, global attribute columns, or direct class head enters local-only training/inference. Dense Transformer features can still contain global context; this is not a pixel-crop-only model.",
+    "fusion": "z(native)+lambda*z(attributes), standardizing each image over 75 candidates. Plain policy selects lambda maximizing mean three-seed fit H. Guarded policy additionally subtracts gamma from seen-class scores, and only allows changes when the native top-two standardized margin is <=0.5. At selection require mean fit U>=native U, mean fit H>=native H, and mean newly introduced unseen errors<=1% of fit unseen images. Maximize mean fit H, tie smaller lambda then gamma. Exact native fallback included. Constraints apply on fitting folds, not promised on held-out folds.",
+    "controls": "Identical fusion budgets across attribute arms. Three fixed inference-time local semantic-column permutations are reported separately, never selected among. Native-only calibration control has lambda=0 and the same gamma/gate grid and constraints. Plain and guarded are separate methods with different budgets; report both, and do not attribute all guard improvement to attributes.",
+    "selection": "Five stratified folds, same split as attribute_fusion_v1. Shared weight/penalty per fold across three fixed training seeds; fit on other four folds, pool held-out predictions. No held-out labels enter prediction/gating/selection. No additional grid or model after results.",
+    "scope": "500 training, 500 reused-development images; 50 seen, 25 development-unseen candidate classes. No final-set access. Exploratory evidence only. Official class-attribute profiles are extra semantic side information; pretraining overlap is unknown. Conditional class bootstrap omits training/selection uncertainty and is not confirmatory."
+  }
+}

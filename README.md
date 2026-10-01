@@ -118,3 +118,17 @@ python -m venv .venv
 - [Google OWL-ViT model](https://huggingface.co/google/owlvit-base-patch32)
 - [AG-CLIP: Attribute-Guided CLIP for Zero-Shot Fine-Grained Recognition](https://doi.org/10.1109/OJCS.2026.3654171)
 - Pilot attribute sources are recorded individually in `configs/pilot_attributes.json`.
+
+## 局部属性隔离与未见类误改（2026-10-01）
+
+最新研究记录：[完整报告](reports/local_attribute_v1/summary_zh.md)。仅保留 144 项局部属性重新训练读出层，比较相同属性在修复定位、原始定位、错误部位、均匀池化及全图特征上的作用；并使用带误改约束的五折融合。当前结果来自重复使用的开发集，尚不是独立测试结论。
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest test_local_attribute test_attribute_fusion test_attribute_path -v
+.\.venv\Scripts\python.exe local_attribute_experiment.py --stage all
+.\.venv\Scripts\python.exe verify_local_attribute.py
+.\.venv\Scripts\python.exe report_local_attribute.py
+.\.venv\Scripts\python.exe predict_local_attribute.py --image E:\path\bird.jpg --seed 42
+```
+
+依赖本机已准备好的 `attribute_path_v1` 缓存、局部定位器和 SigLIP 2 资产；这些数据/权重没有上传。推理仅接受图片与固定模型资产，候选集限定为本实验的 75 个开发物种。`inference_policy.json` 保存探索性配置，不代表已验证支持任意新物种。
