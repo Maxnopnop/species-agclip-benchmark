@@ -32,6 +32,8 @@ Finish line: matched frozen-feature visual baselines on the exact expanded20 spl
 - [x] Lock protocol and implement/test two visual controls.
 - [x] Complete 90 new training cells and lock choices before evaluation.
 - [x] Replay existing 225 cells, evaluate controls, compare three stages.
-- [ ] Report results/limitations, verify and publish.
+- [x] Report results/limitations, verify and publish.
 
 Protocol intent: reuse 20 classes/1,000 images; frozen backbones; shots5/10/20; seeds42/43/44; same sampled images, LR1e-3, 200+200 update/checkpoint schedule. Add standard linear visual head and an equal-parameter random-code projection control. CLIP ViT-B/32 visual baseline retains CLIP pretraining and must never be called CLIP-free. Existing test set is reused, so all inference is exploratory. Do not tune to force improvements.
+
+Completion: all 315 cells reported; eight tests passed; plot reviewed; code and bilingual results published to the public repository in 3052dfd. No photos, caches or checkpoints uploaded. Bounded task complete; no additional tuning started.
