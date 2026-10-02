@@ -1,0 +1,85 @@
+{
+  "source": {
+    "configs\\three_stage_v1.json": "bae463c997f0cc1a0bfa762cb1680eb3c0afc661d1bd20f2eb3423989d6ee09b",
+    "three_stage_experiment.py": "95b38eb1be07f227bea06c2160c5629e7008c1ad0d1492f804f5018cc7910726",
+    "multimodal\\expanded.py": "7b0152fbd062a0b032fe1d967cf74182a528febf3ff243aa06712eb4d9d06cc6",
+    "multimodal\\experiment.py": "2a8cd535579c198469ad4060f293085158bf27781bb59b13437a3cff47c1893c",
+    "multimodal\\models.py": "192ffa1e9dfc84d47d0d67b11e61c2613b6734041f22dec65cc13a5afbe54fea",
+    "run.py": "bffd9a79e443fda1d567e9b293c0e07c075770e78dd70109ec41dbd39f1e1854",
+    "configs\\expanded_protocol.json": "82f09f5f25e69ff7515add0c4ad41fceb238bd06fae396042ae7b8cdcac7987f",
+    "data\\expanded20\\manifest.json": "d8719728183ece936bcf5067451ece7e8e2161f46186b5f8054720fc097221d1",
+    "configs\\expanded_attributes.json": "d733cfe3b762a0dd779619c93dd98a33b3d1620758428a5246915e296bbc33d1",
+    "cache\\expanded20\\text_bank.pt": "a7ce720ebf01b0ea6f1571d13054148457878bc7421e3087ebb3cd7a011a6aea",
+    "runs\\expanded20\\selection_locked.json": "168a32348c6fdabd39bf313d0f2c56c5c200493ab03f38560bedb327594a4c5b",
+    "cache\\expanded20\\efficientnet_b0_features.pt": "c209b1f185a7c66b8ee2123b671a78352c59a091b385f685f5854bdd8196cdb3",
+    "cache\\expanded20\\resnet18_features.pt": "f2d6e4fef8f380f5be0ed5a7375d0e7c15108fc12af013b999764679925985aa",
+    "cache\\expanded20\\convnext_tiny_features.pt": "b47f221d62967222fff8f226180f497f3fede345af434dd37f90026a3d0a2373",
+    "cache\\expanded20\\vit_b_16_features.pt": "ca17a1d10cbd761d8f854a4ea8e0a35e5f055288985d78db72a50e136df9996b",
+    "cache\\expanded20\\clip_vit_b32_features.pt": "074061a20454fe21f2eee91d79d230d3011a847db8ca7a12eced0a5d28d955d1"
+  },
+  "config": {
+    "version": "three_stage_v1",
+    "backbones": [
+      "efficientnet_b0",
+      "resnet18",
+      "convnext_tiny",
+      "vit_b_16",
+      "clip_vit_b32"
+    ],
+    "shots": [
+      5,
+      10,
+      20
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "new_variants": [
+      "visual_linear",
+      "random_codes"
+    ],
+    "reused_variants": [
+      "baseline",
+      "region_only",
+      "ag_mean",
+      "ag_attention",
+      "ag_aux"
+    ],
+    "random_code_seed": 20261002,
+    "stage_steps": [
+      200,
+      200
+    ],
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 32,
+    "validation_interval": 20,
+    "selection": "Same existing train sampler, AdamW, cosine schedule, gradient clipping, two stages, and validation macro-F1 then CE rule. Select stage1 checkpoint; reset optimizer/scheduler and RNG for stage2. Preserve historical AG choices based only on mean validation scores. Lock all90 new checkpoint selections before test evaluation.",
+    "primary_comparisons": [
+      [
+        "visual_linear",
+        "baseline"
+      ],
+      [
+        "baseline",
+        "selected_ag"
+      ],
+      [
+        "region_only",
+        "selected_ag"
+      ],
+      [
+        "random_codes",
+        "baseline"
+      ]
+    ],
+    "statistics": "Three-seed mean/SD for accuracy and macro-F1. Paired exact McNemar and stratified image bootstrap on three-seed probability-ensemble predictions. Holm across all60 declared comparisons. Do not treat three predictions per image as independent examples. Exploratory conditional intervals, no retraining or historical dataset-reuse uncertainty.",
+    "scope": "Closed-set expanded20: 20 species, 1000 images (600 train pool,200 validation,200 previously evaluated test). Each run samples100/200/400 training images. Frozen same cached visual backbones. Reuse225 verified historical cells and train90 controls. Not unseen-class testing, not full CLIP training or original AG-CLIP reproduction. No new data or hyperparameter sweep after results.",
+    "fairness": "visual_linear is an ordinary learned D-to-20 classifier without textual assets, with fewer parameters than text projection. random_codes uses exactly the original D-to-512 projection and temperature, but label prototypes are deterministic random vectors without language. This controls head capacity, not every effect of prototype geometry. Common LR/budget is not a claim of individually optimal tuning. Existing AG has extra parameters and five deterministic geometric crops, not anatomical localization.",
+    "clip_caveat": "clip_vit_b32 image features retain original CLIP pretraining even with visual_linear or random_codes. Those rows are visual readouts of a CLIP-pretrained backbone, never a no-CLIP-pretraining counterfactual. First four use their existing image-pretrained caches.",
+    "delivery": "Publish code/configuration/metrics/plots only, not photos, feature caches, checkpoints, or credentials."
+  },
+  "locked_at_utc": "2026-10-02T06:29:07.753137+00:00"
+}

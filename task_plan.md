@@ -20,3 +20,18 @@ Implement -> test invariants -> lock -> run -> replay/audit -> deliver. Stop whe
 None. Planning resolver returned empty: no existing plan; using legacy project-root planning files.
 
 Completion: bounded scientific work and verification are complete; final Git commit/push follows packaging. No extra search round is planned. Remaining scientific limitation is independent-data validation, explicitly outside this development-only round.
+
+# Three-stage five-backbone comparison (2026-10-02)
+
+User goal: compare pure visual classification, supervised image-text adaptation, and attribute-guided adaptation for the original five backbones.
+
+Finish line: matched frozen-feature visual baselines on the exact expanded20 splits/shots/seeds; verify and reuse existing text/AG cells; preserve validation-only choices; report all methods and paired uncertainty, test implementation, publish code/results to the now-public authorized repository. No accuracy-gain requirement.
+
+## Current phases
+- [x] Inspect existing code, artifacts, and previous training budget.
+- [x] Lock protocol and implement/test two visual controls.
+- [x] Complete 90 new training cells and lock choices before evaluation.
+- [x] Replay existing 225 cells, evaluate controls, compare three stages.
+- [ ] Report results/limitations, verify and publish.
+
+Protocol intent: reuse 20 classes/1,000 images; frozen backbones; shots5/10/20; seeds42/43/44; same sampled images, LR1e-3, 200+200 update/checkpoint schedule. Add standard linear visual head and an equal-parameter random-code projection control. CLIP ViT-B/32 visual baseline retains CLIP pretraining and must never be called CLIP-free. Existing test set is reused, so all inference is exploratory. Do not tune to force improvements.

@@ -1,0 +1,21 @@
+{
+  "version": "three_stage_v1",
+  "backbones": ["efficientnet_b0", "resnet18", "convnext_tiny", "vit_b_16", "clip_vit_b32"],
+  "shots": [5, 10, 20],
+  "seeds": [42, 43, 44],
+  "new_variants": ["visual_linear", "random_codes"],
+  "reused_variants": ["baseline", "region_only", "ag_mean", "ag_attention", "ag_aux"],
+  "random_code_seed": 20261002,
+  "stage_steps": [200, 200],
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "batch_size": 32,
+  "validation_interval": 20,
+  "selection": "Same existing train sampler, AdamW, cosine schedule, gradient clipping, two stages, and validation macro-F1 then CE rule. Select stage1 checkpoint; reset optimizer/scheduler and RNG for stage2. Preserve historical AG choices based only on mean validation scores. Lock all90 new checkpoint selections before test evaluation.",
+  "primary_comparisons": [["visual_linear", "baseline"], ["baseline", "selected_ag"], ["region_only", "selected_ag"], ["random_codes", "baseline"]],
+  "statistics": "Three-seed mean/SD for accuracy and macro-F1. Paired exact McNemar and stratified image bootstrap on three-seed probability-ensemble predictions. Holm across all60 declared comparisons. Do not treat three predictions per image as independent examples. Exploratory conditional intervals, no retraining or historical dataset-reuse uncertainty.",
+  "scope": "Closed-set expanded20: 20 species, 1000 images (600 train pool,200 validation,200 previously evaluated test). Each run samples100/200/400 training images. Frozen same cached visual backbones. Reuse225 verified historical cells and train90 controls. Not unseen-class testing, not full CLIP training or original AG-CLIP reproduction. No new data or hyperparameter sweep after results.",
+  "fairness": "visual_linear is an ordinary learned D-to-20 classifier without textual assets, with fewer parameters than text projection. random_codes uses exactly the original D-to-512 projection and temperature, but label prototypes are deterministic random vectors without language. This controls head capacity, not every effect of prototype geometry. Common LR/budget is not a claim of individually optimal tuning. Existing AG has extra parameters and five deterministic geometric crops, not anatomical localization.",
+  "clip_caveat": "clip_vit_b32 image features retain original CLIP pretraining even with visual_linear or random_codes. Those rows are visual readouts of a CLIP-pretrained backbone, never a no-CLIP-pretraining counterfactual. First four use their existing image-pretrained caches.",
+  "delivery": "Publish code/configuration/metrics/plots only, not photos, feature caches, checkpoints, or credentials."
+}
