@@ -1,0 +1,24 @@
+{
+  "replayed_cells": 11,
+  "max_error": 0.0,
+  "minimum_phash_distance": 6,
+  "minimum_dhash_distance": 9,
+  "class_overlap": 0,
+  "duplicate_threshold_matches": 0,
+  "tests_passed": 5,
+  "seal_before_test": true,
+  "coverage": [
+    {
+      "stage": "development",
+      "zero": 0,
+      "one": 190,
+      "two": 210
+    },
+    {
+      "stage": "test",
+      "zero": 0,
+      "one": 121,
+      "two": 179
+    }
+  ]
+}

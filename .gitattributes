@@ -75,3 +75,8 @@ fungitastic_*.py -text
 configs/fungitastic_confidence_v1.json -text
 report_fungitastic.py text eol=lf
 test_fungitastic.py text eol=lf
+
+/coca_*.py text eol=lf
+/configs/coca_pilot_v1.json text eol=lf
+/test_coca_pilot.py text eol=lf
+/report_coca_pilot.py text eol=lf

@@ -75,3 +75,15 @@ User authorized download and testing. Select ten species using metadata counts, 
 - [x] Audit,bilingual report and authorized GitHub delivery.
 
 Completed42 cells,seven tests,prediction replay maxerror0. Temporal grouping and hash-screening audit passed.600 candidates downloaded,500 used;177/200 test images have two detections. Weighted-minus-uniform seed means0/+0.33pp,ensemble+0.5/-1.5pp;zero positive Holm-significant contrasts. Bilingual report/plot reviewed;Git publication is final delivery step.
+
+
+# CoCa small-scale AG replication (2026-10-03)
+
+Finish line: deploy public CoCa ViT-L/14, verify forward/backward within currently shared8GB GPU, run bounded class-disjoint CUB pilot with matched baseline/attribute/noCAF/CAF controls, audit and report differences from paper without promising gains. First unknown: download size and actual memory fit. Use native CoCa image/text embeddings;partially fine-tune vision/text tails if feasible,otherwise explicitly report frozen approximation. No termination of unrelated generative_ris_v11 GPU process. Fixed data and validation selection;seal before final testing. Exact paper checkpoint and encoder-sharing ambiguity remain unresolved.
+
+- [x] Download pinned public CoCa weights and verify memory/gradients.
+- [x] Lock small class-disjoint data/protocol and implement tests.
+- [x] Complete bounded matched training and held-out evaluation.
+- [x] Audit,bilingual findings and authorized publication.
+
+Bounded pilot complete:10 trained cells plus native reference,11 exact prediction replays,5 tests. ZSL baseline97.25,attributes97.50,CAF96.50,confidence95.75,regions97.00;4/10 selectionsstep0. Partial-tail training peak<=1672MiB;native smoke1674MiB. No positive-gain claim or post-test tuning. Bilingual reports/figure checked and publication prepared.

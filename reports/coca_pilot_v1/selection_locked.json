@@ -1,0 +1,37 @@
+{
+  "source": {
+    "configs/coca_pilot_v1.json": "a07fd05c715bb367f92db5d34fcc2f5429e897e5381326e7e4ca65eb13f3d4ed",
+    "coca_experiment.py": "4428aa3ed374fa08a9a5b3b9736230544251312640cb5a3005e3dee6f2ef6a28",
+    "coca_components.py": "7cb993c580e884f90ffc9ce4155c2fb19db5d060a0725dc9ae989f133db838cc",
+    "coca_data.py": "2fe8029a1d2a81062a228f278089dab5c7f7d20d1399c911579c7a0293880ce0",
+    "coca_download.py": "fd6cc76655c05d195ae75d5211d54c1aa421df3912dcaf86df62771ee3b20e52",
+    "confidence_fresh.py": "3a40ccef0a4008819754a3a92213ef5b38355074706e2696a4b38354082702b7",
+    "multimodal/grounded_data.py": "9f56ef680dcf30e9943f048a0520964b3d1c08aff73c6bd40184ee83ba44ce96",
+    "data_tools.py": "3fd3da8e4e2816df1e7ef033d961bf2586cc1dde05ea954774523e3ae00d8c62",
+    "run.py": "bffd9a79e443fda1d567e9b293c0e07c075770e78dd70109ec41dbd39f1e1854",
+    "data/coca_pilot_v1/manifest.json": "15406a69c4669c7e9e074bedeb0499be7c8ef84b172b9fde0273e97b939c45d3",
+    "open_clip_version": "3.2.0",
+    "weight_sha256": "73725652298ad76ed2162caffdae96d8653a05d7a29b6281103e4df81d0ff8ea",
+    "weight_revision": "74207cb7fde8eafc9864451ebd332fa8e75b150f",
+    "open_clip/transformer.py": "4e860ad042e0a7d6afeeba2fc9e5f160f7847de38b262360aa9bedf92f69595f",
+    "open_clip/coca_model.py": "5d380fd83ab8df1995e2b29fbd26f2e8b48f054197628738bc436133ebdb702d",
+    "open_clip/factory.py": "e161e0e470a77bdec8c4da46e2ebbf5a1a83f952f0314c7340272f6792e1a867"
+  },
+  "assets": {
+    "cache/coca_pilot_v1/initial_tail.pt": "96eb97746c31c03727fb96f89a3bd2ed72f355507fcfaf5f5b18dd541ecef90b",
+    "cache/coca_pilot_v1/text_prefix.pt": "0b8042ee605fec6ed948ac3310bf2e883f05a1033bbf5f5344a777f81c137d6d",
+    "cache/coca_pilot_v1/prefix_development.pt": "de6827db9ecc09b1dad9aaab4be1e03832c07aae7dada447e87ad429fabb2f03",
+    "cache/coca_pilot_v1/regions_development.json": "a4f76afd6b320de4d728717e6bdbd3764d3dac74d4332dc6f496ec550f4fa15c",
+    "runs/coca_pilot_v1/42/baseline.pt": "0d4ce76d34161152027747224bb086409a399063111ea20ea046b90f3c71aaa3",
+    "runs/coca_pilot_v1/42/attributes.pt": "608c27d32668b9ad653f331e3b93c2f49f9d024c0cf8c6fe5aba6d2ccf6401b0",
+    "runs/coca_pilot_v1/42/caf.pt": "88880511fa5bc9c2c38ebf5ff4152fc40844234cb647d5d9fe53b4fdd55c5720",
+    "runs/coca_pilot_v1/42/confidence.pt": "097657daa75c63d04405b84c9e82b649b890ea6439cfefb87961305a6494e082",
+    "runs/coca_pilot_v1/42/regions.pt": "585cb9b6eb1259c6561ff0cba547f825f0630c6571388068a99380dff1c25e18",
+    "runs/coca_pilot_v1/43/baseline.pt": "678a7bead2e18740d6fc6b89bc65a9125a72d24035b3a55fdf52a418af1516b9",
+    "runs/coca_pilot_v1/43/attributes.pt": "686b23a63b043f67a775635379826cbfdf1ed2bbc7809879d2ad14d10f7070ba",
+    "runs/coca_pilot_v1/43/caf.pt": "1182871ce3e5b3b6afbc0c3f5160051d39f55238d8e26f627874af72c2f43cc9",
+    "runs/coca_pilot_v1/43/confidence.pt": "9fa3b050cff3052ba18092edc960ca97e13d21faf8eea9861fcec14e5130807b",
+    "runs/coca_pilot_v1/43/regions.pt": "e46aa8b354a50f5eb0bf5e64cf4dce33702076c7f22dd60ff1f1ddb9b1412c5e"
+  },
+  "locked_at_utc": "2026-10-03T13:53:51.872304+00:00"
+}

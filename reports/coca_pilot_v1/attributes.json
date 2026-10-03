@@ -1,0 +1,98 @@
+[
+  {
+    "prompt": "a bird with black wings.",
+    "source_id": 21
+  },
+  {
+    "prompt": "a bird with white wings.",
+    "source_id": 22
+  },
+  {
+    "prompt": "a bird with grey wings.",
+    "source_id": 15
+  },
+  {
+    "prompt": "a bird with a all-purpose bill.",
+    "source_id": 7
+  },
+  {
+    "prompt": "a bird with a dagger bill.",
+    "source_id": 2
+  },
+  {
+    "prompt": "a bird with a cone bill.",
+    "source_id": 8
+  },
+  {
+    "prompt": "a bird with a white breast.",
+    "source_id": 118
+  },
+  {
+    "prompt": "a bird with a black breast.",
+    "source_id": 117
+  },
+  {
+    "prompt": "a bird with a grey breast.",
+    "source_id": 111
+  },
+  {
+    "prompt": "a bird with a black back.",
+    "source_id": 70
+  },
+  {
+    "prompt": "a bird with a grey back.",
+    "source_id": 64
+  },
+  {
+    "prompt": "a bird with a brown back.",
+    "source_id": 60
+  },
+  {
+    "prompt": "a bird with a white belly.",
+    "source_id": 210
+  },
+  {
+    "prompt": "a bird with a grey belly.",
+    "source_id": 203
+  },
+  {
+    "prompt": "a bird with a buff belly.",
+    "source_id": 212
+  },
+  {
+    "prompt": "a bird with a black crown.",
+    "source_id": 305
+  },
+  {
+    "prompt": "a bird with a brown crown.",
+    "source_id": 295
+  },
+  {
+    "prompt": "a bird with a grey crown.",
+    "source_id": 299
+  },
+  {
+    "prompt": "a bird with solid wings.",
+    "source_id": 309
+  },
+  {
+    "prompt": "a bird with multi-colored wings.",
+    "source_id": 312
+  },
+  {
+    "prompt": "a bird with striped wings.",
+    "source_id": 311
+  },
+  {
+    "prompt": "a bird with a solid breast.",
+    "source_id": 55
+  },
+  {
+    "prompt": "a bird with a multi-colored breast.",
+    "source_id": 58
+  },
+  {
+    "prompt": "a bird with a striped breast.",
+    "source_id": 57
+  }
+]

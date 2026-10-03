@@ -1,0 +1,62 @@
+[
+  {
+    "variant": "baseline",
+    "zsl_mean": 0.9724999999999999,
+    "seen_mean": 0.9099999999999999,
+    "unseen_mean": 0.945,
+    "harmonic_mean": 0.9271698113207546,
+    "zsl_sd": 0.0035355339059327407,
+    "steps": [
+      40,
+      80
+    ]
+  },
+  {
+    "variant": "attributes",
+    "zsl_mean": 0.9749999999999999,
+    "seen_mean": 0.9099999999999999,
+    "unseen_mean": 0.95,
+    "harmonic_mean": 0.9295698924731182,
+    "zsl_sd": 0.007071067811865403,
+    "steps": [
+      40,
+      60
+    ]
+  },
+  {
+    "variant": "caf",
+    "zsl_mean": 0.965,
+    "seen_mean": 0.895,
+    "unseen_mean": 0.9374999999999999,
+    "harmonic_mean": 0.9152602739726027,
+    "zsl_sd": 0.007071067811865481,
+    "steps": [
+      0,
+      60
+    ]
+  },
+  {
+    "variant": "confidence",
+    "zsl_mean": 0.9575,
+    "seen_mean": 0.9199999999999999,
+    "unseen_mean": 0.9024999999999999,
+    "harmonic_mean": 0.9082822519945807,
+    "zsl_sd": 0.017677669529663625,
+    "steps": [
+      20,
+      0
+    ]
+  },
+  {
+    "variant": "regions",
+    "zsl_mean": 0.97,
+    "seen_mean": 0.8699999999999999,
+    "unseen_mean": 0.9549999999999998,
+    "harmonic_mean": 0.9105205479452053,
+    "zsl_sd": 0.0,
+    "steps": [
+      0,
+      0
+    ]
+  }
+]

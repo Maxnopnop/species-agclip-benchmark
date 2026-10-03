@@ -1,0 +1,14 @@
+{
+  "native_image_max_error": 0.0,
+  "native_text_max_error": 0.0,
+  "gradient_norms": {
+    "visual_tail": 29.817172920765916,
+    "text_tail": 15.594713704881869,
+    "attribute_mlp": 5.3493246319352785,
+    "caf": 0.5794253660124228
+  },
+  "loss": 1.58984375,
+  "two_updates_seconds": 0.23400000000037835,
+  "peak_allocated_mib": 1674.12060546875,
+  "peak_reserved_mib": 1720.0
+}
