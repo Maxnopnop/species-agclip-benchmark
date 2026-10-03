@@ -1,0 +1,3 @@
+{
+  "reason": "Initial invocation failed before any image features or training because new cache directory did not exist. Added mkdir in main;superseded preliminary protocol is retained. No model predictions or test grounding had occurred."
+}

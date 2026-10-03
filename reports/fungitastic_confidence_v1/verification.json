@@ -1,0 +1,134 @@
+{
+  "replayed_cells": 42,
+  "max_probability_error": 0.0,
+  "minimum_phash_distance": 12,
+  "minimum_dhash_distance": 10,
+  "prior_and_cross_split_duplicate_matches": 0,
+  "cross_split_observation_overlap": 0,
+  "coverage": [
+    {
+      "split": "train",
+      "images": 200,
+      "zero": 2,
+      "one": 11,
+      "two": 187,
+      "mean_larger_weight": 0.679640531539917
+    },
+    {
+      "split": "val",
+      "images": 100,
+      "zero": 3,
+      "one": 7,
+      "two": 90,
+      "mean_larger_weight": 0.6819465160369873
+    },
+    {
+      "split": "test",
+      "images": 200,
+      "zero": 8,
+      "one": 15,
+      "two": 177,
+      "mean_larger_weight": 0.6737488508224487
+    }
+  ],
+  "interventions": [
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0015035271644592285
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 0,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0034270286560058594
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.011046051979064941
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 0,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.030835449695587158
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0010516345500946045
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 0,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.002114206552505493
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.01494663953781128
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 1,
+      "accuracy_change_pp": -0.5000000000000004,
+      "max_probability_change": 0.024456560611724854
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "intervention": "ag_uniform",
+      "changed_predictions": 1,
+      "accuracy_change_pp": -0.5000000000000004,
+      "max_probability_change": 0.04915556311607361
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 3,
+      "accuracy_change_pp": -1.0000000000000009,
+      "max_probability_change": 0.08720555901527405
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.005771428346633911
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 0,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.009737864136695862
+    }
+  ],
+  "tests_passed": 7,
+  "seal_before_score": true
+}

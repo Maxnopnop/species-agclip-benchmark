@@ -1,0 +1,47 @@
+{
+  "version": "fungitastic_confidence_v1",
+  "backbones": [
+    "efficientnet_b0",
+    "clip_vit_b32"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "variants": [
+    "visual",
+    "random_codes",
+    "text",
+    "region_only",
+    "ag_uniform",
+    "ag_confidence",
+    "ag_shuffled"
+  ],
+  "shots": 20,
+  "stage_steps": 200,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "batch_size": 32,
+  "validation_interval": 20,
+  "random_code_seed": 20261003,
+  "sampling_seed": 202610032,
+  "classes": 10,
+  "per_class": {
+    "train": 20,
+    "val": 10,
+    "test": 20
+  },
+  "dedup_hamming_threshold": 4,
+  "detector_threshold": 0.05,
+  "detector_nms_iou": 0.5,
+  "min_region_area": 0.005,
+  "max_region_area": 0.95,
+  "max_regions": 2,
+  "selection": "FungiTastic Mini Kaggle mirror. Exactly one lexicographically first photo per observation. Fixed-seed shuffle of species with >=35 distinct2022 and >=25 distinct2023 observations;first ten species with enough nonduplicate photos.20 train and10 validation observations from2022,20 test from2023. Reject file/pixel/perceptual duplicates within new data and against historical pilot image fingerprints. No model scores involved.",
+  "method": "Reuse unchanged Head/train and sealed confidence_fresh pipeline. Fixed30 fungus visual prompts chosen before image/model evaluation;shared vocabulary,not per-image captions. Frozen EfficientNet-B0 ImageNet1K_V1 and OpenAI CLIP ViT-B/32.7 arms,3 seeds. AG-inspired adaptation,not original paper replication.",
+  "holdout": "Lock manifest/protocol before grounding. Ground/extract only300 train+validation images;train42 models using validation macro-F1 then CE. Seal all checkpoints and developmental assets before grounding/extracting200 held-out test images. One final scoring after seal; no test-based adaptation. Seeds vary initialization/batches;all seeds use same200 training images.",
+  "statistics": "Six primary paired contrasts,weighted AG against uniform AG,text and shuffled confidence for each backbone;exact McNemar and5000 class-stratified bootstrap using three-seed probability ensemble;Holm across six. Also report seed mean/SD. A zero empirical bootstrap interval is not proof of zero population effect.",
+  "limitations": "Observation dates2022/2023 are later than release of OpenAI CLIP2021 and ImageNet1K data;claim conditional on metadata accuracy. Not guaranteed independent of OWL-ViT pretraining,whose data provenance is not fully audited. Species concepts may be known. One image per observation,not photographer-disjoint. Closed-set custom temporal subset,not official full benchmark. No guarantee no overfitting or no indirect overlap.",
+  "image_size": 500
+}

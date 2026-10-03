@@ -1,5 +1,7 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
+**FungiTastic 时间隔离复测（2026-10-03）：** [中文报告](reports/fungitastic_confidence_v1/summary_zh.md)、[English](reports/fungitastic_confidence_v1/summary_en.md)、[图表](reports/fungitastic_confidence_v1/comparison.png)。下载600张候选，固定使用10种真菌的500张照片、500条观察记录；2022年训练200/验证100，2023年测试200。两主干、七分支、三种子共42组均已训练并核验。纯视觉准确率为64.67%/62.50%，等权AG71.67%/74.50%，置信度AG71.67%/74.83%；六项预设检验无校正后显著正向收益。177/200测试图有两个区域，仍未支持置信度排序具有稳定价值。日期隔离只在元数据可靠前提下支持旧主干，OWL-ViT预训练重叠未审计。
+
 **新数据复测（2026-10-03）：** [中文报告](reports/confidence_fresh_v1/summary_zh.md)、[English](reports/confidence_fresh_v1/summary_en.md)、[图表](reports/confidence_fresh_v1/comparison.png)。排除项目此前120个CUB物种，固定抽取10个未使用物种、500张新图片（训练200／验证100／测试200），对8,242张历史图片进行文件、像素和感知哈希筛查。保持上一轮模型与训练方式，42个检查点锁定后才提取新测试特征。加权AG相对等权AG的种子均值变化为EfficientNet +0.50个百分点、CLIP 0.00；未证明显著收益。项目数据隔离不保证基础模型预训练无重叠，也不意味着训练必然不过拟合。
 
 **置信度加权小实验（2026-10-03）：** [中文报告](reports/confidence_v1/summary_zh.md)、[English](reports/confidence_v1/summary_en.md)、[图表](reports/confidence_v1/comparison.png)。在相同10类、500张图片、20-shot、三种子下，对EfficientNet-B0与CLIP ViT-B/32比较纯视觉、图文适配、等权AG、检测置信度AG及三个控制分支，共42组。等权/加权/打乱权重准确率持平（分别92.00%和93.33%）。权重干预改变概率但未改变预测；100张测试图仅41张有两个有效检测。此轮是冻结特征、历史数据上的轻量探索，不证明加权普遍无效。

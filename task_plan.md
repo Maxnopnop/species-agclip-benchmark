@@ -63,3 +63,15 @@ User goal: replace reused images to reduce adaptive evaluation overfitting. Keep
 Finish line: completed fixed matrix and verified data separation,including negative outcomes. No post-test tuning. New-dataset shift and ten-class scope must be reported. Initial file probe make_expanded.py was absent; used actual CUB metadata. PowerShell rg glob probe failed; resolved via -g.
 
 Complete:42 trained/scored/replayed models;all prior and cross-split exact/perceptual checks passed. New weighted AG seed-mean gain over uniform is +0.50pp EfficientNet,0.00pp CLIP;no positive Holm-significant contrast. No new tuning after results. Finish bounded task after publication.
+
+
+# FungiTastic temporal validation (2026-10-03)
+
+User authorized download and testing. Select ten species using metadata counts, one photo per observation;2022 train/validation and2023 test,20/10/20 per class if feasible. Two old fixed backbones,three seeds,seven unchanged arms;new fixed fungus visual vocabulary. No score-based subset selection. Verify dates and grouping, lock before feature scoring, seal before test processing. Qualify pretraining overlap protection as metadata-supported post-release photographs,not unseen concepts or an absolute guarantee.
+
+- [x] Download and audit metadata/images and freeze manifest.
+- [x] Implement domain configuration and verify grouping/seal.
+- [x] Train matched42 models and evaluate once.
+- [x] Audit,bilingual report and authorized GitHub delivery.
+
+Completed42 cells,seven tests,prediction replay maxerror0. Temporal grouping and hash-screening audit passed.600 candidates downloaded,500 used;177/200 test images have two detections. Weighted-minus-uniform seed means0/+0.33pp,ensemble+0.5/-1.5pp;zero positive Holm-significant contrasts. Bilingual report/plot reviewed;Git publication is final delivery step.

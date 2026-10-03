@@ -1,0 +1,65 @@
+{
+  "config": {
+    "version": "fungitastic_confidence_v1",
+    "backbones": [
+      "efficientnet_b0",
+      "clip_vit_b32"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "variants": [
+      "visual",
+      "random_codes",
+      "text",
+      "region_only",
+      "ag_uniform",
+      "ag_confidence",
+      "ag_shuffled"
+    ],
+    "shots": 20,
+    "stage_steps": 200,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 32,
+    "validation_interval": 20,
+    "random_code_seed": 20261003,
+    "sampling_seed": 202610032,
+    "classes": 10,
+    "per_class": {
+      "train": 20,
+      "val": 10,
+      "test": 20
+    },
+    "dedup_hamming_threshold": 4,
+    "detector_threshold": 0.05,
+    "detector_nms_iou": 0.5,
+    "min_region_area": 0.005,
+    "max_region_area": 0.95,
+    "max_regions": 2,
+    "selection": "FungiTastic Mini Kaggle mirror. Exactly one lexicographically first photo per observation. Fixed-seed shuffle of species with >=35 distinct2022 and >=25 distinct2023 observations;first ten species with enough nonduplicate photos.20 train and10 validation observations from2022,20 test from2023. Reject file/pixel/perceptual duplicates within new data and against historical pilot image fingerprints. No model scores involved.",
+    "method": "Reuse unchanged Head/train and sealed confidence_fresh pipeline. Fixed30 fungus visual prompts chosen before image/model evaluation;shared vocabulary,not per-image captions. Frozen EfficientNet-B0 ImageNet1K_V1 and OpenAI CLIP ViT-B/32.7 arms,3 seeds. AG-inspired adaptation,not original paper replication.",
+    "holdout": "Lock manifest/protocol before grounding. Ground/extract only300 train+validation images;train42 models using validation macro-F1 then CE. Seal all checkpoints and developmental assets before grounding/extracting200 held-out test images. One final scoring after seal; no test-based adaptation. Seeds vary initialization/batches;all seeds use same200 training images.",
+    "statistics": "Six primary paired contrasts,weighted AG against uniform AG,text and shuffled confidence for each backbone;exact McNemar and5000 class-stratified bootstrap using three-seed probability ensemble;Holm across six. Also report seed mean/SD. A zero empirical bootstrap interval is not proof of zero population effect.",
+    "limitations": "Observation dates2022/2023 are later than release of OpenAI CLIP2021 and ImageNet1K data;claim conditional on metadata accuracy. Not guaranteed independent of OWL-ViT pretraining,whose data provenance is not fully audited. Species concepts may be known. One image per observation,not photographer-disjoint. Closed-set custom temporal subset,not official full benchmark. No guarantee no overfitting or no indirect overlap.",
+    "image_size": 500
+  },
+  "source": {
+    "configs\\fungitastic_confidence_v1.json": "9c95f8bfcf11f70416be8e0f9d4d5a0831c05b427da2cc113df92c775aad3c93",
+    "fungitastic_experiment.py": "2775e68bb8895aa18a87b02265d02ffb7b8bde162856062323ab9e163d589060",
+    "fungitastic_data.py": "4147903a2fbff8c7b81091cc3c15a36b3ece24635264163b6f39d57b56750320",
+    "confidence_fresh.py": "3a40ccef0a4008819754a3a92213ef5b38355074706e2696a4b38354082702b7",
+    "confidence_experiment.py": "1cb565bc957b9dbd0af483533d622fa589909ba0001a39713e095504880cafb1",
+    "multimodal\\models.py": "192ffa1e9dfc84d47d0d67b11e61c2613b6734041f22dec65cc13a5afbe54fea",
+    "multimodal\\grounded_data.py": "9f56ef680dcf30e9943f048a0520964b3d1c08aff73c6bd40184ee83ba44ce96",
+    "multimodal\\expanded.py": "7b0152fbd062a0b032fe1d967cf74182a528febf3ff243aa06712eb4d9d06cc6",
+    "multimodal\\experiment.py": "2a8cd535579c198469ad4060f293085158bf27781bb59b13437a3cff47c1893c",
+    "run.py": "bffd9a79e443fda1d567e9b293c0e07c075770e78dd70109ec41dbd39f1e1854",
+    "data\\fungitastic_confidence_v1\\manifest.json": "42aa7d7d157e8fb6fef6f0f88dd876f97548a9a22cfeda7f064f2a33bed80de3",
+    "data\\fungitastic\\FungiTastic-Mini-Val.csv": "4efe156e0d75bfd73b1c6000199d920c9304deded93890b2dd5134ad754b465c",
+    "data\\fungitastic\\FungiTastic-Mini-Test.csv": "50d09a4fdbea38377611cbc49ddb954d9d26c9bf12708d531a790eb31a0aaf29"
+  },
+  "locked_at_utc": "2026-10-03T13:26:03.819762+00:00"
+}

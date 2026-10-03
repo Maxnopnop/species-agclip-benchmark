@@ -1,0 +1,77 @@
+{
+  "classes": [
+    {
+      "label": 0,
+      "name": "Boletus edulis",
+      "source_id": 44
+    },
+    {
+      "label": 1,
+      "name": "Russula olivacea",
+      "source_id": 181
+    },
+    {
+      "label": 2,
+      "name": "Agaricus xanthodermus",
+      "source_id": 24
+    },
+    {
+      "label": 3,
+      "name": "Amanita fulva",
+      "source_id": 29
+    },
+    {
+      "label": 4,
+      "name": "Agaricus campestris",
+      "source_id": 8
+    },
+    {
+      "label": 5,
+      "name": "Mycena haematopus",
+      "source_id": 85
+    },
+    {
+      "label": 6,
+      "name": "Amanita pantherina",
+      "source_id": 35
+    },
+    {
+      "label": 7,
+      "name": "Mycena rosea",
+      "source_id": 109
+    },
+    {
+      "label": 8,
+      "name": "Mycena pelianthina",
+      "source_id": 99
+    },
+    {
+      "label": 9,
+      "name": "Mycena epipterygia",
+      "source_id": 79
+    }
+  ],
+  "images": 500,
+  "train": 200,
+  "val": 100,
+  "test": 200,
+  "unique_observations": 500,
+  "years": {
+    "train": 2022,
+    "val": 2022,
+    "test": 2023
+  },
+  "historical_images_screened": 8742,
+  "rejected": [],
+  "downloaded": 600,
+  "eligible_species": 34,
+  "metadata_hashes": {
+    "data\\fungitastic\\FungiTastic-Mini-Val.csv": "4efe156e0d75bfd73b1c6000199d920c9304deded93890b2dd5134ad754b465c",
+    "data\\fungitastic\\FungiTastic-Mini-Test.csv": "50d09a4fdbea38377611cbc49ddb954d9d26c9bf12708d531a790eb31a0aaf29"
+  },
+  "source": "https://github.com/BohemianVRA/FungiTastic",
+  "mirror": "https://www.kaggle.com/datasets/picekl/fungitastic",
+  "limits": "eventDate is observation date,not independently verified shutter date. OWL-ViT pretraining overlap unaudited. No captions,coordinates or observation identity fed into models.",
+  "actual_image_bytes": 38637374,
+  "resolution": "500p author Kaggle mirror"
+}

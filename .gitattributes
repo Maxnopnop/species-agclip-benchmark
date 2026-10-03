@@ -70,3 +70,8 @@
 /confidence_fresh.py text eol=lf
 /test_confidence_fresh.py text eol=lf
 /report_confidence_fresh.py text eol=lf
+
+fungitastic_*.py -text
+configs/fungitastic_confidence_v1.json -text
+report_fungitastic.py text eol=lf
+test_fungitastic.py text eol=lf
