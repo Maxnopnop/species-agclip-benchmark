@@ -37,3 +37,16 @@ Finish line: matched frozen-feature visual baselines on the exact expanded20 spl
 Protocol intent: reuse 20 classes/1,000 images; frozen backbones; shots5/10/20; seeds42/43/44; same sampled images, LR1e-3, 200+200 update/checkpoint schedule. Add standard linear visual head and an equal-parameter random-code projection control. CLIP ViT-B/32 visual baseline retains CLIP pretraining and must never be called CLIP-free. Existing test set is reused, so all inference is exploratory. Do not tune to force improvements.
 
 Completion: all 315 cells reported; eight tests passed; plot reviewed; code and bilingual results published to the public repository in 3052dfd. No photos, caches or checkpoints uploaded. Bounded task complete; no additional tuning started.
+
+# Confidence aggregation pilot (2026-10-03)
+
+Goal: matched visual / text / uniform AG / detector-confidence AG comparison, plus random-code, region-only and shuffled-confidence controls. Use ten grounded seen classes, 500 existing images (300 train pool,100 val,100 historically used test);20 shots;EfficientNet-B0 and CLIP ViT-B/32;three seeds. Frozen features;200+200 updates;same initial alignment and identical AG modules. No post-result tuning or gain requirement.
+
+- [x] Inspect available detector outputs; all ten-class images already grounded.
+- [x] Implement and test pooling, extract frozen features and lock protocol.
+- [x] Complete training, seal validation selections, evaluate all arms.
+- [x] Audit and prepare bilingual results with limitations; Git delivery is the final step.
+
+Use root planning files (resolver returned empty). Preserve previous byte-hashed implementations. Comparison is a new closed-set lightweight pilot, not the previous twenty-class scores or an original AG-CLIP replication. No new detector/model downloads required.
+
+Completed42 final heads and prediction replay;five tests passed. Uniform/confidence/shuffled accuracy tied for both backbones. Test100-image coverage:25 zero regions,34 one,41 two. Weight interventions affect probabilities but no class predictions. Bounded experiment complete; no additional model search or post-result tuning.

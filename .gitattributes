@@ -62,3 +62,7 @@
 /three_stage_experiment.py text eol=lf
 /test_three_stage.py text eol=lf
 /report_three_stage.py text eol=lf
+/configs/confidence_v1.json text eol=lf
+/confidence_experiment.py text eol=lf
+/test_confidence.py text eol=lf
+/report_confidence.py text eol=lf

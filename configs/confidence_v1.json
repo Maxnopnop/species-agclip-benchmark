@@ -1,0 +1,18 @@
+{
+  "version": "confidence_v1",
+  "backbones": ["efficientnet_b0", "clip_vit_b32"],
+  "seeds": [42, 43, 44],
+  "shots": 20,
+  "variants": ["visual", "random_codes", "text", "region_only", "ag_uniform", "ag_confidence", "ag_shuffled"],
+  "stage_steps": 200,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "batch_size": 32,
+  "validation_interval": 20,
+  "random_code_seed": 20261003,
+  "data": "Ten grounded_v1 seen classes; existing expanded20 splits:300 training pool,100 validation,100 historically reused test images.20 images/class for training.Closed-set exploratory pilot.",
+  "method": "Frozen full-image and actual OWL-ViT region features. Seven matched arms. AG:project region plus detector-selected attribute text, pool tokens, then identical two-token global/attribute CAF. Only pooling weights vary:uniform,normalized detector confidence,or reversed confidence among valid regions. Max two regions. Region-only uses zero text and uniform pooling. No auxiliary alignment loss,confidence threshold tuning or new localization. Missing regions fall back to global.",
+  "training": "200-step visual/random/text initial stage; select by validation macro-F1 then CE. All arms get200 further steps; AG starts from same selected text alignment; matched seed/initialization across AG arms. Same batches/optimizer schedule. Lock all42 checkpoints before scoring test. No test-based selection.",
+  "statistics": "Three-seed accuracy/macro-F1 mean and SD; paired ensemble McNemar and5000 class-stratified bootstrap draws;Holm across six primary comparisons:weighted AG versus uniform AG,text,and shuffled confidence for each backbone.Intervals conditional on fixed models,reused images.",
+  "limitations": "Not exact AG-CLIP replication,not full CLIP pretraining,not zero-shot. CLIP backbone retains language pretraining even with visual head. Same short budget is not optimal tuning. Only2 retained detections;confidence is not calibrated attribute correctness. Data was previously evaluated. No forced positive outcome."
+}

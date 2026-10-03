@@ -1,5 +1,7 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
+**置信度加权小实验（2026-10-03）：** [中文报告](reports/confidence_v1/summary_zh.md)、[English](reports/confidence_v1/summary_en.md)、[图表](reports/confidence_v1/comparison.png)。在相同10类、500张图片、20-shot、三种子下，对EfficientNet-B0与CLIP ViT-B/32比较纯视觉、图文适配、等权AG、检测置信度AG及三个控制分支，共42组。等权/加权/打乱权重准确率持平（分别92.00%和93.33%）。权重干预改变概率但未改变预测；100张测试图仅41张有两个有效检测。此轮是冻结特征、历史数据上的轻量探索，不证明加权普遍无效。
+
 **最新补充（2026-10-02）：完成原五模型的纯视觉／图文适配／属性引导对照。** [中文报告](reports/three_stage_v1/summary_zh.md)、[English report](reports/three_stage_v1/summary_en.md)、[对比图](reports/three_stage_v1/comparison.png)。沿用20物种、1,000张图片、5/10/20-shot和三个种子，新增90组训练并核验重放225组旧结果。随机类别向量对照也明显高于普通线性头，因此不能把图文适配的全部优势归因于语义；15个设置中，AG相对图文适配仍无通过多重比较校正的正向提升。冻结主干、短预算、历史测试集复用，属于探索实验；第五个模型始终保留CLIP预训练。
 
 **最新进展（2026-09-29）：已完成属性定位修复与明确属性评分的第一轮训练。** [结果与图表](reports/attribute_path_v1/summary_zh.md)、[运行说明](docs/attribute_path_v1.md)。现有关键点监督将四部位开发命中率从 53.65% 提高到三种子平均 86.55%；修复定位后的纯属性分支 H 为 49.63%，高于原始定位 47.10% 和错误部位对照 43.78%，但仍低于原始 SigLIP 2 的 75.46%。已完成 3 个定位训练、18 个分类训练及图片输入推理检查；这是开发集机制验证，不是完整 AG-CLIP/DAZLE/TransZero 复现或最终确认性成绩。

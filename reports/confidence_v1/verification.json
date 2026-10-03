@@ -1,0 +1,157 @@
+{
+  "replayed_cells": 42,
+  "max_probability_error": 0.0,
+  "confidence_coverage": [
+    {
+      "split": "train",
+      "images": 300,
+      "zero": 71,
+      "one": 85,
+      "two": 144,
+      "mean_larger_weight_two": 0.6680517196655273,
+      "mean_confidence": 0.19530579447746277
+    },
+    {
+      "split": "val",
+      "images": 100,
+      "zero": 22,
+      "one": 30,
+      "two": 48,
+      "mean_larger_weight_two": 0.7038037180900574,
+      "mean_confidence": 0.1870213896036148
+    },
+    {
+      "split": "test",
+      "images": 100,
+      "zero": 25,
+      "one": 34,
+      "two": 41,
+      "mean_larger_weight_two": 0.6583728194236755,
+      "mean_confidence": 0.17980220913887024
+    }
+  ],
+  "weighted_checkpoint_interventions": [
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy": 0.9,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.000627666711807251,
+      "gate_tanh": 0.08784022927284241
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 0,
+      "accuracy": 0.9,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0012794435024261475,
+      "gate_tanh": 0.08784022927284241
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy": 0.92,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0008726418018341064,
+      "gate_tanh": 0.08584203571081161
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 0,
+      "accuracy": 0.92,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0016867220401763916,
+      "gate_tanh": 0.08584203571081161
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy": 0.94,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0006917715072631836,
+      "gate_tanh": 0.08335517346858978
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 0,
+      "accuracy": 0.94,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0015118122100830078,
+      "gate_tanh": 0.08335517346858978
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy": 0.94,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0021095499396324158,
+      "gate_tanh": 0.1278124898672104
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 0,
+      "accuracy": 0.94,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.005121901631355286,
+      "gate_tanh": 0.1278124898672104
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy": 0.92,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0013024210929870605,
+      "gate_tanh": 0.09100571274757385
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 0,
+      "accuracy": 0.92,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0027610063552856445,
+      "gate_tanh": 0.09100571274757385
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "intervention": "ag_uniform",
+      "changed_predictions": 0,
+      "accuracy": 0.94,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.0034652799367904663,
+      "gate_tanh": 0.09543845057487488
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "intervention": "ag_shuffled",
+      "changed_predictions": 0,
+      "accuracy": 0.94,
+      "accuracy_change_pp": 0.0,
+      "max_probability_change": 0.006685778498649597,
+      "gate_tanh": 0.09543845057487488
+    }
+  ],
+  "tests": "test_confidence:3 passed; test_statistics:2 passed",
+  "scope": "No new tuning. Intervention labels are posthoc diagnostics, not model selection."
+}

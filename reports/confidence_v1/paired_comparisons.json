@@ -1,0 +1,104 @@
+[
+  {
+    "backbone": "efficientnet_b0",
+    "reference": "ag_uniform",
+    "target": "ag_confidence",
+    "reference_accuracy": 0.94,
+    "ag_accuracy": 0.94,
+    "improvement_percentage_points": 0.0,
+    "ag_fixes": 0,
+    "ag_breaks": 0,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      0.0,
+      0.0
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "reference": "text",
+    "target": "ag_confidence",
+    "reference_accuracy": 0.93,
+    "ag_accuracy": 0.94,
+    "improvement_percentage_points": 1.0,
+    "ag_fixes": 1,
+    "ag_breaks": 0,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      0.0,
+      3.0
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "efficientnet_b0",
+    "reference": "ag_shuffled",
+    "target": "ag_confidence",
+    "reference_accuracy": 0.94,
+    "ag_accuracy": 0.94,
+    "improvement_percentage_points": 0.0,
+    "ag_fixes": 0,
+    "ag_breaks": 0,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      0.0,
+      0.0
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "reference": "ag_uniform",
+    "target": "ag_confidence",
+    "reference_accuracy": 0.93,
+    "ag_accuracy": 0.93,
+    "improvement_percentage_points": 0.0,
+    "ag_fixes": 0,
+    "ag_breaks": 0,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      0.0,
+      0.0
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "reference": "text",
+    "target": "ag_confidence",
+    "reference_accuracy": 0.93,
+    "ag_accuracy": 0.93,
+    "improvement_percentage_points": 0.0,
+    "ag_fixes": 0,
+    "ag_breaks": 0,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      0.0,
+      0.0
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  },
+  {
+    "backbone": "clip_vit_b32",
+    "reference": "ag_shuffled",
+    "target": "ag_confidence",
+    "reference_accuracy": 0.93,
+    "ag_accuracy": 0.93,
+    "improvement_percentage_points": 0.0,
+    "ag_fixes": 0,
+    "ag_breaks": 0,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "paired_stratified_bootstrap_95ci_pp": [
+      0.0,
+      0.0
+    ],
+    "holm_adjusted_p": 1.0,
+    "significant_positive_gain": false
+  }
+]

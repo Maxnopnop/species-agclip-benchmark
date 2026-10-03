@@ -1,0 +1,50 @@
+{
+  "config": {
+    "version": "confidence_v1",
+    "backbones": [
+      "efficientnet_b0",
+      "clip_vit_b32"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "shots": 20,
+    "variants": [
+      "visual",
+      "random_codes",
+      "text",
+      "region_only",
+      "ag_uniform",
+      "ag_confidence",
+      "ag_shuffled"
+    ],
+    "stage_steps": 200,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 32,
+    "validation_interval": 20,
+    "random_code_seed": 20261003,
+    "data": "Ten grounded_v1 seen classes; existing expanded20 splits:300 training pool,100 validation,100 historically reused test images.20 images/class for training.Closed-set exploratory pilot.",
+    "method": "Frozen full-image and actual OWL-ViT region features. Seven matched arms. AG:project region plus detector-selected attribute text, pool tokens, then identical two-token global/attribute CAF. Only pooling weights vary:uniform,normalized detector confidence,or reversed confidence among valid regions. Max two regions. Region-only uses zero text and uniform pooling. No auxiliary alignment loss,confidence threshold tuning or new localization. Missing regions fall back to global.",
+    "training": "200-step visual/random/text initial stage; select by validation macro-F1 then CE. All arms get200 further steps; AG starts from same selected text alignment; matched seed/initialization across AG arms. Same batches/optimizer schedule. Lock all42 checkpoints before scoring test. No test-based selection.",
+    "statistics": "Three-seed accuracy/macro-F1 mean and SD; paired ensemble McNemar and5000 class-stratified bootstrap draws;Holm across six primary comparisons:weighted AG versus uniform AG,text,and shuffled confidence for each backbone.Intervals conditional on fixed models,reused images.",
+    "limitations": "Not exact AG-CLIP replication,not full CLIP pretraining,not zero-shot. CLIP backbone retains language pretraining even with visual head. Same short budget is not optimal tuning. Only2 retained detections;confidence is not calibrated attribute correctness. Data was previously evaluated. No forced positive outcome."
+  },
+  "source": {
+    "configs\\confidence_v1.json": "8cd14dbfd99dc0a6a02d2436a93e4596cecebc040b5edeade01a4809f5a3ee0d",
+    "confidence_experiment.py": "1cb565bc957b9dbd0af483533d622fa589909ba0001a39713e095504880cafb1",
+    "multimodal\\models.py": "192ffa1e9dfc84d47d0d67b11e61c2613b6734041f22dec65cc13a5afbe54fea",
+    "multimodal\\expanded.py": "7b0152fbd062a0b032fe1d967cf74182a528febf3ff243aa06712eb4d9d06cc6",
+    "multimodal\\experiment.py": "2a8cd535579c198469ad4060f293085158bf27781bb59b13437a3cff47c1893c",
+    "run.py": "bffd9a79e443fda1d567e9b293c0e07c075770e78dd70109ec41dbd39f1e1854",
+    "multimodal\\grounded_data.py": "9f56ef680dcf30e9943f048a0520964b3d1c08aff73c6bd40184ee83ba44ce96",
+    "configs\\grounded_v1.json": "f6ccdfe48991360bb928cb01dcfe3adda8ddecb18e7bc884577bf02fdb022165",
+    "data\\expanded20\\manifest.json": "d8719728183ece936bcf5067451ece7e8e2161f46186b5f8054720fc097221d1",
+    "cache\\expanded20\\text_bank.pt": "a7ce720ebf01b0ea6f1571d13054148457878bc7421e3087ebb3cd7a011a6aea",
+    "cache\\grounded_v1\\regions_development.json": "f54a4f4833e81e7cc7b6db896b7cfbe4117b34640f01b6b27a99245d33c86d92",
+    "cache\\grounded_v1\\regions_evaluation.json": "59eb2842a430082a5f1615b8ba8e6c8dc161e64fcfba68a9ec183b3d5c19561c"
+  },
+  "locked_at_utc": "2026-10-03T12:38:38.286102+00:00"
+}
