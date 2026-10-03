@@ -1,0 +1,440 @@
+{
+  "source": {
+    "configs\\confidence_fresh_v1.json": "b569e5e1cc983e4615ae00cff80db22c8a3179d2d95228f0168eb264c2b9adae",
+    "confidence_fresh.py": "3a40ccef0a4008819754a3a92213ef5b38355074706e2696a4b38354082702b7",
+    "confidence_experiment.py": "1cb565bc957b9dbd0af483533d622fa589909ba0001a39713e095504880cafb1",
+    "multimodal\\models.py": "192ffa1e9dfc84d47d0d67b11e61c2613b6734041f22dec65cc13a5afbe54fea",
+    "multimodal\\grounded_data.py": "9f56ef680dcf30e9943f048a0520964b3d1c08aff73c6bd40184ee83ba44ce96",
+    "multimodal\\expanded.py": "7b0152fbd062a0b032fe1d967cf74182a528febf3ff243aa06712eb4d9d06cc6",
+    "multimodal\\experiment.py": "2a8cd535579c198469ad4060f293085158bf27781bb59b13437a3cff47c1893c",
+    "run.py": "bffd9a79e443fda1d567e9b293c0e07c075770e78dd70109ec41dbd39f1e1854",
+    "data\\cub\\verified.json": "a96335ecac82918c8a5ed064603f659612deee6d470e41c8e186f8a6f9707653",
+    "data\\cub_attributes_v1\\manifest.json": "aac2e3700cb3743b834d623342e006219168ca3c2779af6eb8e796c469cbee99",
+    "data\\confidence_fresh_v1\\manifest.json": "9491ce461bf7640c53a62dfee83bbebb042d28d6decb8787ed8bfd5caa3a5fac",
+    "data\\cub100_v1\\manifest.json": "cf25f035b5fa011e2a60e24d1f3ea4d7cfaa40aae3adf03032a715a6a36c47fe",
+    "data\\cub_resplit_v1\\catalog.json": "d12a8713a88f80de20c39a6f675d11c2e9c9261eb290f5536f71e38004777089"
+  },
+  "scored_at_utc": "2026-10-03T12:58:05.619797+00:00",
+  "rows": [
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "visual",
+      "training_accuracy": 0.975,
+      "parameters": 12810,
+      "top1_accuracy": 0.955,
+      "macro_f1": 0.9547916307851525,
+      "loss": 1.1276880121231079
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "random_codes",
+      "training_accuracy": 1.0,
+      "parameters": 655873,
+      "top1_accuracy": 0.925,
+      "macro_f1": 0.9221653979688413,
+      "loss": 0.24604358553886413
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "text",
+      "training_accuracy": 1.0,
+      "parameters": 655873,
+      "top1_accuracy": 0.96,
+      "macro_f1": 0.9601188242651657,
+      "loss": 0.1495889186859131
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "region_only",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.96,
+      "macro_f1": 0.9603502188868044,
+      "loss": 0.15145952701568605
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "ag_uniform",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.96,
+      "macro_f1": 0.9603502188868044,
+      "loss": 0.15095679163932801
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "ag_confidence",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9652376485303316,
+      "loss": 0.150387943983078
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "ag_shuffled",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.96,
+      "macro_f1": 0.9603502188868044,
+      "loss": 0.15096214532852173
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "visual",
+      "training_accuracy": 0.985,
+      "parameters": 12810,
+      "top1_accuracy": 0.94,
+      "macro_f1": 0.9392788102723321,
+      "loss": 1.1952352046966552
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "random_codes",
+      "training_accuracy": 1.0,
+      "parameters": 655873,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9649816849816849,
+      "loss": 0.2119969642162323
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "text",
+      "training_accuracy": 1.0,
+      "parameters": 655873,
+      "top1_accuracy": 0.95,
+      "macro_f1": 0.9495352669742914,
+      "loss": 0.16581709682941437
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "region_only",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.945,
+      "macro_f1": 0.9446889503307989,
+      "loss": 0.1564325535297394
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "ag_uniform",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.945,
+      "macro_f1": 0.9446889503307989,
+      "loss": 0.15583287358283995
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "ag_confidence",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.955,
+      "macro_f1": 0.9548395378690631,
+      "loss": 0.16139079332351686
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "ag_shuffled",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.945,
+      "macro_f1": 0.9446889503307989,
+      "loss": 0.15549608945846558
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "visual",
+      "training_accuracy": 0.98,
+      "parameters": 12810,
+      "top1_accuracy": 0.95,
+      "macro_f1": 0.9495419681670689,
+      "loss": 1.082934732437134
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "random_codes",
+      "training_accuracy": 1.0,
+      "parameters": 655873,
+      "top1_accuracy": 0.935,
+      "macro_f1": 0.9325041661151566,
+      "loss": 0.22534524381160737
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "text",
+      "training_accuracy": 1.0,
+      "parameters": 655873,
+      "top1_accuracy": 0.96,
+      "macro_f1": 0.9601188242651657,
+      "loss": 0.14793877720832824
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "region_only",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.96,
+      "macro_f1": 0.9601188242651657,
+      "loss": 0.1480346429347992
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "ag_uniform",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.96,
+      "macro_f1": 0.9601188242651657,
+      "loss": 0.1484718155860901
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "ag_confidence",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.96,
+      "macro_f1": 0.9601188242651657,
+      "loss": 0.14836234211921692
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "ag_shuffled",
+      "training_accuracy": 1.0,
+      "parameters": 1068034,
+      "top1_accuracy": 0.96,
+      "macro_f1": 0.9601188242651657,
+      "loss": 0.1486828726530075
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "visual",
+      "training_accuracy": 0.96,
+      "parameters": 5130,
+      "top1_accuracy": 0.925,
+      "macro_f1": 0.9228276835764072,
+      "loss": 1.7565456104278565
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "random_codes",
+      "training_accuracy": 1.0,
+      "parameters": 262657,
+      "top1_accuracy": 0.95,
+      "macro_f1": 0.9494293660981723,
+      "loss": 0.1672300162911415
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "text",
+      "training_accuracy": 1.0,
+      "parameters": 262657,
+      "top1_accuracy": 0.96,
+      "macro_f1": 0.9596983311938381,
+      "loss": 0.13931352615356446
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "region_only",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9644434866386085,
+      "loss": 0.12884314894676208
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "ag_uniform",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.97,
+      "macro_f1": 0.9697878513026137,
+      "loss": 0.13522107720375062
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "ag_confidence",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.97,
+      "macro_f1": 0.9697878513026137,
+      "loss": 0.13738650619983672
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "ag_shuffled",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9644643033474868,
+      "loss": 0.1310911902785301
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "visual",
+      "training_accuracy": 0.98,
+      "parameters": 5130,
+      "top1_accuracy": 0.925,
+      "macro_f1": 0.9233628601183904,
+      "loss": 1.7028526782989502
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "random_codes",
+      "training_accuracy": 1.0,
+      "parameters": 262657,
+      "top1_accuracy": 0.94,
+      "macro_f1": 0.9395472322471756,
+      "loss": 0.18385851383209229
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "text",
+      "training_accuracy": 1.0,
+      "parameters": 262657,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9647274612422236,
+      "loss": 0.14416178226470946
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "region_only",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.97,
+      "macro_f1": 0.9698494124617358,
+      "loss": 0.1360746991634369
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "ag_uniform",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9647373358348968,
+      "loss": 0.13077735781669617
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "ag_confidence",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9647373358348968,
+      "loss": 0.12862077742815017
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "ag_shuffled",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9647373358348968,
+      "loss": 0.1319694674015045
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "visual",
+      "training_accuracy": 0.98,
+      "parameters": 5130,
+      "top1_accuracy": 0.925,
+      "macro_f1": 0.9233946013502919,
+      "loss": 1.949490966796875
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "random_codes",
+      "training_accuracy": 1.0,
+      "parameters": 262657,
+      "top1_accuracy": 0.955,
+      "macro_f1": 0.9544314255289865,
+      "loss": 0.14524322956800462
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "text",
+      "training_accuracy": 1.0,
+      "parameters": 262657,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9647878513026139,
+      "loss": 0.1479663932323456
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "region_only",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.975,
+      "macro_f1": 0.9748395378690627,
+      "loss": 0.13961480677127838
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "ag_uniform",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9647878513026139,
+      "loss": 0.14337636291980743
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "ag_confidence",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.965,
+      "macro_f1": 0.9645763799743261,
+      "loss": 0.14260337591171265
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "ag_shuffled",
+      "training_accuracy": 1.0,
+      "parameters": 674818,
+      "top1_accuracy": 0.97,
+      "macro_f1": 0.9695763799743261,
+      "loss": 0.1420219534635544
+    }
+  ]
+}

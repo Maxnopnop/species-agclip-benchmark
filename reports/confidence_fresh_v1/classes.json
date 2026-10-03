@@ -1,0 +1,52 @@
+[
+  {
+    "label": 0,
+    "source_id": 91,
+    "name": "Mockingbird"
+  },
+  {
+    "label": 1,
+    "source_id": 164,
+    "name": "Cerulean Warbler"
+  },
+  {
+    "label": 2,
+    "source_id": 175,
+    "name": "Pine Warbler"
+  },
+  {
+    "label": 3,
+    "source_id": 36,
+    "name": "Northern Flicker"
+  },
+  {
+    "label": 4,
+    "source_id": 182,
+    "name": "Yellow Warbler"
+  },
+  {
+    "label": 5,
+    "source_id": 144,
+    "name": "Common Tern"
+  },
+  {
+    "label": 6,
+    "source_id": 41,
+    "name": "Scissor tailed Flycatcher"
+  },
+  {
+    "label": 7,
+    "source_id": 46,
+    "name": "Gadwall"
+  },
+  {
+    "label": 8,
+    "source_id": 34,
+    "name": "Gray crowned Rosy Finch"
+  },
+  {
+    "label": 9,
+    "source_id": 155,
+    "name": "Warbling Vireo"
+  }
+]

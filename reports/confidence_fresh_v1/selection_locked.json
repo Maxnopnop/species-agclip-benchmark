@@ -1,0 +1,530 @@
+{
+  "source": {
+    "configs\\confidence_fresh_v1.json": "b569e5e1cc983e4615ae00cff80db22c8a3179d2d95228f0168eb264c2b9adae",
+    "confidence_fresh.py": "3a40ccef0a4008819754a3a92213ef5b38355074706e2696a4b38354082702b7",
+    "confidence_experiment.py": "1cb565bc957b9dbd0af483533d622fa589909ba0001a39713e095504880cafb1",
+    "multimodal\\models.py": "192ffa1e9dfc84d47d0d67b11e61c2613b6734041f22dec65cc13a5afbe54fea",
+    "multimodal\\grounded_data.py": "9f56ef680dcf30e9943f048a0520964b3d1c08aff73c6bd40184ee83ba44ce96",
+    "multimodal\\expanded.py": "7b0152fbd062a0b032fe1d967cf74182a528febf3ff243aa06712eb4d9d06cc6",
+    "multimodal\\experiment.py": "2a8cd535579c198469ad4060f293085158bf27781bb59b13437a3cff47c1893c",
+    "run.py": "bffd9a79e443fda1d567e9b293c0e07c075770e78dd70109ec41dbd39f1e1854",
+    "data\\cub\\verified.json": "a96335ecac82918c8a5ed064603f659612deee6d470e41c8e186f8a6f9707653",
+    "data\\cub_attributes_v1\\manifest.json": "aac2e3700cb3743b834d623342e006219168ca3c2779af6eb8e796c469cbee99",
+    "data\\confidence_fresh_v1\\manifest.json": "9491ce461bf7640c53a62dfee83bbebb042d28d6decb8787ed8bfd5caa3a5fac",
+    "data\\cub100_v1\\manifest.json": "cf25f035b5fa011e2a60e24d1f3ea4d7cfaa40aae3adf03032a715a6a36c47fe",
+    "data\\cub_resplit_v1\\catalog.json": "d12a8713a88f80de20c39a6f675d11c2e9c9261eb290f5536f71e38004777089"
+  },
+  "checkpoints": [
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "visual",
+      "checkpoint_sha256": "9925ea07882fb36917cfd5cb07a723649d3f314f392e6cadc1604291c546540b",
+      "validation": {
+        "top1_accuracy": 0.91,
+        "macro_f1": 0.9079963316024697,
+        "loss": 1.1098247528076173
+      },
+      "step": 200
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "random_codes",
+      "checkpoint_sha256": "24eed3440d10c40cd6749bb28f1f14d23354f442f8f23546a6756b436b4d2954",
+      "validation": {
+        "top1_accuracy": 0.92,
+        "macro_f1": 0.9180968726163234,
+        "loss": 0.3679236364364624
+      },
+      "step": 200
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "text",
+      "checkpoint_sha256": "212c3e933cbbb347b0acc40411a21b0053843dbdff7a2df47e44a649de412fb8",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9294023829627545,
+        "loss": 0.19015183448791503
+      },
+      "step": 40
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "region_only",
+      "checkpoint_sha256": "fa3979ff255b07b9561b84f98937cdccdfefa9029cbb6e9c7b425563c321ab2c",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9294023829627545,
+        "loss": 0.1894826602935791
+      },
+      "step": 40
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "ag_uniform",
+      "checkpoint_sha256": "0c3a04e54163de95198598c1958e2fa4efedd1e6a39217e57f5e464c70315603",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9294023829627545,
+        "loss": 0.1890864896774292
+      },
+      "step": 40
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "ag_confidence",
+      "checkpoint_sha256": "8f4164342337c168006d62b04759bf5e19a4490a4f4b7a0e994194a3b6a67711",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9294023829627545,
+        "loss": 0.18866269111633302
+      },
+      "step": 40
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 42,
+      "variant": "ag_shuffled",
+      "checkpoint_sha256": "a1239d3ded9baeb19037aac2a5fa27faeb1e9c8d86a01306d02b08242daa7b6c",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9294023829627545,
+        "loss": 0.1888582420349121
+      },
+      "step": 40
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "visual",
+      "checkpoint_sha256": "a14d20e6b3095476fadaf347827dd96de0ea48773311551f16c74b08a09df890",
+      "validation": {
+        "top1_accuracy": 0.92,
+        "macro_f1": 0.918639606456271,
+        "loss": 1.1784111785888671
+      },
+      "step": 100
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "random_codes",
+      "checkpoint_sha256": "b87cbae2a36fea376bcf869c8cdf30374f079c38491745f3b1c8c7892bc3f575",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9311581985266196,
+        "loss": 0.3448372745513916
+      },
+      "step": 80
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "text",
+      "checkpoint_sha256": "3b78eed9414cd01a3d0a824cc3a0f782b7875d5004172f043f960beb8dcfc65b",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9498162071846282,
+        "loss": 0.17723103523254394
+      },
+      "step": 40
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "region_only",
+      "checkpoint_sha256": "414eccd89aa8b965cb211a862e94d24bf3b146428b608f560a86a1986641d7ca",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9506820080504292,
+        "loss": 0.1637104034423828
+      },
+      "step": 60
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "ag_uniform",
+      "checkpoint_sha256": "35ea9343dc5c4d988d4b46c4d36d67670ccae96da485f624b785699aef84bde1",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9506820080504292,
+        "loss": 0.1646446943283081
+      },
+      "step": 60
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "ag_confidence",
+      "checkpoint_sha256": "585a1e0594a80c4b42086a882be6856a197cd7169740f373e9b2bae1e2f15012",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9506820080504292,
+        "loss": 0.1740203881263733
+      },
+      "step": 40
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 43,
+      "variant": "ag_shuffled",
+      "checkpoint_sha256": "45538f2a8b736c48d9a66c65615f9940b69cc0e203eb278d28f97900d94a96e4",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9506820080504292,
+        "loss": 0.1638164210319519
+      },
+      "step": 60
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "visual",
+      "checkpoint_sha256": "10da1fe2a883cb007bfc64a691643346f00192d487e4230bde8fd466f2f60287",
+      "validation": {
+        "top1_accuracy": 0.91,
+        "macro_f1": 0.9079963316024697,
+        "loss": 1.0665349578857422
+      },
+      "step": 200
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "random_codes",
+      "checkpoint_sha256": "47b19ced6fca9d507bf2cb753bcdab77d638129fe77a5fcaf1b2609efbd0dd5a",
+      "validation": {
+        "top1_accuracy": 0.94,
+        "macro_f1": 0.9403802325312622,
+        "loss": 0.33476062178611754
+      },
+      "step": 40
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "text",
+      "checkpoint_sha256": "ace3c33c6854c56afbdb249c8c7f086f406cc65125684aed78f4e17d411096c3",
+      "validation": {
+        "top1_accuracy": 0.94,
+        "macro_f1": 0.9402673350041771,
+        "loss": 0.1863788914680481
+      },
+      "step": 60
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "region_only",
+      "checkpoint_sha256": "06c68feed74ae78474f64e078d841870062914ed2d71d8433a528c34cbe23f56",
+      "validation": {
+        "top1_accuracy": 0.94,
+        "macro_f1": 0.9402673350041771,
+        "loss": 0.18856507062911987
+      },
+      "step": 60
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "ag_uniform",
+      "checkpoint_sha256": "06416dccc5e231f9e1e8da6273a0c8d28cc5ccb71558ed84f98e753505bfdfce",
+      "validation": {
+        "top1_accuracy": 0.94,
+        "macro_f1": 0.9402673350041771,
+        "loss": 0.18905736923217772
+      },
+      "step": 60
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "ag_confidence",
+      "checkpoint_sha256": "fe39d9ae0e6ef7f8d048e9f277b3bcf4c6a08b2b5c4487e7ff48096d8ef55f5e",
+      "validation": {
+        "top1_accuracy": 0.94,
+        "macro_f1": 0.9402673350041771,
+        "loss": 0.1892715001106262
+      },
+      "step": 60
+    },
+    {
+      "backbone": "efficientnet_b0",
+      "seed": 44,
+      "variant": "ag_shuffled",
+      "checkpoint_sha256": "bf6cb761e51a60883ef583ac638a0026088a1ebfa5b272dae4ab6d5c459ab8f1",
+      "validation": {
+        "top1_accuracy": 0.94,
+        "macro_f1": 0.9402673350041771,
+        "loss": 0.1891169786453247
+      },
+      "step": 60
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "visual",
+      "checkpoint_sha256": "075be33c4bb355769cf38fc73e3216366b5fb1a71f3cfb8229b801b623b3efa5",
+      "validation": {
+        "top1_accuracy": 0.9,
+        "macro_f1": 0.894790236460717,
+        "loss": 1.752119255065918
+      },
+      "step": 100
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "random_codes",
+      "checkpoint_sha256": "a5e14e12872e1786e8d80f6ba884d652041b9df9264b13730a4f2ea5177d5795",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9302241110021431,
+        "loss": 0.20846425533294677
+      },
+      "step": 120
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "text",
+      "checkpoint_sha256": "d134810ecab4db42242952b1b7a785c48ef7c0d5402bc7dd278e6e0886400767",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9296878560036456,
+        "loss": 0.1553618311882019
+      },
+      "step": 160
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "region_only",
+      "checkpoint_sha256": "845151cc48d530f016de5605f2c2cd7b8440755a478633f2afc0af94ce4683b8",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9498997493734336,
+        "loss": 0.12881044387817384
+      },
+      "step": 200
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "ag_uniform",
+      "checkpoint_sha256": "c1f20cd63f8204834d095d5711ebe1ae16d6d19db50a5d42889b41a403226f73",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9498997493734336,
+        "loss": 0.13069457054138184
+      },
+      "step": 80
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "ag_confidence",
+      "checkpoint_sha256": "58c9a4d4204bb58367497db9d5cc6e00a4d702eddc5e06deaa2659f6674f4ab6",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9498997493734336,
+        "loss": 0.13107434034347534
+      },
+      "step": 80
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 42,
+      "variant": "ag_shuffled",
+      "checkpoint_sha256": "040a3a29fb9c0460cfd8e82b7cf7560343b2733f601bafcc6e54b6ec27afcf94",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9498997493734336,
+        "loss": 0.13775056838989258
+      },
+      "step": 200
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "visual",
+      "checkpoint_sha256": "22afdff8a8608462ce3e627473ae9c2b9d75ca9db0c0a06d7e64d5017cc4163a",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9278095902392579,
+        "loss": 1.696690330505371
+      },
+      "step": 200
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "random_codes",
+      "checkpoint_sha256": "3ffeebe204232caf8e5e9d9de9df5eb84502af9a41321a43de44e8b2b583193a",
+      "validation": {
+        "top1_accuracy": 0.92,
+        "macro_f1": 0.9197919933523648,
+        "loss": 0.2217373561859131
+      },
+      "step": 20
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "text",
+      "checkpoint_sha256": "7a6113c438488e5a38c7997c073f0b6bdafcaf0d407f8c4480bc1ac05babc38f",
+      "validation": {
+        "top1_accuracy": 0.94,
+        "macro_f1": 0.9398997493734337,
+        "loss": 0.16553340435028077
+      },
+      "step": 20
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "region_only",
+      "checkpoint_sha256": "7bb42c2ebac4cb7b961f4a1afab41a7e0f67313f578072425983f92a8124f260",
+      "validation": {
+        "top1_accuracy": 0.97,
+        "macro_f1": 0.9703827751196172,
+        "loss": 0.12080991983413697
+      },
+      "step": 120
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "ag_uniform",
+      "checkpoint_sha256": "2106a6f0e2cce12888e51aeadb5f3a170f8bdbd4d3d4ac478ef9c646f257a5b0",
+      "validation": {
+        "top1_accuracy": 0.96,
+        "macro_f1": 0.9597729171413383,
+        "loss": 0.1334020495414734
+      },
+      "step": 80
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "ag_confidence",
+      "checkpoint_sha256": "74435b4128268fa7cafd3bfefa1c8e7cc61502c0dfe991cdff2ffe800877f24b",
+      "validation": {
+        "top1_accuracy": 0.96,
+        "macro_f1": 0.9597729171413383,
+        "loss": 0.13178280353546143
+      },
+      "step": 120
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 43,
+      "variant": "ag_shuffled",
+      "checkpoint_sha256": "4e1203bafa9e5d668e216de3843f5e0cc42800438a3ab8768ad9ac218c0c067b",
+      "validation": {
+        "top1_accuracy": 0.96,
+        "macro_f1": 0.9597729171413383,
+        "loss": 0.1339278244972229
+      },
+      "step": 80
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "visual",
+      "checkpoint_sha256": "82bfecad5072f8f35b789cc01c95cb672d95cc1afc29631089f7d62d30aba89f",
+      "validation": {
+        "top1_accuracy": 0.9,
+        "macro_f1": 0.8998496240601505,
+        "loss": 1.9452842712402343
+      },
+      "step": 60
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "random_codes",
+      "checkpoint_sha256": "423a1ae20b7ae7bc0b0274755a5b015a91a2ea2167e02805df9c42e841e2cd7f",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9294524189261031,
+        "loss": 0.18775518894195556
+      },
+      "step": 160
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "text",
+      "checkpoint_sha256": "476e7bb8e8a69bf5eee5884eae46704d910456c9c0e421ca1a5fb07375005349",
+      "validation": {
+        "top1_accuracy": 0.93,
+        "macro_f1": 0.9296878560036456,
+        "loss": 0.16633119106292724
+      },
+      "step": 160
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "region_only",
+      "checkpoint_sha256": "a2e03e77bc879677f365cda47bcbac82698d20176485adc640364610c49b3338",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9498412698412698,
+        "loss": 0.15251968622207643
+      },
+      "step": 120
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "ag_uniform",
+      "checkpoint_sha256": "f73a1004d24b26326624e095a56792bb2bd30380e724d23c42f41c98c834d346",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9498412698412698,
+        "loss": 0.15675272703170776
+      },
+      "step": 100
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "ag_confidence",
+      "checkpoint_sha256": "ef8328f4ee7440ddaa6eb66f5379d0d14b906c5574a045c3efc9c995cd0595d8",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9498412698412698,
+        "loss": 0.16114409923553466
+      },
+      "step": 100
+    },
+    {
+      "backbone": "clip_vit_b32",
+      "seed": 44,
+      "variant": "ag_shuffled",
+      "checkpoint_sha256": "9abd90f02d3931972d1ef44ae4e4f0d891407e7b8fedc03c0d874baad4f5e3e2",
+      "validation": {
+        "top1_accuracy": 0.95,
+        "macro_f1": 0.9498412698412698,
+        "loss": 0.15651983737945557
+      },
+      "step": 200
+    }
+  ],
+  "development_assets": {
+    "cache\\confidence_fresh_v1\\text.pt": "c3106abd41cf0ccbf8e6c3eddab0245b267131b421125d5c19f191837d2280c1",
+    "cache\\confidence_fresh_v1\\regions_development.json": "559af77fd84476ee6d61571f1fe565c6c9d485ee0edadaeccc3a54ec47359731",
+    "cache\\confidence_fresh_v1\\efficientnet_b0_development.pt": "f12919982c0922c2af4240d9acd4b5fb33b8300e11fa06320d83ec9e8ea7f736",
+    "cache\\confidence_fresh_v1\\clip_vit_b32_development.pt": "ee59c09074c320332c35c8d2b4f56a7fbf7393b9899410f25f8bdd2fbeed4cdd"
+  },
+  "locked_at_utc": "2026-10-03T12:57:39.635470+00:00"
+}

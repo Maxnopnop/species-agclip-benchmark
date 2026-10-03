@@ -1,0 +1,80 @@
+{
+  "historical_classes": 120,
+  "historical_images_fingerprinted": 8242,
+  "selected_classes": [
+    {
+      "label": 0,
+      "source_id": 91,
+      "name": "Mockingbird"
+    },
+    {
+      "label": 1,
+      "source_id": 164,
+      "name": "Cerulean Warbler"
+    },
+    {
+      "label": 2,
+      "source_id": 175,
+      "name": "Pine Warbler"
+    },
+    {
+      "label": 3,
+      "source_id": 36,
+      "name": "Northern Flicker"
+    },
+    {
+      "label": 4,
+      "source_id": 182,
+      "name": "Yellow Warbler"
+    },
+    {
+      "label": 5,
+      "source_id": 144,
+      "name": "Common Tern"
+    },
+    {
+      "label": 6,
+      "source_id": 41,
+      "name": "Scissor tailed Flycatcher"
+    },
+    {
+      "label": 7,
+      "source_id": 46,
+      "name": "Gadwall"
+    },
+    {
+      "label": 8,
+      "source_id": 34,
+      "name": "Gray crowned Rosy Finch"
+    },
+    {
+      "label": 9,
+      "source_id": 155,
+      "name": "Warbling Vireo"
+    }
+  ],
+  "images": 500,
+  "split_counts": {
+    "train": 200,
+    "val": 100,
+    "test": 200
+  },
+  "rejected_candidates": [
+    {
+      "image_id": 72,
+      "source_id": 2,
+      "reason": "exact/pixel/perceptual threshold"
+    }
+  ],
+  "insufficient_classes": [
+    2
+  ],
+  "threshold": 4,
+  "exact_and_perceptual_overlap_after_filter": 0,
+  "prior_manifests": {
+    "data\\cub100_v1\\manifest.json": "cf25f035b5fa011e2a60e24d1f3ea4d7cfaa40aae3adf03032a715a6a36c47fe",
+    "data\\cub_attributes_v1\\manifest.json": "aac2e3700cb3743b834d623342e006219168ca3c2779af6eb8e796c469cbee99",
+    "data\\cub_resplit_v1\\catalog.json": "d12a8713a88f80de20c39a6f675d11c2e9c9261eb290f5536f71e38004777089"
+  },
+  "source": "Verified local official CUB-200-2011, data/cub/verified.json; no new downloads. Perceptual screening is heuristic."
+}

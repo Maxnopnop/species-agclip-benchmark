@@ -50,3 +50,16 @@ Goal: matched visual / text / uniform AG / detector-confidence AG comparison, pl
 Use root planning files (resolver returned empty). Preserve previous byte-hashed implementations. Comparison is a new closed-set lightweight pilot, not the previous twenty-class scores or an original AG-CLIP replication. No new detector/model downloads required.
 
 Completed42 final heads and prediction replay;five tests passed. Uniform/confidence/shuffled accuracy tied for both backbones. Test100-image coverage:25 zero regions,34 one,41 two. Weight interventions affect probabilities but no class predictions. Bounded experiment complete; no additional model search or post-result tuning.
+
+# Fresh-data confidence validation (2026-10-03)
+
+User goal: replace reused images to reduce adaptive evaluation overfitting. Keep the prior confidence model/training recipe fixed. Select ten previously unused CUB species from the80 not represented in previous project manifests/catalogs;500 fresh pictures with20 train/10 validation/20 test per species. Respect official train/test split; exact/decoded/perceptual duplicate exclusions against historical images and across new splits. Use existing fixed24 bird attributes,not selected on new scores. Two backbones,three seeds,seven arms. No pretrained-overlap guarantee.
+
+- [x] Audit previous usage and lock fresh manifest and protocol before feature/model scoring.
+- [x] Ground/extract training and validation only;train42 cells and seal all choices.
+- [x] Ground/extract held-out test only after seal;one final evaluation and audit.
+- [x] Prepare bilingual results and independence limits;authorized GitHub upload is the final delivery step.
+
+Finish line: completed fixed matrix and verified data separation,including negative outcomes. No post-test tuning. New-dataset shift and ten-class scope must be reported. Initial file probe make_expanded.py was absent; used actual CUB metadata. PowerShell rg glob probe failed; resolved via -g.
+
+Complete:42 trained/scored/replayed models;all prior and cross-split exact/perceptual checks passed. New weighted AG seed-mean gain over uniform is +0.50pp EfficientNet,0.00pp CLIP;no positive Holm-significant contrast. No new tuning after results. Finish bounded task after publication.

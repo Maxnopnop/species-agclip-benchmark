@@ -1,5 +1,7 @@
 # Species recognition: five backbones with attribute-guided adaptation
 
+**新数据复测（2026-10-03）：** [中文报告](reports/confidence_fresh_v1/summary_zh.md)、[English](reports/confidence_fresh_v1/summary_en.md)、[图表](reports/confidence_fresh_v1/comparison.png)。排除项目此前120个CUB物种，固定抽取10个未使用物种、500张新图片（训练200／验证100／测试200），对8,242张历史图片进行文件、像素和感知哈希筛查。保持上一轮模型与训练方式，42个检查点锁定后才提取新测试特征。加权AG相对等权AG的种子均值变化为EfficientNet +0.50个百分点、CLIP 0.00；未证明显著收益。项目数据隔离不保证基础模型预训练无重叠，也不意味着训练必然不过拟合。
+
 **置信度加权小实验（2026-10-03）：** [中文报告](reports/confidence_v1/summary_zh.md)、[English](reports/confidence_v1/summary_en.md)、[图表](reports/confidence_v1/comparison.png)。在相同10类、500张图片、20-shot、三种子下，对EfficientNet-B0与CLIP ViT-B/32比较纯视觉、图文适配、等权AG、检测置信度AG及三个控制分支，共42组。等权/加权/打乱权重准确率持平（分别92.00%和93.33%）。权重干预改变概率但未改变预测；100张测试图仅41张有两个有效检测。此轮是冻结特征、历史数据上的轻量探索，不证明加权普遍无效。
 
 **最新补充（2026-10-02）：完成原五模型的纯视觉／图文适配／属性引导对照。** [中文报告](reports/three_stage_v1/summary_zh.md)、[English report](reports/three_stage_v1/summary_en.md)、[对比图](reports/three_stage_v1/comparison.png)。沿用20物种、1,000张图片、5/10/20-shot和三个种子，新增90组训练并核验重放225组旧结果。随机类别向量对照也明显高于普通线性头，因此不能把图文适配的全部优势归因于语义；15个设置中，AG相对图文适配仍无通过多重比较校正的正向提升。冻结主干、短预算、历史测试集复用，属于探索实验；第五个模型始终保留CLIP预训练。

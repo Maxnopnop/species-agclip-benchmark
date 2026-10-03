@@ -1,0 +1,64 @@
+{
+  "config": {
+    "version": "confidence_fresh_v1",
+    "backbones": [
+      "efficientnet_b0",
+      "clip_vit_b32"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "variants": [
+      "visual",
+      "random_codes",
+      "text",
+      "region_only",
+      "ag_uniform",
+      "ag_confidence",
+      "ag_shuffled"
+    ],
+    "shots": 20,
+    "stage_steps": 200,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 32,
+    "validation_interval": 20,
+    "random_code_seed": 20261003,
+    "sampling_seed": 202610031,
+    "classes": 10,
+    "per_class": {
+      "train": 20,
+      "val": 10,
+      "test": 20
+    },
+    "dedup_hamming_threshold": 4,
+    "detector_threshold": 0.05,
+    "detector_nms_iou": 0.5,
+    "min_region_area": 0.005,
+    "max_region_area": 0.95,
+    "max_regions": 2,
+    "selection": "Exclude all prior project CUB species identified in existing manifests/catalogs. Shuffle eligible remaining classes and images using fixed seed. Use official train images for train/validation and official test for test. Reject exact bytes,decoded pixels or pHash<=4/dHash<=4 matches against all images of previous CUB species, prior iNaturalist files, and already accepted new images. First ten classes with sufficient nonduplicate images, without any model scores.",
+    "method": "Reuse unchanged confidence_experiment.Head and train; seven arms,two frozen backbones,three seeds. Fixed24 bird attribute prompts inherited from previous training-only attribute selection;no new held-out attributes/parts/boxes used. Confidence aggregation and CAF unchanged. No original AG-CLIP reproduction claim.",
+    "holdout": "Lock manifest/protocol before grounding. Ground/extract only300 train+validation images;train42 models using validation macro-F1 then CE. Seal all checkpoints and developmental assets before grounding/extracting200 held-out test images. One final scoring after seal; no test-based adaptation. Seeds vary initialization/batches;all seeds use same200 training images.",
+    "statistics": "Six primary paired contrasts,weighted AG against uniform AG,text and shuffled confidence for each backbone;exact McNemar and5000 class-stratified bootstrap using three-seed probability ensemble;Holm across six. Also report seed mean/SD. A zero empirical bootstrap interval is not proof of zero population effect.",
+    "limitations": "Project-unused images AND species,not necessarily new to foundation-model pretraining. Perceptual hash is heuristic;no photographer/observation grouping metadata. New bird-only domain differs from mixed iNaturalist. Same short training budget is not optimal per-model tuning. New test protects against prior test reuse but cannot guarantee absence of training overfitting."
+  },
+  "source": {
+    "configs\\confidence_fresh_v1.json": "b569e5e1cc983e4615ae00cff80db22c8a3179d2d95228f0168eb264c2b9adae",
+    "confidence_fresh.py": "3a40ccef0a4008819754a3a92213ef5b38355074706e2696a4b38354082702b7",
+    "confidence_experiment.py": "1cb565bc957b9dbd0af483533d622fa589909ba0001a39713e095504880cafb1",
+    "multimodal\\models.py": "192ffa1e9dfc84d47d0d67b11e61c2613b6734041f22dec65cc13a5afbe54fea",
+    "multimodal\\grounded_data.py": "9f56ef680dcf30e9943f048a0520964b3d1c08aff73c6bd40184ee83ba44ce96",
+    "multimodal\\expanded.py": "7b0152fbd062a0b032fe1d967cf74182a528febf3ff243aa06712eb4d9d06cc6",
+    "multimodal\\experiment.py": "2a8cd535579c198469ad4060f293085158bf27781bb59b13437a3cff47c1893c",
+    "run.py": "bffd9a79e443fda1d567e9b293c0e07c075770e78dd70109ec41dbd39f1e1854",
+    "data\\cub\\verified.json": "a96335ecac82918c8a5ed064603f659612deee6d470e41c8e186f8a6f9707653",
+    "data\\cub_attributes_v1\\manifest.json": "aac2e3700cb3743b834d623342e006219168ca3c2779af6eb8e796c469cbee99",
+    "data\\confidence_fresh_v1\\manifest.json": "9491ce461bf7640c53a62dfee83bbebb042d28d6decb8787ed8bfd5caa3a5fac",
+    "data\\cub100_v1\\manifest.json": "cf25f035b5fa011e2a60e24d1f3ea4d7cfaa40aae3adf03032a715a6a36c47fe",
+    "data\\cub_resplit_v1\\catalog.json": "d12a8713a88f80de20c39a6f675d11c2e9c9261eb290f5536f71e38004777089"
+  },
+  "locked_at_utc": "2026-10-03T12:54:23.306949+00:00"
+}
